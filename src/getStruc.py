@@ -21,6 +21,7 @@ dirDic2 = {
     "east": (0,-1),
     "west": (0,1)
 }
+# For Door Facing
 inverseDir = {
     "north": "south",
     "south": "north",
@@ -39,6 +40,9 @@ def generateDoor(x,z,y,direction,block):
     command = "/setblock " + str(x + dis[0] + dis2[0]) + " " + str(z + 2) + " " + str(y + dis[1] + dis2[1]) + " minecraft:" + block
     commandlist.append(command)
     return commandlist
+
+# Where the start block is
+# /setblock x y+4 z minecraft:pink_carpet
 
 if __name__ == "__main__":
     # Test location (-100, 3, 120)
