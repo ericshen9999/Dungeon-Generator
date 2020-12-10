@@ -1,15 +1,20 @@
+
 options = [
-    "S", # Start
-    "E", # End
-    "O", # Open Passage
-    "B", # Button
-    "L", # Lever
-    "P", # Puzzle
-    "R", # Room
-    "T", # Trapped Room
-    "F", # Fake Room
-    " " # Nothing
+    "S",    # Start
+    "E",    # End
+    "O",    # Open Passage
+    "B",    # Button
+    "L",    # Lever
+    "P",    # Puzzle
+    "R",    # Room
+    "T",    # Trapped Room
+    "F",    # Fake Room
+    " "     # Nothing
 ]
+
+maxSections = 10        #maximum number of sections the dungeon can have
+maxSectionSize = 10     #maximum number of rooms a section can have
+maxChildren = 1         # Maximum number of children a section can have
 
 inverseDir = {   #just a dictionary for quickly getting an opposite direction
     "n": "s",
@@ -33,7 +38,12 @@ class Room:         #Class for a single room
         }
         self.type = None    # the type of room the room is - should remain nothing until the entire dungeon is generated
         self.depth = depth  # how deep in the section the room is - useful for finding rooms at the end of a section
-        
+        self.connectionNum = 0
+    def recalculateConnectionCount(self):
+        self.connectionNum = 0
+        for val in self.connections:
+            if val is True:
+                self.connectionNum += 1
 class Section:      #Class for a section - a connected set of rooms
     def __init__(self, entrancePos, entranceDir, currentGrid):      #passes the entrance position, entrance direction
                                                                     # and a dictionary positions already in use
@@ -41,15 +51,43 @@ class Section:      #Class for a section - a connected set of rooms
                                             # has finished generating its rooms
         self.prefilled = currentGrid        # might not be needed, may remove later
         self.sectionMap = {entrancePos: Room(entrancePos, 0)}  # the map of rooms in this section
-        if entranceDir is not None:     #only execute the next line if this isn't the first section
-            self.sectionMap[entrancePos].connections[inverseDir(entranceDir)] = True # set the initial room in the
+        if entranceDir is not None:     #only execute the next lines if this isn't the first section
+            self.sectionMap[entrancePos].connections[inverseDir[entranceDir]] = True # set the initial room in the
                                                                                      # section to be connected
+            self.sectionMap[entrancePos].recalculateConnectionCount()
+
 class Map:
     def __init__(self):
         self.map = {}   # dictionary to contain the rooms that are in the dungeon.
                         # rooms in here have been successfully placed on the map.
         self.firstSection = Section((0, 0), None, self.map)
 
+def connectRooms(room1, room2):     # create a connection between two rooms and update their available connection count
+    xy1 = room1.xy
+    xy2 = room2.xy
+    c1 = None
+    c2 = None
+    if xy1[0] == xy2[0]:            # if the rooms have the same x coordinate
+        if xy1[1] - xy2[1] == 1:        # if room1 is 1 space above room2
+            c1 = "s"
+            c2 = "n"
+        elif xy1[1] - xy2[1] == -1:     # if room1 is 1 space below room2
+            c1 = "n"
+            c2 = "s"
+    elif xy1[1] == xy2[0]:           # if the rooms have the same y coordinate
+        if xy1[1] - xy2[1] == 1:        # if room1 is 1 space right of room2
+            c1 = "w"
+            c2 = "e"
+        elif xy1[1] - xy2[1] == -1:     # if room1 is 1 space left of room2
+            c1 = "e"
+            c2 = "w"
+    if c1 is not None and c2 is not None:    # check that the room pair is valid
+        room1.connections[c1] = True
+        room2.connections[c2] = True
+        room1.recalculateConnectionCount()
+        room2.recalculateConnecitonCount()
+        return True
+    return False
 
 # Create the Structure of a maze 
 def createDungeon():
