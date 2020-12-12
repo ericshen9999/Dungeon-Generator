@@ -1,4 +1,4 @@
-
+from random import choice, choices
 options = [
     "S",    # Start
     "E",    # End
@@ -87,6 +87,7 @@ def connectRooms(room1, room2):     # create a connection between two rooms and 
         room1.recalculateConnectionCount()
         room2.recalculateConnecitonCount()
         return True
+    print("Error: Unable to connect the following rooms:\t" + xy1 + xy2)
     return False
 
 # Create the Structure of a maze 
