@@ -1,10 +1,10 @@
 # Rooms are 11x11 with 9x9 insides (+10 for the next room since walls overlap)
 # (x,z,y) [-100, 3, 120]
-def generateRoom(x,z,y):
+def generateRoom(x,y,z):
     commandlist = []
-    command = "/fill " + str(x) + " " + str(z) + " " + str(y) + " " + str(x+10) + " " + str(z+3) + " " + str(y+10) + " minecraft:stone keep"
+    command = "/fill " + str(x) + " " + str(y) + " " + str(z) + " " + str(x+10) + " " + str(y+3) + " " + str(z+10) + " minecraft:stone keep"
     commandlist.append(command)
-    command = "/fill " + str(x+1) + " " + str(z+1) + " " + str(y+1) + " " + str(x+9) + " " + str(z+3) + " " + str(y+9) + " minecraft:air replace minecraft:stone"
+    command = "/fill " + str(x+1) + " " + str(y+1) + " " + str(z+1) + " " + str(x+9) + " " + str(y+3) + " " + str(z+9) + " minecraft:air replace minecraft:stone"
     commandlist.append(command)
     return commandlist
 # For Door
@@ -29,44 +29,44 @@ inverseDir = {
     "west": "east"
 }
 # (x,z,y,direction,block) [-100, 3, 120, "north", "white_wool"]
-def generateDoor(x,z,y,direction,block):
+def generateDoor(x,y,z,direction,block):
     commandlist = []
     dis = dirDic[direction]
     dis2 = dirDic2[direction]
-    command = "/setblock " + str(x + dis[0]) + " " + str(z + 1) + " " + str(y + dis[1]) + " minecraft:iron_door[half=lower, facing=" + inverseDir[direction] + "]"
+    command = "/setblock " + str(x + dis[0]) + " " + str(y + 1) + " " + str(z + dis[1]) + " minecraft:iron_door[half=lower, facing=" + inverseDir[direction] + "]"
     commandlist.append(command)
-    command = "/setblock " + str(x + dis[0]) + " " + str(z + 2) + " " + str(y + dis[1]) + " minecraft:iron_door[half=upper, facing=" + inverseDir[direction] + "]"
+    command = "/setblock " + str(x + dis[0]) + " " + str(y + 2) + " " + str(z + dis[1]) + " minecraft:iron_door[half=upper, facing=" + inverseDir[direction] + "]"
     commandlist.append(command)
-    command = "/setblock " + str(x + dis[0] + dis2[0]) + " " + str(z + 2) + " " + str(y + dis[1] + dis2[1]) + " minecraft:" + block
+    command = "/setblock " + str(x + dis[0] + dis2[0]) + " " + str(y + 2) + " " + str(z + dis[1] + dis2[1]) + " minecraft:" + block
     commandlist.append(command)
     return commandlist
 
 
-def get3x3(x,z,y):
+def get3x3(x,y,z):
     commandlist = []
-    command = "/fill " + str(x+4) + " " + str(z) + " " + str(y+4) + " " + str(x+6) + " " + str(z) + " " + str(y+6) + " minecraft:barrier replace"
+    command = "/fill " + str(x+4) + " " + str(y) + " " + str(z+4) + " " + str(x+6) + " " + str(y) + " " + str(z+6) + " minecraft:barrier replace"
     commandlist.append(command)
-    command = "/fill " + str(x+2) + " " + str(z-1) + " " + str(y+2) + " " + str(x+8) + " " + str(z-1) + " " + str(y+8) + " minecraft:obsidian replace"
+    command = "/fill " + str(x+2) + " " + str(y-1) + " " + str(z+2) + " " + str(x+8) + " " + str(y-1) + " " + str(z+8) + " minecraft:obsidian replace"
     commandlist.append(command)
-    command = "/fill " + str(x+3) + " " + str(z-1) + " " + str(y+3) + " " + str(x+7) + " " + str(z-1) + " " + str(y+7) + " minecraft:air replace minecraft:obsidian"
+    command = "/fill " + str(x+3) + " " + str(y-1) + " " + str(z+3) + " " + str(x+7) + " " + str(y-1) + " " + str(z+7) + " minecraft:air replace minecraft:obsidian"
     commandlist.append(command)
-    command = "/fill " + str(x+3) + " " + str(z-1) + " " + str(y+4) + " " + str(x+3) + " " + str(z-1) + " " + str(y+6) + " minecraft:sticky_piston[facing=east]"
+    command = "/fill " + str(x+3) + " " + str(y-1) + " " + str(z+4) + " " + str(x+3) + " " + str(y-1) + " " + str(z+6) + " minecraft:sticky_piston[facing=east]"
     commandlist.append(command)
-    command = "/fill " + str(x+7) + " " + str(z-1) + " " + str(y+4) + " " + str(x+7) + " " + str(z-1) + " " + str(y+6) + " minecraft:sticky_piston[facing=west]"
+    command = "/fill " + str(x+7) + " " + str(y-1) + " " + str(z+4) + " " + str(x+7) + " " + str(y-1) + " " + str(z+6) + " minecraft:sticky_piston[facing=west]"
     commandlist.append(command)
-    command = "/fill " + str(x+4) + " " + str(z-1) + " " + str(y+3) + " " + str(x+6) + " " + str(z-1) + " " + str(y+3) + " minecraft:sticky_piston[facing=south]"
+    command = "/fill " + str(x+4) + " " + str(y-1) + " " + str(z+3) + " " + str(x+6) + " " + str(y-1) + " " + str(z+3) + " minecraft:sticky_piston[facing=south]"
     commandlist.append(command)
-    command = "/fill " + str(x+4) + " " + str(z-1) + " " + str(y+7) + " " + str(x+6) + " " + str(z-1) + " " + str(y+7) + " minecraft:sticky_piston[facing=north]"
+    command = "/fill " + str(x+4) + " " + str(y-1) + " " + str(z+7) + " " + str(x+6) + " " + str(y-1) + " " + str(z+7) + " minecraft:sticky_piston[facing=north]"
     commandlist.append(command)
     return commandlist
 
 puzzleType = {
     "3x3": get3x3
 }
-# (x,z,y,direction,block) [-100, 3, 120, "north", "white_wool"]
-def getpuzzle(x,z,y,name):
+# (x,y,z,direction,block) [-100, 3, 120, "north", "white_wool"]
+def getpuzzle(x,y,z,name):
     if name in puzzleType:
-        return puzzleType[name](x,z,y)
+        return puzzleType[name](x,y,z)
     else:
         print("ERROR:", x, ",", y, ",", z, ",", name, "not found")
         return None
