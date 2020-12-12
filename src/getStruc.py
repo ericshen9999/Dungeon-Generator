@@ -50,6 +50,14 @@ def get3x3(x,z,y):
     commandlist.append(command)
     command = "/fill " + str(x+3) + " " + str(z-1) + " " + str(y+3) + " " + str(x+7) + " " + str(z-1) + " " + str(y+7) + " minecraft:air replace minecraft:obsidian"
     commandlist.append(command)
+    command = "/fill " + str(x+3) + " " + str(z-1) + " " + str(y+4) + " " + str(x+3) + " " + str(z-1) + " " + str(y+6) + " minecraft:sticky_piston[facing=east]"
+    commandlist.append(command)
+    command = "/fill " + str(x+7) + " " + str(z-1) + " " + str(y+4) + " " + str(x+7) + " " + str(z-1) + " " + str(y+6) + " minecraft:sticky_piston[facing=west]"
+    commandlist.append(command)
+    command = "/fill " + str(x+4) + " " + str(z-1) + " " + str(y+3) + " " + str(x+6) + " " + str(z-1) + " " + str(y+3) + " minecraft:sticky_piston[facing=south]"
+    commandlist.append(command)
+    command = "/fill " + str(x+4) + " " + str(z-1) + " " + str(y+7) + " " + str(x+6) + " " + str(z-1) + " " + str(y+7) + " minecraft:sticky_piston[facing=north]"
+    commandlist.append(command)
     return commandlist
 
 puzzleType = {
