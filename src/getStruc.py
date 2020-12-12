@@ -41,9 +41,31 @@ def generateDoor(x,z,y,direction,block):
     commandlist.append(command)
     return commandlist
 
+
+def get3x3(x,z,y):
+    commandlist = []
+    command = "/fill " + str(x+4) + " " + str(z) + " " + str(y+4) + " " + str(x+6) + " " + str(z) + " " + str(y+6) + " minecraft:barrier replace"
+    commandlist.append(command)
+    command = "/fill " + str(x+2) + " " + str(z-1) + " " + str(y+2) + " " + str(x+8) + " " + str(z-1) + " " + str(y+8) + " minecraft:obsidian replace"
+    commandlist.append(command)
+    command = "/fill " + str(x+3) + " " + str(z-1) + " " + str(y+3) + " " + str(x+7) + " " + str(z-1) + " " + str(y+7) + " minecraft:air replace minecraft:obsidian"
+    commandlist.append(command)
+    return commandlist
+
+puzzleType = {
+    "3x3": get3x3
+}
+# (x,z,y,direction,block) [-100, 3, 120, "north", "white_wool"]
+def getpuzzle(x,z,y,name):
+    if name in puzzleType:
+        return puzzleType[name](x,z,y)
+    else:
+        print("ERROR:", x, ",", y, ",", z, ",", name, "not found")
+        return None
+    
 # Where the start block is
 # /setblock x y+4 z minecraft:pink_carpet
 
 if __name__ == "__main__":
     # Test location (-100, 3, 120)
-    print(generateDoor(-100, 3, 120, "west","white_wool"))
+    print(getpuzzle(-100,3,120,"3x3"))
