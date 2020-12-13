@@ -378,11 +378,11 @@ def getTape(x,y,z):
 
     command = "/setblock " + str(x+5) + " " + str(y-4) + " " + str(z+10) + " minecraft:stone_bricks replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+5) + " " + str(y-3) + " " + str(z+10) + " minecraft:redstone_torch"
+    command = "/setblock " + str(x+5) + " " + str(y-3) + " " + str(z+10) + " minecraft:redstone_torch replace"
     commandlist.append(command)
     command = "/setblock " + str(x+5) + " " + str(y-2) + " " + str(z+10) + " minecraft:stone_bricks replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+5) + " " + str(y-1) + " " + str(z+10) + " minecraft:redstone_torch"
+    command = "/setblock " + str(x+5) + " " + str(y-1) + " " + str(z+10) + " minecraft:redstone_torch replace"
     commandlist.append(command)
 
     return commandlist
