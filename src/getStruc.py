@@ -2,9 +2,9 @@
 # (x,z,y) [-100, 3, 120]
 def generateRoom(x,y,z):
     commandlist = []
-    command = "/fill " + str(x) + " " + str(y) + " " + str(z) + " " + str(x+10) + " " + str(y+3) + " " + str(z+10) + " minecraft:stone keep"
+    command = "/fill " + str(x) + " " + str(y) + " " + str(z) + " " + str(x+10) + " " + str(y+3) + " " + str(z+10) + " minecraft:stone_bricks keep"
     commandlist.append(command)
-    command = "/fill " + str(x+1) + " " + str(y+1) + " " + str(z+1) + " " + str(x+9) + " " + str(y+3) + " " + str(z+9) + " minecraft:air replace minecraft:stone"
+    command = "/fill " + str(x+1) + " " + str(y+1) + " " + str(z+1) + " " + str(x+9) + " " + str(y+3) + " " + str(z+9) + " minecraft:air replace minecraft:stone_bricks"
     commandlist.append(command)
     return commandlist
 # For Door
@@ -46,18 +46,142 @@ def get3x3(x,y,z):
     commandlist = []
     command = "/fill " + str(x+4) + " " + str(y) + " " + str(z+4) + " " + str(x+6) + " " + str(y) + " " + str(z+6) + " minecraft:barrier replace"
     commandlist.append(command)
-    command = "/fill " + str(x+2) + " " + str(y-1) + " " + str(z+2) + " " + str(x+8) + " " + str(y-1) + " " + str(z+8) + " minecraft:obsidian replace"
+
+    command = "/fill " + str(x+1) + " " + str(y-1) + " " + str(z+1) + " " + str(x+9) + " " + str(y-1) + " " + str(z+9) + " minecraft:obsidian replace"
     commandlist.append(command)
-    command = "/fill " + str(x+3) + " " + str(y-1) + " " + str(z+3) + " " + str(x+7) + " " + str(y-1) + " " + str(z+7) + " minecraft:air replace minecraft:obsidian"
+    command = "/fill " + str(x+2) + " " + str(y-1) + " " + str(z+2) + " " + str(x+8) + " " + str(y-1) + " " + str(z+8) + " minecraft:air replace minecraft:obsidian"
     commandlist.append(command)
-    command = "/fill " + str(x+3) + " " + str(y-1) + " " + str(z+4) + " " + str(x+3) + " " + str(y-1) + " " + str(z+6) + " minecraft:sticky_piston[facing=east]"
+
+    command = "/fill " + str(x+2) + " " + str(y-1) + " " + str(z+4) + " " + str(x+2) + " " + str(y-1) + " " + str(z+6) + " minecraft:sticky_piston[facing=down] replace"
     commandlist.append(command)
-    command = "/fill " + str(x+7) + " " + str(y-1) + " " + str(z+4) + " " + str(x+7) + " " + str(y-1) + " " + str(z+6) + " minecraft:sticky_piston[facing=west]"
+    command = "/fill " + str(x+8) + " " + str(y-1) + " " + str(z+4) + " " + str(x+8) + " " + str(y-1) + " " + str(z+6) + " minecraft:sticky_piston[facing=down] replace"
     commandlist.append(command)
-    command = "/fill " + str(x+4) + " " + str(y-1) + " " + str(z+3) + " " + str(x+6) + " " + str(y-1) + " " + str(z+3) + " minecraft:sticky_piston[facing=south]"
+    command = "/fill " + str(x+4) + " " + str(y-1) + " " + str(z+2) + " " + str(x+6) + " " + str(y-1) + " " + str(z+2) + " minecraft:sticky_piston[facing=down] replace"
     commandlist.append(command)
-    command = "/fill " + str(x+4) + " " + str(y-1) + " " + str(z+7) + " " + str(x+6) + " " + str(y-1) + " " + str(z+7) + " minecraft:sticky_piston[facing=north]"
+    command = "/fill " + str(x+4) + " " + str(y-1) + " " + str(z+8) + " " + str(x+6) + " " + str(y-1) + " " + str(z+8) + " minecraft:sticky_piston[facing=down] replace"
     commandlist.append(command)
+
+    command = "/fill " + str(x+2) + " " + str(y) + " " + str(z+4) + " " + str(x+2) + " " + str(y) + " " + str(z+6) + " minecraft:powered_rail replace"
+    commandlist.append(command)
+    command = "/fill " + str(x+8) + " " + str(y) + " " + str(z+4) + " " + str(x+8) + " " + str(y) + " " + str(z+6) + " minecraft:powered_rail replace"
+    commandlist.append(command)
+    command = "/fill " + str(x+4) + " " + str(y) + " " + str(z+2) + " " + str(x+6) + " " + str(y) + " " + str(z+2) + " minecraft:powered_rail replace"
+    commandlist.append(command)
+    command = "/fill " + str(x+4) + " " + str(y) + " " + str(z+8) + " " + str(x+6) + " " + str(y) + " " + str(z+8) + " minecraft:powered_rail replace"
+    commandlist.append(command)
+
+    command = "/fill " + str(x+3) + " " + str(y-1) + " " + str(z+4) + " " + str(x+3) + " " + str(y-1) + " " + str(z+6) + " minecraft:sticky_piston[facing=north] replace"
+    commandlist.append(command)
+    command = "/fill " + str(x+7) + " " + str(y-1) + " " + str(z+4) + " " + str(x+7) + " " + str(y-1) + " " + str(z+6) + " minecraft:sticky_piston[facing=south] replace"
+    commandlist.append(command)
+    command = "/fill " + str(x+4) + " " + str(y-1) + " " + str(z+3) + " " + str(x+6) + " " + str(y-1) + " " + str(z+3) + " minecraft:sticky_piston[facing=west] replace"
+    commandlist.append(command)
+    command = "/fill " + str(x+4) + " " + str(y-1) + " " + str(z+7) + " " + str(x+6) + " " + str(y-1) + " " + str(z+7) + " minecraft:sticky_piston[facing=east] replace"
+    commandlist.append(command)
+
+    command = "/fill " + str(x+4) + " " + str(y-1) + " " + str(z+5) + " " + str(x+4) + " " + str(y-1) + " " + str(z+6) + " minecraft:smooth_quartz replace"
+    commandlist.append(command)
+    command = "/fill " + str(x+6) + " " + str(y-1) + " " + str(z+5) + " " + str(x+6) + " " + str(y-1) + " " + str(z+6) + " minecraft:smooth_quartz replace"
+    commandlist.append(command)
+    command = "/fill " + str(x+5) + " " + str(y-1) + " " + str(z+4) + " " + str(x+5) + " " + str(y-1) + " " + str(z+6) + " minecraft:redstone_block replace"
+    commandlist.append(command)
+    command = "/setblock " + str(x+6) + " " + str(y-1) + " " + str(z+4) + " minecraft:redstone_block replace"
+    commandlist.append(command)
+
+    command = "/fill " + str(x+2) + " " + str(y-2) + " " + str(z+4) + " " + str(x+2) + " " + str(y-2) + " " + str(z+6) + " minecraft:observer[facing=south] replace"
+    commandlist.append(command)
+    command = "/fill " + str(x+8) + " " + str(y-2) + " " + str(z+4) + " " + str(x+8) + " " + str(y-2) + " " + str(z+6) + " minecraft:observer[facing=north] replace"
+    commandlist.append(command)
+    command = "/fill " + str(x+4) + " " + str(y-2) + " " + str(z+2) + " " + str(x+6) + " " + str(y-2) + " " + str(z+2) + " minecraft:observer[facing=east] replace"
+    commandlist.append(command)
+    command = "/fill " + str(x+4) + " " + str(y-2) + " " + str(z+8) + " " + str(x+6) + " " + str(y-2) + " " + str(z+8) + " minecraft:observer[facing=west] replace"
+    commandlist.append(command)
+
+    command = "/fill " + str(x+3) + " " + str(y-2) + " " + str(z+4) + " " + str(x+3) + " " + str(y-2) + " " + str(z+6) + " minecraft:stone_bricks replace"
+    commandlist.append(command)
+    command = "/fill " + str(x+7) + " " + str(y-2) + " " + str(z+4) + " " + str(x+7) + " " + str(y-2) + " " + str(z+6) + " minecraft:stone_bricks replace"
+    commandlist.append(command)
+    command = "/fill " + str(x+4) + " " + str(y-2) + " " + str(z+3) + " " + str(x+6) + " " + str(y-2) + " " + str(z+3) + " minecraft:stone_bricks replace"
+    commandlist.append(command)
+    command = "/fill " + str(x+4) + " " + str(y-2) + " " + str(z+7) + " " + str(x+6) + " " + str(y-2) + " " + str(z+7) + " minecraft:stone_bricks replace"
+    commandlist.append(command)
+
+    command = "/setblock " + str(x+4) + " " + str(y-3) + " " + str(z+6) + " minecraft:stone_bricks replace"
+    commandlist.append(command)
+    command = "/setblock " + str(x+6) + " " + str(y-3) + " " + str(z+6) + " minecraft:stone_bricks replace"
+    commandlist.append(command)
+    command = "/setblock " + str(x+6) + " " + str(y-3) + " " + str(z+4) + " minecraft:stone_bricks replace"
+    commandlist.append(command)
+    command = "/setblock " + str(x+4) + " " + str(y-3) + " " + str(z+4) + " minecraft:stone_bricks replace"
+    commandlist.append(command)
+
+    command = "/setblock " + str(x+5) + " " + str(y-3) + " " + str(z+6) + " minecraft:redstone_wall_torch[facing=north] replace"
+    commandlist.append(command)
+    command = "/setblock " + str(x+6) + " " + str(y-3) + " " + str(z+5) + " minecraft:redstone_wall_torch[facing=east] replace"
+    commandlist.append(command)
+    command = "/setblock " + str(x+5) + " " + str(y-3) + " " + str(z+4) + " minecraft:redstone_wall_torch[facing=south] replace"
+    commandlist.append(command)
+    command = "/setblock " + str(x+4) + " " + str(y-3) + " " + str(z+5) + " minecraft:redstone_wall_torch[facing=west] replace"
+    commandlist.append(command)
+    
+    command = "/setblock " + str(x+4) + " " + str(y-2) + " " + str(z+6) + " minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace"
+    commandlist.append(command)
+    command = "/setblock " + str(x+6) + " " + str(y-2) + " " + str(z+6) + " minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace"
+    commandlist.append(command)
+    command = "/setblock " + str(x+6) + " " + str(y-2) + " " + str(z+4) + " minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace"
+    commandlist.append(command)
+    command = "/setblock " + str(x+4) + " " + str(y-2) + " " + str(z+4) + " minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace"
+    commandlist.append(command)
+
+    
+    command = "/fill " + str(x+4) + " " + str(y-5) + " " + str(z+4) + " " + str(x+6) + " " + str(y-5) + " " + str(z+6) + " minecraft:stone_bricks replace"
+    commandlist.append(command)
+
+    command = "/fill " + str(x+4) + " " + str(y-4) + " " + str(z+4) + " " + str(x+6) + " " + str(y-4) + " " + str(z+6) + " minecraft:redstone_wire replace"
+    commandlist.append(command)
+
+    command = "/setblock " + str(x+5) + " " + str(y-4) + " " + str(z+5) + " minecraft:air replace"
+    commandlist.append(command)
+
+    command = "/setblock " + str(x+5) + " " + str(y-5) + " " + str(z+7) + " minecraft:redstone_wall_torch[facing=west] replace"
+    commandlist.append(command)
+
+    command = "/setblock " + str(x+5) + " " + str(y-6) + " " + str(z+8) + " minecraft:stone_bricks replace"
+    commandlist.append(command)
+    command = "/setblock " + str(x+5) + " " + str(y-5) + " " + str(z+9) + " minecraft:stone_bricks replace"
+    commandlist.append(command)
+    command = "/setblock " + str(x+5) + " " + str(y-4) + " " + str(z+10) + " minecraft:stone_bricks replace"
+    commandlist.append(command)
+    command = "/setblock " + str(x+5) + " " + str(y-2) + " " + str(z+10) + " minecraft:stone_bricks replace"
+    commandlist.append(command)
+
+    command = "/setblock " + str(x+5) + " " + str(y-5) + " " + str(z+8) + " minecraft:redstone_wire replace"
+    commandlist.append(command)
+    command = "/setblock " + str(x+5) + " " + str(y-4) + " " + str(z+9) + " minecraft:redstone_wire replace"
+    commandlist.append(command)
+    command = "/setblock " + str(x+5) + " " + str(y-3) + " " + str(z+10) + " minecraft:redstone_torch replace"
+    commandlist.append(command)
+    command = "/setblock " + str(x+5) + " " + str(y-1) + " " + str(z+10) + " minecraft:redstone_torch replace"
+    commandlist.append(command)
+
+    command = "/fill " + str(x+2) + " " + str(y+1) + " " + str(z+4) + " " + str(x+2) + " " + str(y+1) + " " + str(z+6) + " minecraft:stone_bricks replace"
+    commandlist.append(command)
+    command = "/fill " + str(x+8) + " " + str(y+1) + " " + str(z+4) + " " + str(x+8) + " " + str(y+1) + " " + str(z+6) + " minecraft:stone_bricks replace"
+    commandlist.append(command)
+    command = "/fill " + str(x+4) + " " + str(y+1) + " " + str(z+2) + " " + str(x+6) + " " + str(y+1) + " " + str(z+2) + " minecraft:stone_bricks replace"
+    commandlist.append(command)
+    command = "/fill " + str(x+4) + " " + str(y+1) + " " + str(z+8) + " " + str(x+6) + " " + str(y+1) + " " + str(z+8) + " minecraft:stone_bricks replace"
+    commandlist.append(command)
+    
+    command = "/fill " + str(x+2) + " " + str(y+2) + " " + str(z+4) + " " + str(x+2) + " " + str(y+2) + " " + str(z+6) + " minecraft:stone_button[face=floor, facing=south] replace"
+    commandlist.append(command)
+    command = "/fill " + str(x+8) + " " + str(y+2) + " " + str(z+4) + " " + str(x+8) + " " + str(y+2) + " " + str(z+6) + " minecraft:stone_button[face=floor, facing=north] replace"
+    commandlist.append(command)
+    command = "/fill " + str(x+4) + " " + str(y+2) + " " + str(z+2) + " " + str(x+6) + " " + str(y+2) + " " + str(z+2) + " minecraft:stone_button[face=floor, facing=east] replace"
+    commandlist.append(command)
+    command = "/fill " + str(x+4) + " " + str(y+2) + " " + str(z+8) + " " + str(x+6) + " " + str(y+2) + " " + str(z+8) + " minecraft:stone_button[face=floor, facing=west] replace"
+    commandlist.append(command)
+
     return commandlist
 
 puzzleType = {
