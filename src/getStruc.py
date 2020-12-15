@@ -1,10 +1,10 @@
 # Rooms are 11x11 with 9x9 insides (+10 for the next room since walls overlap)
 # (x,z,y) [-100, 3, 120]
-def generateRoom(x,y,z):
+def generateRoom(x,y,z,block):
     commandlist = []
-    command = "/fill " + str(x) + " " + str(y) + " " + str(z) + " " + str(x+10) + " " + str(y+3) + " " + str(z+10) + " minecraft:stone_bricks keep"
+    command = "/fill " + str(x) + " " + str(y) + " " + str(z) + " " + str(x+10) + " " + str(y+3) + " " + str(z+10) + " minecraft:" + block + " keep"
     commandlist.append(command)
-    command = "/fill " + str(x+1) + " " + str(y+1) + " " + str(z+1) + " " + str(x+9) + " " + str(y+3) + " " + str(z+9) + " minecraft:air replace minecraft:stone_bricks"
+    command = "/fill " + str(x+1) + " " + str(y+1) + " " + str(z+1) + " " + str(x+9) + " " + str(y+3) + " " + str(z+9) + " minecraft:air replace minecraft:" + block
     commandlist.append(command)
     return commandlist
 # For Door
