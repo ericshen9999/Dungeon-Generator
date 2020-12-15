@@ -42,8 +42,11 @@ def generateDoor(x,y,z,direction,block):
     return commandlist
 
 
-def get3x3(x,y,z):
+def get3x3(x,y,z,block):
     commandlist = []
+    command = "/fill " + str(x+1) + " " + str(y-1) + " " + str(z+1) + " " + str(x+9) + " " + str(y-6) + " " + str(z+9) + " minecraft:air replace"
+    commandlist.append(command)
+
     command = "/fill " + str(x+4) + " " + str(y) + " " + str(z+4) + " " + str(x+6) + " " + str(y) + " " + str(z+6) + " minecraft:barrier replace"
     commandlist.append(command)
 
@@ -164,13 +167,13 @@ def get3x3(x,y,z):
     command = "/setblock " + str(x+5) + " " + str(y-1) + " " + str(z+10) + " minecraft:redstone_torch replace"
     commandlist.append(command)
 
-    command = "/fill " + str(x+2) + " " + str(y+1) + " " + str(z+4) + " " + str(x+2) + " " + str(y+1) + " " + str(z+6) + " minecraft:stone_bricks replace"
+    command = "/fill " + str(x+2) + " " + str(y+1) + " " + str(z+4) + " " + str(x+2) + " " + str(y+1) + " " + str(z+6) + " " + block + " replace"
     commandlist.append(command)
-    command = "/fill " + str(x+8) + " " + str(y+1) + " " + str(z+4) + " " + str(x+8) + " " + str(y+1) + " " + str(z+6) + " minecraft:stone_bricks replace"
+    command = "/fill " + str(x+8) + " " + str(y+1) + " " + str(z+4) + " " + str(x+8) + " " + str(y+1) + " " + str(z+6) + " " + block + " replace"
     commandlist.append(command)
-    command = "/fill " + str(x+4) + " " + str(y+1) + " " + str(z+2) + " " + str(x+6) + " " + str(y+1) + " " + str(z+2) + " minecraft:stone_bricks replace"
+    command = "/fill " + str(x+4) + " " + str(y+1) + " " + str(z+2) + " " + str(x+6) + " " + str(y+1) + " " + str(z+2) + " " + block + " replace"
     commandlist.append(command)
-    command = "/fill " + str(x+4) + " " + str(y+1) + " " + str(z+8) + " " + str(x+6) + " " + str(y+1) + " " + str(z+8) + " minecraft:stone_bricks replace"
+    command = "/fill " + str(x+4) + " " + str(y+1) + " " + str(z+8) + " " + str(x+6) + " " + str(y+1) + " " + str(z+8) + " " + block + " replace"
     commandlist.append(command)
     
     command = "/fill " + str(x+2) + " " + str(y+2) + " " + str(z+4) + " " + str(x+2) + " " + str(y+2) + " " + str(z+6) + " minecraft:stone_button[face=floor, facing=south] replace"
@@ -186,6 +189,9 @@ def get3x3(x,y,z):
 
 def getTape(x,y,z):
     commandlist = []
+    command = "/fill " + str(x+1) + " " + str(y-1) + " " + str(z+1) + " " + str(x+9) + " " + str(y-6) + " " + str(z+9) + " minecraft:air replace"
+    commandlist.append(command)
+
     command = "/fill " + str(x+4) + " " + str(y) + " " + str(z+1) + " " + str(x+6) + " " + str(y) + " " + str(z+9) + " minecraft:barrier replace"
     commandlist.append(command)
     command = "/fill " + str(x+1) + " " + str(y) + " " + str(z+4) + " " + str(x+9) + " " + str(y) + " " + str(z+6) + " minecraft:barrier replace"
@@ -205,32 +211,32 @@ def getTape(x,y,z):
     command = "/setblock " + str(x+9) + " " + str(y+1) + " " + str(z+8) + " minecraft:stone_button[face=floor, facing=north] replace"
     commandlist.append(command)
 
-    command = "/fill " + str(x+5) + " " + str(y-1) + " " + str(z+1) + " " + str(x+6) + " " + str(y-1) + " " + str(z+1) + " minecraft:lime_concrete replace"
+    command = "/fill " + str(x+5) + " " + str(y-1) + " " + str(z+1) + " " + str(x+6) + " " + str(y-1) + " " + str(z+1) + " minecraft:black_concrete replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+3) + " " + str(y-1) + " " + str(z+2) + " minecraft:lime_concrete replace"
+    command = "/setblock " + str(x+3) + " " + str(y-1) + " " + str(z+2) + " minecraft:black_concrete replace"
     commandlist.append(command)
-    command = "/fill " + str(x+1) + " " + str(y-1) + " " + str(z+4) + " " + str(x+1) + " " + str(y-1) + " " + str(z+5) + " minecraft:lime_concrete replace"
+    command = "/fill " + str(x+1) + " " + str(y-1) + " " + str(z+4) + " " + str(x+1) + " " + str(y-1) + " " + str(z+5) + " minecraft:black_concrete replace"
     commandlist.append(command)
-    command = "/fill " + str(x+1) + " " + str(y-1) + " " + str(z+7) + " " + str(x+3) + " " + str(y-1) + " " + str(z+7) + " minecraft:lime_concrete replace"
+    command = "/fill " + str(x+1) + " " + str(y-1) + " " + str(z+7) + " " + str(x+3) + " " + str(y-1) + " " + str(z+7) + " minecraft:black_concrete replace"
     commandlist.append(command)
-    command = "/fill " + str(x+9) + " " + str(y-1) + " " + str(z+5) + " " + str(x+9) + " " + str(y-1) + " " + str(z+6) + " minecraft:lime_concrete replace"
+    command = "/fill " + str(x+9) + " " + str(y-1) + " " + str(z+5) + " " + str(x+9) + " " + str(y-1) + " " + str(z+6) + " minecraft:black_concrete replace"
     commandlist.append(command)
-    command = "/fill " + str(x+4) + " " + str(y-1) + " " + str(z+9) + " " + str(x+5) + " " + str(y-1) + " " + str(z+9) + " minecraft:lime_concrete replace"
+    command = "/fill " + str(x+4) + " " + str(y-1) + " " + str(z+9) + " " + str(x+5) + " " + str(y-1) + " " + str(z+9) + " minecraft:black_concrete replace"
     commandlist.append(command)
 
-    command = "/setblock " + str(x+5) + " " + str(y-1) + " " + str(z+2) + " minecraft:cyan_concrete replace"
+    command = "/setblock " + str(x+5) + " " + str(y-1) + " " + str(z+2) + " minecraft:white_concrete replace"
     commandlist.append(command)
-    command = "/fill " + str(x+4) + " " + str(y-1) + " " + str(z+3) + " " + str(x+4) + " " + str(y-1) + " " + str(z+7) + " minecraft:cyan_concrete replace"
+    command = "/fill " + str(x+4) + " " + str(y-1) + " " + str(z+3) + " " + str(x+4) + " " + str(y-1) + " " + str(z+7) + " minecraft:white_concrete replace"
     commandlist.append(command)
-    command = "/fill " + str(x+6) + " " + str(y-1) + " " + str(z+3) + " " + str(x+6) + " " + str(y-1) + " " + str(z+8) + " minecraft:cyan_concrete replace"
+    command = "/fill " + str(x+6) + " " + str(y-1) + " " + str(z+3) + " " + str(x+6) + " " + str(y-1) + " " + str(z+8) + " minecraft:white_concrete replace"
     commandlist.append(command)
-    command = "/fill " + str(x+3) + " " + str(y-1) + " " + str(z+4) + " " + str(x+6) + " " + str(y-1) + " " + str(z+4) + " minecraft:cyan_concrete replace"
+    command = "/fill " + str(x+3) + " " + str(y-1) + " " + str(z+4) + " " + str(x+6) + " " + str(y-1) + " " + str(z+4) + " minecraft:white_concrete replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+2) + " " + str(y-1) + " " + str(z+5) + " minecraft:cyan_concrete replace"
+    command = "/setblock " + str(x+2) + " " + str(y-1) + " " + str(z+5) + " minecraft:white_concrete replace"
     commandlist.append(command)
-    command = "/fill " + str(x+3) + " " + str(y-1) + " " + str(z+6) + " " + str(x+6) + " " + str(y-1) + " " + str(z+6) + " minecraft:cyan_concrete replace"
+    command = "/fill " + str(x+3) + " " + str(y-1) + " " + str(z+6) + " " + str(x+6) + " " + str(y-1) + " " + str(z+6) + " minecraft:white_concrete replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+5) + " " + str(y-1) + " " + str(z+8) + " minecraft:cyan_concrete replace"
+    command = "/setblock " + str(x+5) + " " + str(y-1) + " " + str(z+8) + " minecraft:white_concrete replace"
     commandlist.append(command)
 
     command = "/fill " + str(x+7) + " " + str(y-1) + " " + str(z+4) + " " + str(x+8) + " " + str(y-1) + " " + str(z+4) + " minecraft:redstone_block replace"
@@ -259,17 +265,17 @@ def getTape(x,y,z):
     command = "/setblock " + str(x+6) + " " + str(y-1) + " " + str(z+9) + " minecraft:piston[facing=south] replace"
     commandlist.append(command)
 
-    command = "/fill " + str(x+4) + " " + str(y-2) + " " + str(z+1) + " " + str(x+6) + " " + str(y-2) + " " + str(z+3) + " minecraft:lime_concrete replace"
+    command = "/fill " + str(x+4) + " " + str(y-2) + " " + str(z+1) + " " + str(x+6) + " " + str(y-2) + " " + str(z+3) + " minecraft:black_concrete replace"
     commandlist.append(command)
-    command = "/fill " + str(x+1) + " " + str(y-2) + " " + str(z+5) + " " + str(x+3) + " " + str(y-2) + " " + str(z+6) + " minecraft:lime_concrete replace"
+    command = "/fill " + str(x+1) + " " + str(y-2) + " " + str(z+5) + " " + str(x+3) + " " + str(y-2) + " " + str(z+6) + " minecraft:black_concrete replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+2) + " " + str(y-2) + " " + str(z+4) + " minecraft:lime_concrete replace"
+    command = "/setblock " + str(x+2) + " " + str(y-2) + " " + str(z+4) + " minecraft:black_concrete replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+5) + " " + str(y-2) + " " + str(z+5) + " minecraft:lime_concrete replace"
+    command = "/setblock " + str(x+5) + " " + str(y-2) + " " + str(z+5) + " minecraft:black_concrete replace"
     commandlist.append(command)
-    command = "/fill " + str(x+7) + " " + str(y-2) + " " + str(z+5) + " " + str(x+8) + " " + str(y-2) + " " + str(z+6) + " minecraft:lime_concrete replace"
+    command = "/fill " + str(x+7) + " " + str(y-2) + " " + str(z+5) + " " + str(x+8) + " " + str(y-2) + " " + str(z+6) + " minecraft:black_concrete replace"
     commandlist.append(command)
-    command = "/fill " + str(x+3) + " " + str(y-2) + " " + str(z+7) + " " + str(x+6) + " " + str(y-2) + " " + str(z+9) + " minecraft:lime_concrete replace"
+    command = "/fill " + str(x+3) + " " + str(y-2) + " " + str(z+7) + " " + str(x+6) + " " + str(y-2) + " " + str(z+9) + " minecraft:black_concrete replace"
     commandlist.append(command)
 
     command = "/setblock " + str(x+9) + " " + str(y-2) + " " + str(z+4) + " minecraft:stone_bricks replace"
