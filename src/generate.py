@@ -543,8 +543,6 @@ if __name__ == "__main__":
     print("Converting dungeon to text")
     dungeonMap = dungeon.writeDungeon()
     print(dungeonMap)
-    print(dungeon.offsetVal)
-    print(useOffset((0, 0), dungeon.offsetVal))
     #dungeon = populateDungeon(dungeon)
     f = open("map.txt", "w")
     f.write(dungeonMap)
