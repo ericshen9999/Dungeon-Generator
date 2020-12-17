@@ -1,24 +1,26 @@
-  X-X-^-X->       
-      |   |       
-  X X-X X-X       
-  | |   | |       
-X-X-^-X X X X     
-    |   |   |     
-O-X-X   X->-X     
-    |     | |     
-    X X-<-X X     
-        | |       
-    X-X-X X       
-        | |       
-      X-v X       
-      |           
-      X->-X       
-          |       
-        X-v-X-X X 
-          |   | | 
-          X   v-X 
-              |   
-            X-X-X 
-                | 
-                X 
-                  
+        X       
+        |       
+  X-<-X-<-X-X   
+  | |   |   |   
+  X X X-X   O-X 
+    |           
+  X-v-X-X       
+      |         
+  X-X-X->-X     
+        |       
+        X       
+        |       
+      X-X-X     
+        |       
+    X-X-v-X     
+      |   |     
+  X-X X X-X     
+    |     |     
+X-<-^ X-X-v     
+| | |   |       
+X X X-X v-X     
+  |   | |       
+X-X   X-X       
+  |     |       
+  X     X       
+                
