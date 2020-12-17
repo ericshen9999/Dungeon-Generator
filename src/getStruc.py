@@ -403,10 +403,34 @@ def getpuzzle(x,y,z,name):
     else:
         print("ERROR:", x, ",", y, ",", z, ",", name, "not found")
         return None
-    
+
+def getSection(localx, localy):
+    search = "(" + str(localx) + ", " + str(localy) + ") "
+    with open("section.txt", "r") as f:
+        for line in f:
+            if search in line:
+                output = line.replace(search,"")
+                return output.replace("\n","")
+
+roomType = { # Can be randomized later
+    "0": "netherrack",
+    "1": "stone", #Section 1 is Stone (can be changed)
+    "2": "cobblestone",
+    "3": "wool",
+    "4": "sandstone",
+    "5": "ice",
+    "6": "slime_block",
+    "7": "end_stone",
+    "8": "purpur_block",
+    "9": "quartz_block"
+}
+def getBlock(section):
+    return roomType[section]
+
 # Where the start block is
 # /setblock x y+4 z minecraft:pink_carpet
 
 if __name__ == "__main__":
     # Test location (-100, 3, 120)
-    print(getpuzzle(-100,3,120,"3x3"))
+    print(getBlock(getSection(0,0)))
+    

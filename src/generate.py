@@ -110,6 +110,7 @@ class Section:      # Class for a section - a connected set of rooms
             if parentRoomPosition is None:
                 break
             self.addRoom(parentRoomPosition, parentRoomExit)
+        self.writeSection()
         self.commitSection()
         print('Finished Generating Section #', self.id)
         while random() <= self.newChildChance() and self.map.sectionCount < maxSections:
@@ -175,6 +176,13 @@ class Section:      # Class for a section - a connected set of rooms
         newRoom = Room(newPos, parent.depth + 1, self.id)
         connectRooms(parent, newRoom)
         self.sectionMap[newRoom.xy] = newRoom
+
+    def writeSection(self):
+        f = open("section.txt" ,"a")
+        for key in self.sectionMap.keys(): 
+            output = str(key) + ": " + str(self.id) + "\n"
+            f.write(output)
+        f.close()
 
 
 
@@ -376,6 +384,7 @@ def populateDungeon(dungeon):
 if __name__ == "__main__":
     sectionCount = 0
     path = "map.txt"
+    open('section.txt', 'w').close()
     print("Generating dungeon")
     dungeon = Map()
     dungeon.createDungeon()
