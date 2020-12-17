@@ -143,6 +143,7 @@ class Section:      # Class for a section - a connected set of rooms
             if parentRoomPosition is None:
                 break
             self.addRoom(parentRoomPosition, parentRoomExit)
+        self.writeSection()
         self.commitSection()
         while random() <= self.newChildChance() and self.map.sectionCount < maxSections and self.getUnassignedRooms() and self.roomCount() >= minSectionSize:
             parentRoomPosition, parentRoomExit = self.getNextRoom(True)
@@ -228,6 +229,14 @@ class Section:      # Class for a section - a connected set of rooms
         if not unassigned:
             return False
         return unassigned
+
+    def writeSection(self):
+        f = open("section.txt" ,"a")
+        for key in self.sectionMap.keys(): 
+            output = str(key) + ": " + str(self.id) + "\n"
+            f.write(output)
+        f.close()
+
 
 
 
@@ -468,11 +477,53 @@ def connectRooms(room1, room2):     # create a connection between two rooms and 
         return True
     print("Error: Unable to connect the following rooms:\t", xy1 , ' ', xy2)
     return False
+
+
+"""
+# Populate the maze
+def populateDungeon(dungeon):
+
+    maxSectionDifficulty = ?
+    for room in dungeon:
+        RoomsSection = (getSection(room.sectionID))
+        RoomToGenerate = random.choice(RoomsSectionTheme)
+        while pass = 0:
+            pass = 1
+            RoomToGenerate = random.choice(RoomsSectionTheme)
+            if RoomsSection.difficulty + RoomsSectionTheme[RoomToGenerate] > maxSectionDifficulty:
+                pass = 0
+                continue
+            check other room requirements/generation requirements here:
+                pass = 0
+                continue
+
+
+
+        
+        
+
+
+
+    
+    
+    
+    
+    
+    test_output = ""
+    for y in range(width):
+        for x in range(length):
+            # Do stuff instead of adding it to a string
+            test_output += dungeon[x][y]
+        test_output += "\n"
+    print(test_output)
+    return dungeon
+    """
             
 if __name__ == "__main__":
     minSectionSize = maxChildren + 3
     sectionCount = 0
     path = "map.txt"
+    open('section.txt', 'w').close()
     print("Generating dungeon")
     dungeon = Map()
     dungeon.createDungeon()
