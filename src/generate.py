@@ -332,6 +332,38 @@ def connectRooms(room1, room2):     # create a connection between two rooms and 
 
 # Populate the maze
 def populateDungeon(dungeon):
+    """
+    maxSectionDifficulty = ?
+    for room in dungeon:
+        RoomsSection = (getSection(room.sectionID))
+        RoomToGenerate = random.choice(RoomsSectionTheme)
+        while pass = 0:
+            pass = 1
+            RoomToGenerate = random.choice(RoomsSectionTheme)
+            if RoomsSection.difficulty + RoomsSectionTheme[RoomToGenerate] > maxSectionDifficulty:
+                pass = 0
+                continue
+            check other room requirements/generation requirements here:
+                pass = 0
+                continue
+
+
+
+
+        
+            
+
+
+
+
+
+
+    """
+    
+    
+    
+    
+    
     test_output = ""
     for y in range(width):
         for x in range(length):
