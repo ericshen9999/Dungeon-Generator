@@ -62,9 +62,9 @@ class Room:         #Class for a single room
         self.sectionEntrance = tuple((False, None))
         self.meta = False
 
-    def getMeta(self):
+    def getMeta(self, offset):
         if self.meta:
-            return str(self.xy) + ' ' + self.meta + '\n'
+            return str(useOffset(self.xy, offset)) + ' ' + self.meta + '\n'
         return ''
 
 
@@ -250,7 +250,7 @@ class Map:
         self.sectionCount = 1
         self.firstSection = Section(tuple((0, 0)), None, self.map, self, 0, None, True)
         self.firstSection.sectionMap[tuple((0,0))].type = 'S'       #set start rooms type to S
-        self.offsetVal = tuple((0 ,0))     # set a default value for the offset for later
+        self.offsetVal = tuple((0, 0))     # set a default value for the offset for later
         self.size = tuple((0, 0))
         self.goalSection = -1
         self.sectionDict = {0: self.firstSection}
@@ -412,13 +412,18 @@ class Map:
             y -= 1
         textMap += '***\n'
         for pi in self.passageInfo:
+            i = 0
             for meta in pi:
-                textMap += str(meta) + ' '
+                if i == 1 or i ==2:
+                    textMap += str(useOffset(meta, self.offsetVal)) + ' '
+                else:
+                    textMap += str(meta) + ' '
+                i += 1
             textMap += '\n'
         textMap += '***\n'
         for roomID in self.map:
             room = self.map[roomID]
-            textMap += room.getMeta()
+            textMap += room.getMeta(self.offsetVal)
         return textMap
 
 
@@ -479,6 +484,10 @@ def connectRooms(room1, room2):     # create a connection between two rooms and 
     return False
 
 
+def useOffset(tup, offset):
+    return tuple((tup[0] - offset[0], -(tup[1] - offset[1])))
+
+
 """
 # Populate the maze
 def populateDungeon(dungeon):
@@ -534,6 +543,8 @@ if __name__ == "__main__":
     print("Converting dungeon to text")
     dungeonMap = dungeon.writeDungeon()
     print(dungeonMap)
+    print(dungeon.offsetVal)
+    print(useOffset((0, 0), dungeon.offsetVal))
     #dungeon = populateDungeon(dungeon)
     f = open("map.txt", "w")
     f.write(dungeonMap)
