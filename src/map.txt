@@ -1,24 +1,46 @@
-      X             
-      |             
-      X     X       
-      |     |       
-      X X-X-X-X     
-      | | |         
-    X-X-v X-^ X     
-    |   |   | |     
-    X X-X X-X-X     
-      |       |     
-      v-X X X ^-X-X 
-      | | | | |     
-      X v X-O X X   
-        |   | | |   
-    X-X-X   X->-X   
-      | |     |     
-    X-v X X-X-X-X   
-    |               
-  X-X               
-  |                 
-X v-X-X             
-| |                 
-X-v-X               
-                    
+      R-R-R                           
+          |                           
+  R R-R R-R                           
+  |   | | |                           
+  R-R-R-R R     R R                   
+  |   | | |     | |                   
+K-R-R R K R-R-K-R R                   
+      |         | |                   
+  R-R-R-R-R-E R-R-R                   
+      |     |     |                   
+    R-R     R R-R P       R           
+                | |       |           
+              R R-R-R R-R R           
+              | | |     | |           
+              R-R R K R K-R R-K R     
+                |   | |   |   | |     
+                R-R-R-R-R-R-R-R-R     
+                    |           |     
+                    R R-R R R P-R-R   
+                        | | | |   |   
+                      R-R-K R-R-R R-R 
+                      |   |   |   |   
+                      R S-R-R-R   R   
+                          | |         
+                          R R-R       
+                            |         
+                            R         
+                                      
+***
+Key (1, 0) (2, 0) temp#0 
+Puzzle (3, 2) (4, 2) 
+Key (3, 3) (2, 3) temp#45 
+Key (0, 3) (-1, 3) temp#30 
+Key (-4, 3) (-4, 4) temp#42 
+Puzzle (-3, 6) (-3, 7) 
+Key (-7, 8) (-7, 9) temp#1 
+Key (-8, 9) (-9, 9) temp#25 
+Key (-9, 8) (-9, 7) temp#24 
+***
+(1, 1) temp#0
+(3, 4) temp#45
+(0, 4) temp#30
+(-2, 4) temp#42
+(-5, 8) temp#1
+(-8, 8) temp#25
+(-12, 8) temp#24

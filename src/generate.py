@@ -1,20 +1,31 @@
-from random import choice, choices, random
-options = [
+from random import choice, choices, random, randrange
+from copy import deepcopy
+
+specialOptions = [
     "S",    # Start
     "E",    # End
-    "O",    # Open Passage
-    "B",    # Button
-    "L",    # Lever
-    "P",    # Puzzle
+    "K",    # key room
+    "P"     # Puzzle room
+
+]
+
+
+
+options = [
+
+
+    #"T",    # Trapped Room
+    #" ",     # Nothing
     "R",    # Room
-    "T",    # Trapped Room
-    "F",    # Fake Room
-    " "     # Nothing
+]
+
+keyBlocks = [
+      #please fill this with the names of blocks used
 ]
 
 maxSections = 10        #maximum number of sections the dungeon can have
 maxSectionSize = 10     #maximum number of rooms a section can have
-maxChildren = 1         # Maximum number of children a section can have
+maxChildren = 3        # Maximum number of children a section can have
 
 inverseDir = {   # Just a dictionary for quickly getting an opposite direction
     "n": "s",
@@ -49,6 +60,13 @@ class Room:         #Class for a single room
         self.connectionNum = 0
         self.sectionID = sectionID  #the ID of the section the room is in
         self.sectionEntrance = tuple((False, None))
+        self.meta = False
+
+    def getMeta(self):
+        if self.meta:
+            return str(self.xy) + ' ' + self.meta + '\n'
+        return ''
+
 
     def getNeighbourPosition(self, direction):  #returns the grid position in the direction passed
         offset = dirOffset[direction]
@@ -76,16 +94,32 @@ class Section:      # Class for a section - a connected set of rooms
         self.sectionMap[entrancePos].sectionEntrance = tuple((True, entranceDir))     # mark the room as a section entrance
         self.entrance = tuple((entrancePos, entranceDir))
         if entranceDir is not None:     #only execute the next lines if this isn't the first section
-            self.sectionMap[entrancePos].connections[entranceDir] = True # set the initial room in the
-                                                                                     # section to be connected
+            self.sectionMap[entrancePos].connections[entranceDir] = True    # set the initial room in the
+                                                                            # section to be connected
             self.sectionMap[entrancePos].recalculateConnectionCount()
+            self.sectionMap[entrancePos].type = '1'     # temporarily mark the entrance to this section
+            parExit, parDir = self.getParentExit()
+            self.map.map[parExit].type = '0'          # temporarily mark the room in the parent section leading to this section
+
+
+
+    def getParentExit(self):
+        parExit = self.sectionMap[self.entrance[0]].getNeighbourPosition(self.entrance[1])
+        return parExit, inverseDir[self.entrance[1]]
 
     def roomCount(self):            # returns the number of rooms in the section
         return len(self.sectionMap)
 
     def newRoomChance(self):        # returns the probability another room will generate - modifiable if needed
                                     # current probability is 1 - (room count squared divided by max rooms squared)
-        return 1 - ((self.roomCount() * self.roomCount()) / (maxSectionSize * maxSectionSize))
+        if self.roomCount() <= minSectionSize:
+            return 1
+        num = self.roomCount() - minSectionSize
+        denom = maxSectionSize - minSectionSize
+        if denom == 0:
+            return -1
+
+        return 1 - ((num * num) / (denom * denom))
 
     def newChildChance(self):       # returns the probability the section will attempt to generate an additional child
         chance = 1
@@ -103,17 +137,15 @@ class Section:      # Class for a section - a connected set of rooms
             connectRooms(self.map.map[self.entrance[0]], self.map.map[prevRoom])
 
     def fill(self):          # generate the section
-        print('Generating Section #', self.id)
         done = False
         while random() <= self.newRoomChance():
-            parentRoomPosition, parentRoomExit = self.getNextRoom()
+            parentRoomPosition, parentRoomExit = self.getNextRoom(False)
             if parentRoomPosition is None:
                 break
             self.addRoom(parentRoomPosition, parentRoomExit)
         self.commitSection()
-        print('Finished Generating Section #', self.id)
-        while random() <= self.newChildChance() and self.map.sectionCount < maxSections:
-            parentRoomPosition, parentRoomExit = self.getNextRoom()
+        while random() <= self.newChildChance() and self.map.sectionCount < maxSections and self.getUnassignedRooms() and self.roomCount() >= minSectionSize:
+            parentRoomPosition, parentRoomExit = self.getNextRoom(True)
             if parentRoomPosition is not None:
                 newSectionStart = self.sectionMap[parentRoomPosition].getNeighbourPosition(parentRoomExit)
                 newSectionEntrance = inverseDir[parentRoomExit]
@@ -123,9 +155,11 @@ class Section:      # Class for a section - a connected set of rooms
                     onMainPath = True
                 self.map.sectionCount += 1
                 self.children.append(Section(newSectionStart, newSectionEntrance, self.map.map, self.map, self.map.sectionCount - 1, self, onMainPath))
+                self.map.sectionDict[self.children[-1].id] = self.children[-1]
                 done = self.children[-1].fill()
             else:
                 done = True
+                break
         if not done:
             if self.map.sectionCount == maxSections:
                 return True
@@ -153,14 +187,22 @@ class Section:      # Class for a section - a connected set of rooms
         else:
             return available
 
-    def getNextRoom(self):          # returns the room position and direction the next room will be generated from
+    def getNextRoom(self, useUnassignedPool):          # returns the room position and direction the next room will be generated from
+        if useUnassignedPool:
+            pool = self.getUnassignedRooms()
+        else:
+            pool = self.sectionMap.keys()
         possibleRooms = {}
-        for room in self.sectionMap:
-            if self.getAvailableConnectionCount(self.sectionMap[room]) > 0:
-                possibleRooms[self.sectionMap[room].xy] = self.getAvailableConnections(self.sectionMap[room])
+        if pool:
+            for id in pool:
+                room = self.sectionMap[id]
+                if self.getAvailableConnectionCount(room) > 0:
+                    possibleRooms[room.xy] = self.getAvailableConnections(room)
+        else:
+            return None, None
         if possibleRooms:
             roomList = []
-            for key in possibleRooms.keys():
+            for key in possibleRooms:
                 roomList.append(key)
             parentRoom = choice(roomList)
             dir = choice(possibleRooms[parentRoom])
@@ -168,13 +210,24 @@ class Section:      # Class for a section - a connected set of rooms
         else:
             return None, None
 
-
     def addRoom(self, parentPosition, parentExit):      # adds a valid room to the section map
         parent = self.sectionMap[parentPosition]
         newPos = tuple((parent.xy[0] + dirOffset[parentExit][0], parent.xy[1] + dirOffset[parentExit][1]))
         newRoom = Room(newPos, parent.depth + 1, self.id)
         connectRooms(parent, newRoom)
         self.sectionMap[newRoom.xy] = newRoom
+
+    def getRandomRoomID(self):
+        return choice(list(self.sectionMap.keys()))
+
+    def getUnassignedRooms(self):
+        unassigned = []
+        for room in list(self.sectionMap):
+            if self.sectionMap[room].type is None:
+                unassigned.append(room)
+        if not unassigned:
+            return False
+        return unassigned
 
 
 
@@ -187,11 +240,28 @@ class Map:
                         # rooms in here have been successfully placed on the map.
         self.sectionCount = 1
         self.firstSection = Section(tuple((0, 0)), None, self.map, self, 0, None, True)
+        self.firstSection.sectionMap[tuple((0,0))].type = 'S'       #set start rooms type to S
         self.offsetVal = tuple((0 ,0))     # set a default value for the offset for later
         self.size = tuple((0, 0))
+        self.goalSection = -1
+        self.sectionDict = {0: self.firstSection}
+        self.passageInfo = []
+        self.roomInfo = []
+        self.availableKeys = deepcopy(keyBlocks)
+        if not self.availableKeys:  # fills the list with temporary values if the list is empty
+            c = 0
+            while c < 48:
+                self.availableKeys.append("temp#" + str(c))
+                c += 1
 
     def createDungeon(self):            # Create the Structure of a maze
         self.firstSection.fill()
+
+    def assignEmptyRooms(self):
+        for roomID in list(self.map):
+            room = self.map[roomID]
+            if room.type is None or room.type == '0' or room.type == '1':
+                room.type = choice(options)
 
     def setOffsetandSize(self):
         minx = 0
@@ -218,6 +288,76 @@ class Map:
     def offset(self, pos):
         return tuple((pos[0] + self.offsetVal[0], -1 * (pos[1] + self.offsetVal[1])))
 
+    def populateDungeon(self):
+        self.setKeyRooms()
+        self.assignEmptyRooms()
+
+    def generateSectionPath(self):
+        endID = self.getEndSectionID()
+        path = []
+        frontier = [self.firstSection.id]
+        while frontier:
+            next = frontier.pop(randrange(len(frontier)))
+            path.append(next)
+            for child in self.sectionDict[next].children:
+                if child.id != endID:
+                    frontier.append(child.id)
+        path.append(endID)
+        return path
+
+    def getPassage(self, sectionID):
+        sec = self.sectionDict[sectionID]
+        pExit = sec.entrance[0]
+        pDir = sec.entrance[1]
+        pEnt = self.map[pExit].getNeighbourPosition(pDir)
+        return pEnt, pExit
+
+
+
+
+    def setKeyRooms(self):
+        endID = self.getEndSectionID()
+        self.map[self.sectionDict[endID].getRandomRoomID()].type = 'E'
+        path = self.generateSectionPath()
+        lastWasPuzzle = False
+        while len(path) >= 2:
+            if not lastWasPuzzle and len(path) > 2:
+                roomType = randrange(2)
+            else:
+                roomType = 0
+            if roomType == 0:       #if lever room is selected
+                if self.sectionDict[path[0]].getUnassignedRooms():
+                    keyRoom = self.map[choice(self.sectionDict[path[0]].getUnassignedRooms())]
+                else:
+                    keyRoom = self.map[self.sectionDict[path[0]].entrance[0]]
+                keyRoom.type = 'K'
+                keyRoom.meta = self.availableKeys.pop(randrange(len(self.availableKeys)))
+                pEnt, pExit = self.getPassage(path[1])
+                self.passageInfo.append([
+                    "Key",
+                    pEnt,
+                    pExit,
+                    keyRoom.meta
+                ])
+                lastWasPuzzle = False
+            else:
+                pEnt, pExit = self.getPassage(path[1])
+                self.map[pEnt].type = 'P'
+                self.passageInfo.append([
+                    "Puzzle",
+                    pEnt,
+                    pExit
+                    ])
+                lastWasPuzzle = True
+            path.pop(0)
+
+
+    def getEndSectionID(self):
+        section = self.firstSection
+        while section.children:
+            section = section.children[0]
+        return section.id
+
     def writeDungeon(self):
         self.setOffsetandSize()
         textMap = ''
@@ -230,19 +370,10 @@ class Map:
             while x <= self.maxx:
                 pos = tuple((x, y))
                 if pos in self.map:
-                    if self.map[pos].sectionEntrance[0]:
-                        if self.map[pos].sectionEntrance[1] is None:
-                            mid += 'O'
-                        elif self.map[pos].sectionEntrance[1] is 'n':
-                            mid += 'v'
-                        elif self.map[pos].sectionEntrance[1] is 's':
-                            mid += '^'
-                        elif self.map[pos].sectionEntrance[1] is 'w':
-                            mid += '>'
-                        elif self.map[pos].sectionEntrance[1] is 'e':
-                            mid += '<'
+                    if self.map[pos].type is not None:
+                        mid += str(self.map[pos].type)
                     else:
-                        mid += 'X'
+                        mid += str(self.map[pos].sectionID)
                     if self.map[pos].connections['e']:
                         mid += '-'
                     else:
@@ -270,6 +401,15 @@ class Map:
                 x += 1
             textMap += mid + '\n' + bot + '\n'
             y -= 1
+        textMap += '***\n'
+        for pi in self.passageInfo:
+            for meta in pi:
+                textMap += str(meta) + ' '
+            textMap += '\n'
+        textMap += '***\n'
+        for roomID in self.map:
+            room = self.map[roomID]
+            textMap += room.getMeta()
         return textMap
 
 
@@ -328,26 +468,18 @@ def connectRooms(room1, room2):     # create a connection between two rooms and 
         return True
     print("Error: Unable to connect the following rooms:\t", xy1 , ' ', xy2)
     return False
-
-
-# Populate the maze
-def populateDungeon(dungeon):
-    test_output = ""
-    for y in range(width):
-        for x in range(length):
-            # Do stuff instead of adding it to a string
-            test_output += dungeon[x][y]
-        test_output += "\n"
-    print(test_output)
-    return dungeon
             
 if __name__ == "__main__":
+    minSectionSize = maxChildren + 3
     sectionCount = 0
     path = "map.txt"
     print("Generating dungeon")
     dungeon = Map()
     dungeon.createDungeon()
     print("Dungeon generation complete")
+    print("Assigning room types")
+    dungeon.populateDungeon()
+    print("Room type assignment complete")
     print("Converting dungeon to text")
     dungeonMap = dungeon.writeDungeon()
     print(dungeonMap)
