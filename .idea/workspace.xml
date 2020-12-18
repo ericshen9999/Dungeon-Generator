@@ -21,10 +21,17 @@
   <component name="ChangeListManager">
     <list default="true" id="8ee1a8ee-9507-4167-89b2-c9b9b5f750e1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2020-12-17-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/logs/2020-12-17-1.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2020-12-17-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/logs/2020-12-17-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2020-12-17-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/logs/2020-12-17-3.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2020-12-17-4.log.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2020-12-17-5.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2020-12-17-6.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/logs/2020-12-17-6.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2020-12-17-7.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/logs/2020-12-17-7.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/getStruc.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/getStruc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/section.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/usercache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/world/DIM-1/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/world/DIM-1/data/raids.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/world/DIM1/data/raids_end.dat" beforeDir="false" afterPath="$PROJECT_DIR$/world/DIM1/data/raids_end.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/world/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/world/data/raids.dat" afterDir="false" />
