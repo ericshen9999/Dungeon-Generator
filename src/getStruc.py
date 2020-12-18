@@ -458,7 +458,7 @@ def getRoom(x,y,z,block):
 def getKey(x,y,z,block,keyblock):
     return generateRoom(x,y,z,block) + getKeyRoom(x,y,z,keyblock)
 def getPuzzle(x,y,z,block):
-    return generateRoom(x,y,z,block) + findPuzzle(x,y,z,choice(puzzleType))
+    return generateRoom(x,y,z,block) + findPuzzle(x,y,z,choice(list(puzzleType.keys())))
 
 # Where the start block is
 # /setblock x y+4 z minecraft:pink_carpet
@@ -475,13 +475,59 @@ roomFunction = {
 }
 if __name__ == "__main__":
     # Test location (-100, 3, 120)
-    localx = 0
-    localy = 0
-    absolutex = localx * 11
-    absolutey = 3
-    absolutez = localy * 11
-    block = roomType[getSection(localx,localy)]
-    f = open("commands.txt", "w")
-    for command in getStart(absolutex,absolutey,absolutez,block):
-        f.write(command + "\n")
-    f.close()
+    #localx = 0
+    #localy = 0
+    #absolutex = localx * 11
+    #absolutey = 3
+    #absolutez = localy * 11
+    #block = roomType[getSection(localx,localy)]
+    #f = open("commands.txt", "w")
+    #for command in getStart(absolutex,absolutey,absolutez,block):
+        #f.write(command + "\n")
+    #f.close()
+
+    currxf = 0.0
+    curry = 3
+    currzf = 0.0
+    stage = 1
+
+    comf = open("commands.txt", "w")
+    with open("map.txt") as mapf:
+        for line in mapf:
+            for c in line:
+
+                if stage == 1:
+                    currx = int(currxf)
+                    currz = int(currzf)
+                    if c == '*':
+                        stage = 2
+                        break
+                    if c == 'S':
+                        for command in getStart((10 * currx), (10 * curry), (10 * currz),
+                                                                                    getBlock(getSection(currx, currz))):
+                            comf.write(command + "\n")
+                    if c == 'E':
+                        for command in getEnd((10 * currx), (10 * curry), (10 * currz),
+                                                                                    getBlock(getSection(currx, currz))):
+                            comf.write(command + "\n")
+                    if c == 'R':
+                        for command in getRoom((10 * currx), (10 * curry), (10 * currz),
+                                                                                    getBlock(getSection(currx, currz))):
+                            comf.write(command + "\n")
+                    if c == 'P':
+                        for command in getPuzzle((10 * currx), (10 * curry), (10 * currz),
+                                                                                    getBlock(getSection(currx, currz))):
+                            comf.write(command + "\n")
+                    currxf += 0.5
+
+                if stage == 2:
+                    if c == '*':
+                        stage = 3
+                        break
+
+                if stage == 3:
+                    break
+            currxf = 0
+            currzf += 0.5
+
+    comf.close()

@@ -1,3 +1,41 @@
-/fill 0 3 0 10 6 10 minecraft:netherrack keep
-/fill 1 4 1 9 6 9 minecraft:air replace minecraft:netherrack
-/setblock 5 4 5 minecraft:oak_sign[rotation=0]{{}Text1:"\"Start\""{}}
+/fill 10 30 0 20 33 10 minecraft:quartz_block keep
+/fill 11 31 1 19 33 9 minecraft:air replace minecraft:quartz_block
+/fill 20 30 0 30 33 10 minecraft:quartz_block keep
+/fill 21 31 1 29 33 9 minecraft:air replace minecraft:quartz_block
+/fill 30 30 0 40 33 10 minecraft:quartz_block keep
+/fill 31 31 1 39 33 9 minecraft:air replace minecraft:quartz_block
+/setblock 35 31 5 minecraft:oak_sign[rotation=0]{{}Text1:"\"End\""{}}
+/fill 20 30 10 30 33 20 minecraft:quartz_block keep
+/fill 21 31 11 29 33 19 minecraft:air replace minecraft:quartz_block
+/fill 30 30 10 40 33 20 minecraft:quartz_block keep
+/fill 31 31 11 39 33 19 minecraft:air replace minecraft:quartz_block
+/fill 0 30 20 10 33 30 minecraft:quartz_block keep
+/fill 1 31 21 9 33 29 minecraft:air replace minecraft:quartz_block
+/fill 10 30 20 20 33 30 minecraft:quartz_block keep
+/fill 11 31 21 19 33 29 minecraft:air replace minecraft:quartz_block
+/fill 20 30 20 30 33 30 minecraft:quartz_block keep
+/fill 21 31 21 29 33 29 minecraft:air replace minecraft:quartz_block
+/fill 40 30 20 50 33 30 minecraft:purpur_block keep
+/fill 41 31 21 49 33 29 minecraft:air replace minecraft:purpur_block
+/fill 50 30 20 60 33 30 minecraft:purpur_block keep
+/fill 51 31 21 59 33 29 minecraft:air replace minecraft:purpur_block
+/fill 10 30 30 20 33 40 minecraft:quartz_block keep
+/fill 11 31 31 19 33 39 minecraft:air replace minecraft:quartz_block
+/fill 20 30 30 30 33 40 minecraft:quartz_block keep
+/fill 21 31 31 29 33 39 minecraft:air replace minecraft:quartz_block
+/fill 30 30 30 40 33 40 minecraft:purpur_block keep
+/fill 31 31 31 39 33 39 minecraft:air replace minecraft:purpur_block
+/fill 40 30 30 50 33 40 minecraft:purpur_block keep
+/fill 41 31 31 49 33 39 minecraft:air replace minecraft:purpur_block
+/fill 60 30 30 70 33 40 minecraft:purpur_block keep
+/fill 61 31 31 69 33 39 minecraft:air replace minecraft:purpur_block
+/fill 30 30 40 40 33 50 minecraft:purpur_block keep
+/fill 31 31 41 39 33 49 minecraft:air replace minecraft:purpur_block
+/fill 40 30 40 50 33 50 minecraft:purpur_block keep
+/fill 41 31 41 49 33 49 minecraft:air replace minecraft:purpur_block
+/fill 50 30 40 60 33 50 minecraft:purpur_block keep
+/fill 51 31 41 59 33 49 minecraft:air replace minecraft:purpur_block
+/fill 60 30 40 70 33 50 minecraft:purpur_block keep
+/fill 61 31 41 69 33 49 minecraft:air replace minecraft:purpur_block
+/fill 30 30 50 40 33 60 minecraft:end_stone keep
+/fill 31 31 51 39 33 59 minecraft:air replace minecraft:end_stone
