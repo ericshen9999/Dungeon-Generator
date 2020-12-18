@@ -465,6 +465,7 @@ def removeAll(x,y,z,localx,localy):
     for i in range(localy):
         command = "/fill " + str(x) + " " + str(y) + " " + str(z + 10 * i-1) + str(x + localx*10) + " " + str(y) + " " + str(z + 10 * i) + " minecraft:air"
         commandlist.append(command)
+    return commandlist
         
 # Where the start block is
 # /setblock x y+4 z minecraft:pink_carpet
