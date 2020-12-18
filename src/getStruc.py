@@ -395,6 +395,7 @@ def getTape(x,y,z):
 
 puzzleType = {
     "3x3": get3x3
+    "Tape": getTape
 }
 def getKeyRoom(x,y,z,block):
     commandlist = []
