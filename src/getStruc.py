@@ -459,14 +459,16 @@ def getKey(x,y,z,block,keyblock):
     return generateRoom(x,y,z,block) + getKeyRoom(x,y,z,keyblock)
 def getPuzzle(x,y,z,block):
     return generateRoom(x,y,z,block) + findPuzzle(x,y,z,choice(list(puzzleType.keys())),block)
-
-def removeAll(x,y,z,localx,localy):
-    commandlist = []
-    for i in range(localy):
-        command = "/fill " + str(x) + " " + str(y) + " " + str(z + 10 * i-1) + str(x + localx*10) + " " + str(y) + " " + str(z + 10 * i) + " minecraft:air"
-        commandlist.append(command)
-    return commandlist
         
+getDirection = {
+    (-1,0): "W",
+    (1,0): "E",
+    (0,-1): "S",
+    (0,1): "N"
+}
+def findDirection(x1,y1,x2,y2):
+    return getDirection[x2-x1,y2-y1]
+
 # Where the start block is
 # /setblock x y+4 z minecraft:pink_carpet
 
@@ -492,7 +494,6 @@ if __name__ == "__main__":
     #for command in getStart(absolutex,absolutey,absolutez,block):
         #f.write(command + "\n")
     #f.close()
-
     currxf = 0.0
     curry = 3
     currzf = 0.0
