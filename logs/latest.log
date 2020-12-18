@@ -1,0 +1,60 @@
+[16:24:48] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[16:24:48] [main/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[16:24:48] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[16:24:48] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[16:24:48] [main/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[16:24:48] [main/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[16:24:48] [main/INFO]: Reloading ResourceManager: Default
+[16:24:49] [Worker-Main-12/INFO]: Loaded 7 recipes
+[16:24:49] [Worker-Main-12/INFO]: Loaded 927 advancements
+[16:24:51] [Server thread/INFO]: Starting minecraft server version 1.16.4
+[16:24:51] [Server thread/INFO]: Loading properties
+[16:24:51] [Server thread/INFO]: Default game type: SURVIVAL
+[16:24:51] [Server thread/INFO]: Generating keypair
+[16:24:51] [Server thread/INFO]: Starting Minecraft server on *:25565
+[16:24:51] [Server thread/INFO]: Using default channel type
+[16:24:52] [Server thread/INFO]: Preparing level "world"
+[16:24:52] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[16:24:53] [Server thread/INFO]: Preparing spawn area: 0%
+[16:24:53] [Server thread/INFO]: Preparing spawn area: 0%
+[16:24:53] [Server thread/INFO]: Preparing spawn area: 54%
+[16:24:54] [Server thread/INFO]: Time elapsed: 1695 ms
+[16:24:54] [Server thread/INFO]: Done (1.849s)! For help, type "help"
+[17:21:03] [User Authenticator #1/INFO]: UUID of player NinjaKhan is 868979b1-3961-476a-912a-56c08c1648f7
+[17:21:03] [Server thread/INFO]: NinjaKhan[/192.168.1.71:59048] logged in with entity id 5 at (1.7299837414878576, 4.0, -1.5817808708553316)
+[17:21:03] [Server thread/INFO]: NinjaKhan joined the game
+[17:22:11] [Server thread/INFO]: Set the weather to clear
+[17:22:41] [Server thread/INFO]: Changed the block at 0, 5, 0
+[17:23:50] [Server thread/INFO]: Changed the block at 0, 5, 0
+[17:24:02] [Server thread/INFO]: Changed the block at 0, 5, 0
+[17:27:44] [Server thread/INFO]: [NinjaKhan: Set the weather to clear]
+[17:32:52] [Server thread/INFO]: NinjaKhan lost connection: Disconnected
+[17:32:52] [Server thread/INFO]: NinjaKhan left the game
+[17:37:52] [User Authenticator #2/INFO]: UUID of player NinjaKhan is 868979b1-3961-476a-912a-56c08c1648f7
+[17:37:52] [Server thread/INFO]: NinjaKhan[/192.168.1.71:61138] logged in with entity id 8 at (1.7299837414878576, 4.0, -1.5817808708553316)
+[17:37:52] [Server thread/INFO]: NinjaKhan joined the game
+[17:38:05] [Server thread/INFO]: Set the weather to clear
+[17:38:23] [Server thread/INFO]: Changed the block at 0, 5, 0
+[17:38:23] [Server thread/INFO]: Changed the block at 0, 6, 0
+[17:38:23] [Server thread/INFO]: Changed the block at 0, 7, 0
+[17:38:23] [Server thread/INFO]: Changed the block at 1, 5, 0
+[17:38:23] [Server thread/INFO]: Changed the block at -1, 5, 0
+[17:43:28] [Server thread/INFO]: [NinjaKhan: Set the weather to clear]
+[17:50:08] [Server thread/INFO]: [NinjaKhan: Set the weather to clear]
+[17:51:44] [Server thread/INFO]: Successfully filled 363 blocks
+[17:51:44] [Server thread/INFO]: Successfully filled 243 blocks
+[17:53:29] [Server thread/INFO]: Changed the block at 5, 4, 5
+[17:54:21] [Server thread/INFO]: Successfully filled 267 blocks
+[17:54:21] [Server thread/INFO]: Successfully filled 243 blocks
+[17:55:46] [Server thread/INFO]: NinjaKhan lost connection: Disconnected
+[17:55:46] [Server thread/INFO]: NinjaKhan left the game
+[18:01:33] [Server thread/INFO]: Expected whitespace to end one argument, but found trailing data
+[18:01:33] [Server thread/INFO]: ...otation=0]/fill 0 3 0 10 6 10 minecraft:netherrack keep<--[HERE]
+[18:01:33] [Server thread/INFO]: No blocks were filled
+[18:01:33] [Server thread/INFO]: Changed the block at 5, 4, 5
+[18:01:48] [User Authenticator #3/INFO]: UUID of player NinjaKhan is 868979b1-3961-476a-912a-56c08c1648f7
+[18:01:48] [Server thread/INFO]: NinjaKhan[/192.168.1.71:63298] logged in with entity id 19 at (4.42227321377468, 4.0, 4.83240936606276)
+[18:01:48] [Server thread/INFO]: NinjaKhan joined the game
+[18:02:06] [Server thread/INFO]: [NinjaKhan: Set the weather to clear]
+[18:02:42] [Server thread/INFO]: [NinjaKhan: Gamerule doWeatherCycle is now set to: false]
+[18:03:07] [Server thread/INFO]: [NinjaKhan: Gamerule doDaylightCycle is now set to: false]

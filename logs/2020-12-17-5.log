@@ -1,0 +1,25 @@
+[15:56:28] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[15:56:29] [main/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[15:56:29] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[15:56:29] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[15:56:29] [main/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[15:56:29] [main/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[15:56:29] [main/INFO]: Reloading ResourceManager: Default
+[15:56:30] [Worker-Main-14/INFO]: Loaded 7 recipes
+[15:56:30] [Worker-Main-14/INFO]: Loaded 927 advancements
+[15:56:31] [Server thread/INFO]: Starting minecraft server version 1.16.4
+[15:56:31] [Server thread/INFO]: Loading properties
+[15:56:31] [Server thread/INFO]: Default game type: SURVIVAL
+[15:56:31] [Server thread/INFO]: Generating keypair
+[15:56:32] [Server thread/INFO]: Starting Minecraft server on *:25565
+[15:56:32] [Server thread/INFO]: Using default channel type
+[15:56:33] [Server thread/INFO]: Preparing level "world"
+[15:56:33] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[15:56:34] [Server thread/INFO]: Preparing spawn area: 0%
+[15:56:34] [Server thread/INFO]: Preparing spawn area: 0%
+[15:56:34] [Server thread/INFO]: Preparing spawn area: 27%
+[15:56:34] [Server thread/INFO]: Time elapsed: 1507 ms
+[15:56:34] [Server thread/INFO]: Done (1.642s)! For help, type "help"
+[15:56:43] [User Authenticator #1/INFO]: UUID of player NinjaKhan is 868979b1-3961-476a-912a-56c08c1648f7
+[15:56:44] [Server thread/INFO]: NinjaKhan[/192.168.1.71:51891] logged in with entity id 5 at (1.7299837414878576, 4.0, -1.5817808708553316)
+[15:56:44] [Server thread/INFO]: NinjaKhan joined the game

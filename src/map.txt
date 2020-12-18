@@ -1,0 +1,50 @@
+                              E R     
+                              | |     
+                              R-R-R   
+                                |     
+                          R-K-R R-R-R 
+                              | |     
+          R               R-R-R R-R   
+          |                 |   |     
+        R-R     R R R-R-K   R-R-R     
+        |       | |   | |   |         
+      R R-R-R-R-P-R-R-R R   R-R       
+      | |         | |       |         
+    R-R R-R       R R-P-R-K-R         
+      | |           |     | |         
+  R-R K-R-R         R-R-R R R         
+  |   |               |               
+  R-P-R R-R         R-R-R             
+    |   |                             
+R-R-R R-K R                           
+    |   | |                           
+  R-R-R-R-R                           
+        | |                           
+        R P R                         
+          | |                         
+          S-R                         
+          |                           
+          R-R                         
+          |                           
+          R                           
+          |                           
+          R                           
+          |                           
+          R                           
+                                      
+***
+Puzzle (5, 11) (5, 10) 
+Key (3, 10) (2, 10) minecraft:blue_terracotta 
+Puzzle (2, 8) (3, 8) 
+Key (4, 6) (4, 5) minecraft:light_blue_terracotta 
+Puzzle (8, 5) (9, 5) 
+Key (10, 5) (10, 6) minecraft:white_wool 
+Puzzle (11, 6) (12, 6) 
+Key (14, 5) (14, 4) minecraft:pink_wool 
+Key (16, 4) (16, 3) minecraft:red_wool 
+***
+(4, 9) minecraft:blue_terracotta
+(3, 7) minecraft:light_blue_terracotta
+(12, 4) minecraft:white_wool
+(13, 6) minecraft:pink_wool
+(14, 2) minecraft:red_wool
