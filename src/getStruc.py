@@ -31,7 +31,7 @@ inverseDir = {
     "west": "east"
 }
 # (x,z,y,direction,block) [-100, 3, 120, "north", "white_wool"]
-def generateDoor(x,y,z,direction,block):
+def generateLockedDoor(x,y,z,direction,block):
     commandlist = []
     dis = dirDic[direction]
     dis2 = dirDic2[direction]
@@ -43,6 +43,14 @@ def generateDoor(x,y,z,direction,block):
     commandlist.append(command)
     return commandlist
 
+def generateDoor(x,y,z,direction):
+    commandlist = []
+    dis = dirDic[direction]
+    command = "/setblock " + str(x + dis[0]) + " " + str(y + 1) + " " + str(z + dis[1]) + " minecraft:air"
+    commandlist.append(command)
+    command = "/setblock " + str(x + dis[0]) + " " + str(y + 2) + " " + str(z + dis[1]) + " minecraft:air"
+    commandlist.append(command)
+    return commandlist
 
 def get3x3(x,y,z,block):
     commandlist = []
@@ -461,8 +469,9 @@ roomFunction = {
     "R": getRoom, #x,y,z,block
     "K": getKey, #x,y,z,block,keyblock
     "P": getPuzzle, #x,y,z,block
-    "|": generateDoor, #x,y,z,direction,block
-    "-": generateDoor #x,y,z,direction,block
+    "|": generateDoor, #x,y,z,direction
+    "-": generateDoor #x,y,z,direction
+    #"L": generateLockedDoor #x,y,z,direction,keyblock
 }
 if __name__ == "__main__":
     # Test location (-100, 3, 120)
