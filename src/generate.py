@@ -434,6 +434,10 @@ class Map:
             textMap += mid + '\n' + bot + '\n'
             y -= 1
         textMap += '***\n'
+        for roomID in self.map:
+            room = self.map[roomID]
+            textMap += room.getMeta(self.offsetVal)
+        textMap += '***\n'
         for pi in self.passageInfo:
             i = 0
             for meta in pi:
@@ -443,10 +447,6 @@ class Map:
                     textMap += str(meta) + ' '
                 i += 1
             textMap += '\n'
-        textMap += '***\n'
-        for roomID in self.map:
-            room = self.map[roomID]
-            textMap += room.getMeta(self.offsetVal)
         return textMap
 
 
