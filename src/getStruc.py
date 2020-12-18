@@ -435,7 +435,7 @@ roomType = { # Can be randomized later
     "0": "netherrack",
     "1": "stone", #Section 1 is Stone (can be changed)
     "2": "cobblestone",
-    "3": "",
+    "3": "iron_block",
     "4": "sandstone",
     "5": "ice",
     "6": "slime_block",
