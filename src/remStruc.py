@@ -31,6 +31,10 @@ if __name__ == "__main__":
                         command = "/fill " + str(currx) + " " + str(curry - 6) + " " + str(currz) + " " + str(
                             currx + 10) + " " + str(curry + 3) + " " + str(currz + 10) + " minecraft:air replace"
                         comf.write(command + "\n")
+                    if c == 'K':
+                        command = "/fill " + str(currx) + " " + str(curry) + " " + str(currz) + " " + str(
+                            currx + 10) + " " + str(curry + 3) + " " + str(currz + 10) + " minecraft:air replace"
+                        comf.write(command + "\n")
                     currxf += 0.5
 
                 if stage == 2:
