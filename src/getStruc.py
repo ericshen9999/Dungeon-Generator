@@ -405,12 +405,11 @@ def getpuzzle(x,y,z,name):
         return None
 
 def getSection(localx, localy):
-    search = "(" + str(localx) + ", " + str(localy) + ") "
+    search = "(" + str(localx) + ", " + str(localy) + ")"
     with open("section.txt", "r") as f:
         for line in f:
             if search in line:
-                output = line.replace(search,"")
-                return output.replace("\n","")
+                return line[-2:-1]
 
 roomType = { # Can be randomized later
     "0": "netherrack",
