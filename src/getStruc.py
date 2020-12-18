@@ -538,6 +538,7 @@ if __name__ == "__main__":
                     for command in getKey(10 * int(locationList[0]),curry,10 * int(locationList[1]),
                                             getBlock(getSection(locationList[0],locationList[1])),locationList[2]):
                         comf.write(command + "\n")
+                    break
 
                 if stage == 3:
                     break

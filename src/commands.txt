@@ -1,322 +1,378 @@
-/fill 10 12 0 20 15 10 minecraft:quartz_block keep
-/fill 11 13 1 19 15 9 minecraft:air replace minecraft:quartz_block
-/fill 20 12 0 30 15 10 minecraft:quartz_block keep
-/fill 21 13 1 29 15 9 minecraft:air replace minecraft:quartz_block
-/fill 30 12 0 40 15 10 minecraft:quartz_block keep
-/fill 31 13 1 39 15 9 minecraft:air replace minecraft:quartz_block
-/setblock 35 13 5 minecraft:oak_sign[rotation=0]{{}Text1:"\"End\""{}}
-/fill 20 12 10 30 15 20 minecraft:quartz_block keep
-/fill 21 13 11 29 15 19 minecraft:air replace minecraft:quartz_block
-/fill 30 12 10 40 15 20 minecraft:quartz_block keep
-/fill 31 13 11 39 15 19 minecraft:air replace minecraft:quartz_block
-/fill 0 12 20 10 15 30 minecraft:quartz_block keep
-/fill 1 13 21 9 15 29 minecraft:air replace minecraft:quartz_block
-/fill 10 12 20 20 15 30 minecraft:quartz_block keep
-/fill 11 13 21 19 15 29 minecraft:air replace minecraft:quartz_block
-/fill 20 12 20 30 15 30 minecraft:quartz_block keep
-/fill 21 13 21 29 15 29 minecraft:air replace minecraft:quartz_block
-/fill 40 12 20 50 15 30 minecraft:purpur_block keep
-/fill 41 13 21 49 15 29 minecraft:air replace minecraft:purpur_block
-/fill 50 12 20 60 15 30 minecraft:purpur_block keep
-/fill 51 13 21 59 15 29 minecraft:air replace minecraft:purpur_block
-/fill 10 12 30 20 15 40 minecraft:quartz_block keep
-/fill 11 13 31 19 15 39 minecraft:air replace minecraft:quartz_block
-/fill 20 12 30 30 15 40 minecraft:quartz_block keep
-/fill 21 13 31 29 15 39 minecraft:air replace minecraft:quartz_block
+/fill 140 12 0 150 15 10 minecraft:iron_block keep
+/fill 141 13 1 149 15 9 minecraft:air replace minecraft:iron_block
+/fill 120 12 10 130 15 20 minecraft:sandstone keep
+/fill 121 13 11 129 15 19 minecraft:air replace minecraft:sandstone
+/fill 130 12 10 140 15 20 minecraft:iron_block keep
+/fill 131 13 11 139 15 19 minecraft:air replace minecraft:iron_block
+/fill 140 12 10 150 15 20 minecraft:iron_block keep
+/fill 141 13 11 149 15 19 minecraft:air replace minecraft:iron_block
+/fill 150 12 10 160 15 20 minecraft:iron_block keep
+/fill 151 13 11 159 15 19 minecraft:air replace minecraft:iron_block
+/fill 110 12 20 120 15 30 minecraft:sandstone keep
+/fill 111 13 21 119 15 29 minecraft:air replace minecraft:sandstone
+/fill 120 12 20 130 15 30 minecraft:sandstone keep
+/fill 121 13 21 129 15 29 minecraft:air replace minecraft:sandstone
+/fill 130 12 20 140 15 30 minecraft:iron_block keep
+/fill 131 13 21 139 15 29 minecraft:air replace minecraft:iron_block
+/fill 150 12 20 160 15 30 minecraft:iron_block keep
+/fill 151 13 21 159 15 29 minecraft:air replace minecraft:iron_block
+/fill 160 12 20 170 15 30 minecraft:iron_block keep
+/fill 161 13 21 169 15 29 minecraft:air replace minecraft:iron_block
 /fill 30 12 30 40 15 40 minecraft:purpur_block keep
 /fill 31 13 31 39 15 39 minecraft:air replace minecraft:purpur_block
-/fill 40 12 30 50 15 40 minecraft:purpur_block keep
-/fill 41 13 31 49 15 39 minecraft:air replace minecraft:purpur_block
-/fill 60 12 30 70 15 40 minecraft:purpur_block keep
-/fill 61 13 31 69 15 39 minecraft:air replace minecraft:purpur_block
+/fill 100 12 30 110 15 40 minecraft:sandstone keep
+/fill 101 13 31 109 15 39 minecraft:air replace minecraft:sandstone
+/fill 101 11 31 109 6 39 minecraft:air replace
+/fill 104 12 34 106 12 36 minecraft:barrier replace
+/fill 101 11 31 109 11 39 minecraft:obsidian replace
+/fill 102 11 32 108 11 38 minecraft:air replace minecraft:obsidian
+/fill 102 11 34 102 11 36 minecraft:sticky_piston[facing=down] replace
+/fill 108 11 34 108 11 36 minecraft:sticky_piston[facing=down] replace
+/fill 104 11 32 106 11 32 minecraft:sticky_piston[facing=down] replace
+/fill 104 11 38 106 11 38 minecraft:sticky_piston[facing=down] replace
+/fill 102 12 34 102 12 36 minecraft:powered_rail replace
+/fill 108 12 34 108 12 36 minecraft:powered_rail replace
+/fill 104 12 32 106 12 32 minecraft:powered_rail replace
+/fill 104 12 38 106 12 38 minecraft:powered_rail replace
+/fill 103 11 34 103 11 36 minecraft:sticky_piston[facing=north] replace
+/fill 107 11 34 107 11 36 minecraft:sticky_piston[facing=south] replace
+/fill 104 11 33 106 11 33 minecraft:sticky_piston[facing=west] replace
+/fill 104 11 37 106 11 37 minecraft:sticky_piston[facing=east] replace
+/fill 104 11 35 104 11 36 minecraft:smooth_quartz replace
+/fill 106 11 35 106 11 36 minecraft:smooth_quartz replace
+/fill 105 11 34 105 11 36 minecraft:redstone_block replace
+/setblock 106 11 34 minecraft:redstone_block replace
+/fill 102 10 34 102 10 36 minecraft:observer[facing=south] replace
+/fill 108 10 34 108 10 36 minecraft:observer[facing=north] replace
+/fill 104 10 32 106 10 32 minecraft:observer[facing=east] replace
+/fill 104 10 38 106 10 38 minecraft:observer[facing=west] replace
+/fill 103 10 34 103 10 36 minecraft:stone_bricks replace
+/fill 107 10 34 107 10 36 minecraft:stone_bricks replace
+/fill 104 10 33 106 10 33 minecraft:stone_bricks replace
+/fill 104 10 37 106 10 37 minecraft:stone_bricks replace
+/setblock 104 9 36 minecraft:stone_bricks replace
+/setblock 106 9 36 minecraft:stone_bricks replace
+/setblock 106 9 34 minecraft:stone_bricks replace
+/setblock 104 9 34 minecraft:stone_bricks replace
+/setblock 105 9 36 minecraft:redstone_wall_torch[facing=north] replace
+/setblock 106 9 35 minecraft:redstone_wall_torch[facing=east] replace
+/setblock 105 9 34 minecraft:redstone_wall_torch[facing=south] replace
+/setblock 104 9 35 minecraft:redstone_wall_torch[facing=west] replace
+/setblock 104 10 36 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
+/setblock 106 10 36 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
+/setblock 106 10 34 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
+/setblock 104 10 34 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
+/fill 104 7 34 106 7 36 minecraft:stone_bricks replace
+/fill 104 8 34 106 8 36 minecraft:redstone_wire replace
+/setblock 105 8 35 minecraft:air replace
+/setblock 105 7 37 minecraft:redstone_wall_torch[facing=west] replace
+/setblock 105 6 38 minecraft:stone_bricks replace
+/setblock 105 7 39 minecraft:stone_bricks replace
+/setblock 105 8 40 minecraft:stone_bricks replace
+/setblock 105 10 40 minecraft:stone_bricks replace
+/setblock 105 7 38 minecraft:redstone_wire replace
+/setblock 105 8 39 minecraft:redstone_wire replace
+/setblock 105 9 40 minecraft:redstone_torch replace
+/setblock 105 11 40 minecraft:redstone_torch replace
+/fill 102 13 34 102 13 36 sandstone replace
+/fill 108 13 34 108 13 36 sandstone replace
+/fill 104 13 32 106 13 32 sandstone replace
+/fill 104 13 38 106 13 38 sandstone replace
+/fill 102 14 34 102 14 36 minecraft:stone_button[face=floor, facing=south] replace
+/fill 108 14 34 108 14 36 minecraft:stone_button[face=floor, facing=north] replace
+/fill 104 14 32 106 14 32 minecraft:stone_button[face=floor, facing=east] replace
+/fill 104 14 38 106 14 38 minecraft:stone_button[face=floor, facing=west] replace
+/fill 110 12 30 120 15 40 minecraft:sandstone keep
+/fill 111 13 31 119 15 39 minecraft:air replace minecraft:sandstone
+/fill 120 12 30 130 15 40 minecraft:sandstone keep
+/fill 121 13 31 129 15 39 minecraft:air replace minecraft:sandstone
+/fill 130 12 30 140 15 40 minecraft:cobblestone keep
+/fill 131 13 31 139 15 39 minecraft:air replace minecraft:cobblestone
+/fill 140 12 30 150 15 40 minecraft:cobblestone keep
+/fill 141 13 31 149 15 39 minecraft:air replace minecraft:cobblestone
+/fill 150 12 30 160 15 40 minecraft:iron_block keep
+/fill 151 13 31 159 15 39 minecraft:air replace minecraft:iron_block
+/fill 160 12 30 170 15 40 minecraft:cobblestone keep
+/fill 161 13 31 169 15 39 minecraft:air replace minecraft:cobblestone
 /fill 30 12 40 40 15 50 minecraft:purpur_block keep
 /fill 31 13 41 39 15 49 minecraft:air replace minecraft:purpur_block
 /fill 40 12 40 50 15 50 minecraft:purpur_block keep
 /fill 41 13 41 49 15 49 minecraft:air replace minecraft:purpur_block
-/fill 50 12 40 60 15 50 minecraft:purpur_block keep
-/fill 51 13 41 59 15 49 minecraft:air replace minecraft:purpur_block
-/fill 60 12 40 70 15 50 minecraft:purpur_block keep
-/fill 61 13 41 69 15 49 minecraft:air replace minecraft:purpur_block
-/fill 30 12 50 40 15 60 minecraft:end_stone keep
-/fill 31 13 51 39 15 59 minecraft:air replace minecraft:end_stone
-/fill 40 12 50 50 15 60 minecraft:end_stone keep
-/fill 41 13 51 49 15 59 minecraft:air replace minecraft:end_stone
-/fill 41 11 51 49 6 59 minecraft:air replace
-/fill 44 12 51 46 12 59 minecraft:barrier replace
-/fill 41 12 54 49 12 56 minecraft:barrier replace
-/setblock 44 12 54 minecraft:red_stained_glass replace
-/setblock 46 12 54 minecraft:red_stained_glass replace
-/setblock 44 12 56 minecraft:red_stained_glass replace
-/setblock 46 12 56 minecraft:red_stained_glass replace
-/setblock 48 13 59 minecraft:stone_button[face=floor, facing=west] replace
-/setblock 49 13 58 minecraft:stone_button[face=floor, facing=north] replace
-/fill 45 11 51 46 11 51 minecraft:black_concrete replace
-/setblock 43 11 52 minecraft:black_concrete replace
-/fill 41 11 54 41 11 55 minecraft:black_concrete replace
-/fill 41 11 57 43 11 57 minecraft:black_concrete replace
-/fill 49 11 55 49 11 56 minecraft:black_concrete replace
-/fill 44 11 59 45 11 59 minecraft:black_concrete replace
-/setblock 45 11 52 minecraft:white_concrete replace
-/fill 44 11 53 44 11 57 minecraft:white_concrete replace
-/fill 46 11 53 46 11 58 minecraft:white_concrete replace
-/fill 43 11 54 46 11 54 minecraft:white_concrete replace
-/setblock 42 11 55 minecraft:white_concrete replace
-/fill 43 11 56 46 11 56 minecraft:white_concrete replace
-/setblock 45 11 58 minecraft:white_concrete replace
-/fill 47 11 54 48 11 54 minecraft:redstone_block replace
-/setblock 48 11 55 minecraft:redstone_block replace
-/setblock 47 11 56 minecraft:redstone_block replace
-/setblock 44 11 51 minecraft:piston[facing=north] replace
-/setblock 47 11 52 minecraft:piston[facing=west] replace
-/setblock 42 11 53 minecraft:piston[facing=north] replace
-/setblock 49 11 54 minecraft:piston[facing=west] replace
-/setblock 41 11 56 minecraft:piston[facing=east] replace
-/setblock 48 11 57 minecraft:piston[facing=south] replace
-/setblock 49 11 58 minecraft:piston[facing=south] replace
-/setblock 43 11 58 minecraft:piston[facing=east] replace
-/setblock 46 11 59 minecraft:piston[facing=south] replace
-/fill 44 10 51 46 10 53 minecraft:black_concrete replace
-/fill 41 10 55 43 10 56 minecraft:black_concrete replace
-/setblock 42 10 54 minecraft:black_concrete replace
-/setblock 45 10 55 minecraft:black_concrete replace
-/fill 47 10 55 48 10 56 minecraft:black_concrete replace
-/fill 43 10 57 46 10 59 minecraft:black_concrete replace
-/setblock 49 10 54 minecraft:stone_bricks replace
-/setblock 48 10 59 minecraft:stone_bricks replace
-/setblock 49 10 58 minecraft:sticky_piston[facing=south] replace
-/setblock 44 10 51 minecraft:observer[facing=down] replace
-/setblock 45 10 52 minecraft:observer[facing=up] replace
-/setblock 47 10 52 minecraft:observer[facing=down] replace
-/setblock 42 10 53 minecraft:observer[facing=down] replace
-/setblock 46 10 53 minecraft:observer[facing=up] replace
-/setblock 43 10 54 minecraft:observer[facing=up] replace
-/setblock 42 10 55 minecraft:observer[facing=up] replace
-/setblock 47 10 56 minecraft:observer[facing=up] replace
-/setblock 41 10 56 minecraft:observer[facing=down] replace
-/setblock 44 10 57 minecraft:observer[facing=up] replace
-/setblock 48 10 57 minecraft:observer[facing=down] replace
-/setblock 49 10 57 minecraft:observer[facing=north] replace
-/setblock 43 10 58 minecraft:observer[facing=down] replace
-/setblock 48 11 59 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
-/setblock 45 9 51 minecraft:piston[facing=west] replace
-/setblock 43 9 53 minecraft:piston[facing=west] replace
-/setblock 47 9 53 minecraft:piston[facing=south] replace
-/setblock 41 9 55 minecraft:piston[facing=north] replace
-/setblock 43 9 57 minecraft:piston[facing=north] replace
-/setblock 47 9 57 minecraft:piston[facing=east] replace
-/setblock 48 9 59 minecraft:piston[facing=west] replace
-/setblock 45 9 52 minecraft:stone_bricks replace
-/fill 46 9 53 46 9 54 minecraft:stone_bricks replace
-/fill 43 9 54 44 9 54 minecraft:stone_bricks replace
-/setblock 42 9 55 minecraft:stone_bricks replace
-/setblock 49 9 55 minecraft:stone_bricks replace
-/fill 44 9 56 44 9 57 minecraft:stone_bricks replace
-/fill 46 9 56 47 9 56 minecraft:stone_bricks replace
-/setblock 45 9 56 minecraft:redstone_wall_torch[facing=east] replace
-/setblock 46 9 55 minecraft:redstone_wall_torch[facing=south] replace
-/setblock 45 9 54 minecraft:redstone_wall_torch[facing=west] replace
-/setblock 44 9 55 minecraft:redstone_wall_torch[facing=north] replace
-/setblock 47 9 59 minecraft:observer[facing=down] replace
-/setblock 44 10 54 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
-/setblock 44 10 56 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
-/setblock 46 10 54 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
-/setblock 46 10 56 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
-/setblock 49 10 55 minecraft:redstone_wire[east=side, north=side, south=side, west=side] replace
-/fill 44 7 54 46 7 56 minecraft:stone_bricks replace
-/fill 44 8 54 46 8 56 minecraft:redstone_wire replace
-/setblock 45 8 55 minecraft:air replace
-/fill 45 7 57 45 7 59 minecraft:stone_bricks replace
-/fill 45 8 57 45 8 59 minecraft:redstone_wire replace
-/setblock 45 8 60 minecraft:stone_bricks replace
-/setblock 45 9 60 minecraft:redstone_torch replace
-/setblock 45 10 60 minecraft:stone_bricks replace
-/setblock 45 11 60 minecraft:redstone_torch replace
+/fill 100 12 40 110 15 50 minecraft:ice keep
+/fill 101 13 41 109 15 49 minecraft:air replace minecraft:ice
+/fill 110 12 40 120 15 50 minecraft:sandstone keep
+/fill 111 13 41 119 15 49 minecraft:air replace minecraft:sandstone
+/fill 120 12 40 130 15 50 minecraft:sandstone keep
+/fill 121 13 41 129 15 49 minecraft:air replace minecraft:sandstone
+/fill 130 12 40 140 15 50 minecraft:sandstone keep
+/fill 131 13 41 139 15 49 minecraft:air replace minecraft:sandstone
+/fill 140 12 40 150 15 50 minecraft:cobblestone keep
+/fill 141 13 41 149 15 49 minecraft:air replace minecraft:cobblestone
+/fill 150 12 40 160 15 50 minecraft:cobblestone keep
+/fill 151 13 41 159 15 49 minecraft:air replace minecraft:cobblestone
+/fill 151 11 41 159 6 49 minecraft:air replace
+/fill 154 12 44 156 12 46 minecraft:barrier replace
+/fill 151 11 41 159 11 49 minecraft:obsidian replace
+/fill 152 11 42 158 11 48 minecraft:air replace minecraft:obsidian
+/fill 152 11 44 152 11 46 minecraft:sticky_piston[facing=down] replace
+/fill 158 11 44 158 11 46 minecraft:sticky_piston[facing=down] replace
+/fill 154 11 42 156 11 42 minecraft:sticky_piston[facing=down] replace
+/fill 154 11 48 156 11 48 minecraft:sticky_piston[facing=down] replace
+/fill 152 12 44 152 12 46 minecraft:powered_rail replace
+/fill 158 12 44 158 12 46 minecraft:powered_rail replace
+/fill 154 12 42 156 12 42 minecraft:powered_rail replace
+/fill 154 12 48 156 12 48 minecraft:powered_rail replace
+/fill 153 11 44 153 11 46 minecraft:sticky_piston[facing=north] replace
+/fill 157 11 44 157 11 46 minecraft:sticky_piston[facing=south] replace
+/fill 154 11 43 156 11 43 minecraft:sticky_piston[facing=west] replace
+/fill 154 11 47 156 11 47 minecraft:sticky_piston[facing=east] replace
+/fill 154 11 45 154 11 46 minecraft:smooth_quartz replace
+/fill 156 11 45 156 11 46 minecraft:smooth_quartz replace
+/fill 155 11 44 155 11 46 minecraft:redstone_block replace
+/setblock 156 11 44 minecraft:redstone_block replace
+/fill 152 10 44 152 10 46 minecraft:observer[facing=south] replace
+/fill 158 10 44 158 10 46 minecraft:observer[facing=north] replace
+/fill 154 10 42 156 10 42 minecraft:observer[facing=east] replace
+/fill 154 10 48 156 10 48 minecraft:observer[facing=west] replace
+/fill 153 10 44 153 10 46 minecraft:stone_bricks replace
+/fill 157 10 44 157 10 46 minecraft:stone_bricks replace
+/fill 154 10 43 156 10 43 minecraft:stone_bricks replace
+/fill 154 10 47 156 10 47 minecraft:stone_bricks replace
+/setblock 154 9 46 minecraft:stone_bricks replace
+/setblock 156 9 46 minecraft:stone_bricks replace
+/setblock 156 9 44 minecraft:stone_bricks replace
+/setblock 154 9 44 minecraft:stone_bricks replace
+/setblock 155 9 46 minecraft:redstone_wall_torch[facing=north] replace
+/setblock 156 9 45 minecraft:redstone_wall_torch[facing=east] replace
+/setblock 155 9 44 minecraft:redstone_wall_torch[facing=south] replace
+/setblock 154 9 45 minecraft:redstone_wall_torch[facing=west] replace
+/setblock 154 10 46 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
+/setblock 156 10 46 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
+/setblock 156 10 44 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
+/setblock 154 10 44 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
+/fill 154 7 44 156 7 46 minecraft:stone_bricks replace
+/fill 154 8 44 156 8 46 minecraft:redstone_wire replace
+/setblock 155 8 45 minecraft:air replace
+/setblock 155 7 47 minecraft:redstone_wall_torch[facing=west] replace
+/setblock 155 6 48 minecraft:stone_bricks replace
+/setblock 155 7 49 minecraft:stone_bricks replace
+/setblock 155 8 50 minecraft:stone_bricks replace
+/setblock 155 10 50 minecraft:stone_bricks replace
+/setblock 155 7 48 minecraft:redstone_wire replace
+/setblock 155 8 49 minecraft:redstone_wire replace
+/setblock 155 9 50 minecraft:redstone_torch replace
+/setblock 155 11 50 minecraft:redstone_torch replace
+/fill 152 13 44 152 13 46 cobblestone replace
+/fill 158 13 44 158 13 46 cobblestone replace
+/fill 154 13 42 156 13 42 cobblestone replace
+/fill 154 13 48 156 13 48 cobblestone replace
+/fill 152 14 44 152 14 46 minecraft:stone_button[face=floor, facing=south] replace
+/fill 158 14 44 158 14 46 minecraft:stone_button[face=floor, facing=north] replace
+/fill 154 14 42 156 14 42 minecraft:stone_button[face=floor, facing=east] replace
+/fill 154 14 48 156 14 48 minecraft:stone_button[face=floor, facing=west] replace
+/fill 160 12 40 170 15 50 minecraft:cobblestone keep
+/fill 161 13 41 169 15 49 minecraft:air replace minecraft:cobblestone
+/fill 10 12 50 20 15 60 minecraft:quartz_block keep
+/fill 11 13 51 19 15 59 minecraft:air replace minecraft:quartz_block
+/fill 30 12 50 40 15 60 minecraft:purpur_block keep
+/fill 31 13 51 39 15 59 minecraft:air replace minecraft:purpur_block
+/fill 40 12 50 50 15 60 minecraft:purpur_block keep
+/fill 41 13 51 49 15 59 minecraft:air replace minecraft:purpur_block
 /fill 50 12 50 60 15 60 minecraft:end_stone keep
 /fill 51 13 51 59 15 59 minecraft:air replace minecraft:end_stone
-/fill 20 12 60 30 15 70 minecraft:end_stone keep
-/fill 21 13 61 29 15 69 minecraft:air replace minecraft:end_stone
-/fill 30 12 60 40 15 70 minecraft:end_stone keep
-/fill 31 13 61 39 15 69 minecraft:air replace minecraft:end_stone
+/fill 80 12 50 90 15 60 minecraft:slime_block keep
+/fill 81 13 51 89 15 59 minecraft:air replace minecraft:slime_block
+/fill 90 12 50 100 15 60 minecraft:slime_block keep
+/fill 91 13 51 99 15 59 minecraft:air replace minecraft:slime_block
+/fill 100 12 50 110 15 60 minecraft:ice keep
+/fill 101 13 51 109 15 59 minecraft:air replace minecraft:ice
+/fill 110 12 50 120 15 60 minecraft:ice keep
+/fill 111 13 51 119 15 59 minecraft:air replace minecraft:ice
+/fill 120 12 50 130 15 60 minecraft:sandstone keep
+/fill 121 13 51 129 15 59 minecraft:air replace minecraft:sandstone
+/fill 130 12 50 140 15 60 minecraft:stone keep
+/fill 131 13 51 139 15 59 minecraft:air replace minecraft:stone
+/fill 140 12 50 150 15 60 minecraft:cobblestone keep
+/fill 141 13 51 149 15 59 minecraft:air replace minecraft:cobblestone
+/fill 150 12 50 160 15 60 minecraft:cobblestone keep
+/fill 151 13 51 159 15 59 minecraft:air replace minecraft:cobblestone
+/fill 0 12 60 10 15 70 minecraft:quartz_block keep
+/fill 1 13 61 9 15 69 minecraft:air replace minecraft:quartz_block
+/fill 10 12 60 20 15 70 minecraft:quartz_block keep
+/fill 11 13 61 19 15 69 minecraft:air replace minecraft:quartz_block
+/fill 20 12 60 30 15 70 minecraft:quartz_block keep
+/fill 21 13 61 29 15 69 minecraft:air replace minecraft:quartz_block
+/fill 30 12 60 40 15 70 minecraft:purpur_block keep
+/fill 31 13 61 39 15 69 minecraft:air replace minecraft:purpur_block
 /fill 40 12 60 50 15 70 minecraft:end_stone keep
 /fill 41 13 61 49 15 69 minecraft:air replace minecraft:end_stone
+/fill 41 11 61 49 6 69 minecraft:air replace
+/fill 44 12 64 46 12 66 minecraft:barrier replace
+/fill 41 11 61 49 11 69 minecraft:obsidian replace
+/fill 42 11 62 48 11 68 minecraft:air replace minecraft:obsidian
+/fill 42 11 64 42 11 66 minecraft:sticky_piston[facing=down] replace
+/fill 48 11 64 48 11 66 minecraft:sticky_piston[facing=down] replace
+/fill 44 11 62 46 11 62 minecraft:sticky_piston[facing=down] replace
+/fill 44 11 68 46 11 68 minecraft:sticky_piston[facing=down] replace
+/fill 42 12 64 42 12 66 minecraft:powered_rail replace
+/fill 48 12 64 48 12 66 minecraft:powered_rail replace
+/fill 44 12 62 46 12 62 minecraft:powered_rail replace
+/fill 44 12 68 46 12 68 minecraft:powered_rail replace
+/fill 43 11 64 43 11 66 minecraft:sticky_piston[facing=north] replace
+/fill 47 11 64 47 11 66 minecraft:sticky_piston[facing=south] replace
+/fill 44 11 63 46 11 63 minecraft:sticky_piston[facing=west] replace
+/fill 44 11 67 46 11 67 minecraft:sticky_piston[facing=east] replace
+/fill 44 11 65 44 11 66 minecraft:smooth_quartz replace
+/fill 46 11 65 46 11 66 minecraft:smooth_quartz replace
+/fill 45 11 64 45 11 66 minecraft:redstone_block replace
+/setblock 46 11 64 minecraft:redstone_block replace
+/fill 42 10 64 42 10 66 minecraft:observer[facing=south] replace
+/fill 48 10 64 48 10 66 minecraft:observer[facing=north] replace
+/fill 44 10 62 46 10 62 minecraft:observer[facing=east] replace
+/fill 44 10 68 46 10 68 minecraft:observer[facing=west] replace
+/fill 43 10 64 43 10 66 minecraft:stone_bricks replace
+/fill 47 10 64 47 10 66 minecraft:stone_bricks replace
+/fill 44 10 63 46 10 63 minecraft:stone_bricks replace
+/fill 44 10 67 46 10 67 minecraft:stone_bricks replace
+/setblock 44 9 66 minecraft:stone_bricks replace
+/setblock 46 9 66 minecraft:stone_bricks replace
+/setblock 46 9 64 minecraft:stone_bricks replace
+/setblock 44 9 64 minecraft:stone_bricks replace
+/setblock 45 9 66 minecraft:redstone_wall_torch[facing=north] replace
+/setblock 46 9 65 minecraft:redstone_wall_torch[facing=east] replace
+/setblock 45 9 64 minecraft:redstone_wall_torch[facing=south] replace
+/setblock 44 9 65 minecraft:redstone_wall_torch[facing=west] replace
+/setblock 44 10 66 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
+/setblock 46 10 66 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
+/setblock 46 10 64 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
+/setblock 44 10 64 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
+/fill 44 7 64 46 7 66 minecraft:stone_bricks replace
+/fill 44 8 64 46 8 66 minecraft:redstone_wire replace
+/setblock 45 8 65 minecraft:air replace
+/setblock 45 7 67 minecraft:redstone_wall_torch[facing=west] replace
+/setblock 45 6 68 minecraft:stone_bricks replace
+/setblock 45 7 69 minecraft:stone_bricks replace
+/setblock 45 8 70 minecraft:stone_bricks replace
+/setblock 45 10 70 minecraft:stone_bricks replace
+/setblock 45 7 68 minecraft:redstone_wire replace
+/setblock 45 8 69 minecraft:redstone_wire replace
+/setblock 45 9 70 minecraft:redstone_torch replace
+/setblock 45 11 70 minecraft:redstone_torch replace
+/fill 42 13 64 42 13 66 end_stone replace
+/fill 48 13 64 48 13 66 end_stone replace
+/fill 44 13 62 46 13 62 end_stone replace
+/fill 44 13 68 46 13 68 end_stone replace
+/fill 42 14 64 42 14 66 minecraft:stone_button[face=floor, facing=south] replace
+/fill 48 14 64 48 14 66 minecraft:stone_button[face=floor, facing=north] replace
+/fill 44 14 62 46 14 62 minecraft:stone_button[face=floor, facing=east] replace
+/fill 44 14 68 46 14 68 minecraft:stone_button[face=floor, facing=west] replace
 /fill 50 12 60 60 15 70 minecraft:end_stone keep
 /fill 51 13 61 59 15 69 minecraft:air replace minecraft:end_stone
 /fill 60 12 60 70 15 70 minecraft:slime_block keep
 /fill 61 13 61 69 15 69 minecraft:air replace minecraft:slime_block
-/fill 30 12 70 40 15 80 minecraft:end_stone keep
-/fill 31 13 71 39 15 79 minecraft:air replace minecraft:end_stone
+/fill 80 12 60 90 15 70 minecraft:slime_block keep
+/fill 81 13 61 89 15 69 minecraft:air replace minecraft:slime_block
+/fill 90 12 60 100 15 70 minecraft:ice keep
+/fill 91 13 61 99 15 69 minecraft:air replace minecraft:ice
+/fill 100 12 60 110 15 70 minecraft:ice keep
+/fill 101 13 61 109 15 69 minecraft:air replace minecraft:ice
+/fill 110 12 60 120 15 70 minecraft:netherrack keep
+/fill 111 13 61 119 15 69 minecraft:air replace minecraft:netherrack
+/fill 120 12 60 130 15 70 minecraft:stone keep
+/fill 121 13 61 129 15 69 minecraft:air replace minecraft:stone
+/fill 130 12 60 140 15 70 minecraft:stone keep
+/fill 131 13 61 139 15 69 minecraft:air replace minecraft:stone
+/fill 140 12 60 150 15 70 minecraft:stone keep
+/fill 141 13 61 149 15 69 minecraft:air replace minecraft:stone
+/fill 150 12 60 160 15 70 minecraft:cobblestone keep
+/fill 151 13 61 159 15 69 minecraft:air replace minecraft:cobblestone
+/fill 160 12 60 170 15 70 minecraft:cobblestone keep
+/fill 161 13 61 169 15 69 minecraft:air replace minecraft:cobblestone
+/fill 0 12 70 10 15 80 minecraft:quartz_block keep
+/fill 1 13 71 9 15 79 minecraft:air replace minecraft:quartz_block
+/fill 10 12 70 20 15 80 minecraft:quartz_block keep
+/fill 11 13 71 19 15 79 minecraft:air replace minecraft:quartz_block
+/fill 20 12 70 30 15 80 minecraft:quartz_block keep
+/fill 21 13 71 29 15 79 minecraft:air replace minecraft:quartz_block
+/setblock 25 13 75 minecraft:oak_sign[rotation=0]{{}Text1:"\"End\""{}}
+/fill 30 12 70 40 15 80 minecraft:purpur_block keep
+/fill 31 13 71 39 15 79 minecraft:air replace minecraft:purpur_block
 /fill 40 12 70 50 15 80 minecraft:end_stone keep
 /fill 41 13 71 49 15 79 minecraft:air replace minecraft:end_stone
 /fill 50 12 70 60 15 80 minecraft:end_stone keep
 /fill 51 13 71 59 15 79 minecraft:air replace minecraft:end_stone
+/fill 60 12 70 70 15 80 minecraft:slime_block keep
+/fill 61 13 71 69 15 79 minecraft:air replace minecraft:slime_block
 /fill 70 12 70 80 15 80 minecraft:slime_block keep
 /fill 71 13 71 79 15 79 minecraft:air replace minecraft:slime_block
-/fill 40 12 80 50 15 90 minecraft:slime_block keep
-/fill 41 13 81 49 15 89 minecraft:air replace minecraft:slime_block
-/fill 50 12 80 60 15 90 minecraft:slime_block keep
-/fill 51 13 81 59 15 89 minecraft:air replace minecraft:slime_block
-/fill 60 12 80 70 15 90 minecraft:slime_block keep
-/fill 61 13 81 69 15 89 minecraft:air replace minecraft:slime_block
-/fill 70 12 80 80 15 90 minecraft:ice keep
-/fill 71 13 81 79 15 89 minecraft:air replace minecraft:ice
-/fill 120 12 80 130 15 90 minecraft:sandstone keep
-/fill 121 13 81 129 15 89 minecraft:air replace minecraft:sandstone
-/fill 40 12 90 50 15 100 minecraft:slime_block keep
-/fill 41 13 91 49 15 99 minecraft:air replace minecraft:slime_block
-/fill 50 12 90 60 15 100 minecraft:slime_block keep
-/fill 51 13 91 59 15 99 minecraft:air replace minecraft:slime_block
-/fill 60 12 90 70 15 100 minecraft:ice keep
-/fill 61 13 91 69 15 99 minecraft:air replace minecraft:ice
-/fill 70 12 90 80 15 100 minecraft:ice keep
-/fill 71 13 91 79 15 99 minecraft:air replace minecraft:ice
-/fill 80 12 90 90 15 100 minecraft:ice keep
-/fill 81 13 91 89 15 99 minecraft:air replace minecraft:ice
-/fill 110 12 90 120 15 100 minecraft:sandstone keep
-/fill 111 13 91 119 15 99 minecraft:air replace minecraft:sandstone
-/fill 120 12 90 130 15 100 minecraft:sandstone keep
-/fill 121 13 91 129 15 99 minecraft:air replace minecraft:sandstone
-/fill 60 12 100 70 15 110 minecraft:ice keep
-/fill 61 13 101 69 15 109 minecraft:air replace minecraft:ice
-/fill 70 12 100 80 15 110 minecraft:ice keep
-/fill 71 13 101 79 15 109 minecraft:air replace minecraft:ice
-/fill 80 12 100 90 15 110 minecraft:ice keep
-/fill 81 13 101 89 15 109 minecraft:air replace minecraft:ice
-/fill 90 12 100 100 15 110 minecraft:sandstone keep
-/fill 91 13 101 99 15 109 minecraft:air replace minecraft:sandstone
-/fill 100 12 100 110 15 110 minecraft:sandstone keep
-/fill 101 13 101 109 15 109 minecraft:air replace minecraft:sandstone
-/fill 110 12 100 120 15 110 minecraft:sandstone keep
-/fill 111 13 101 119 15 109 minecraft:air replace minecraft:sandstone
-/fill 70 12 110 80 15 120 minecraft:ice keep
-/fill 71 13 111 79 15 119 minecraft:air replace minecraft:ice
-/fill 100 12 110 110 15 120 minecraft:sandstone keep
-/fill 101 13 111 109 15 119 minecraft:air replace minecraft:sandstone
-/fill 110 12 110 120 15 120 minecraft:sandstone keep
-/fill 111 13 111 119 15 119 minecraft:air replace minecraft:sandstone
-/fill 120 12 110 130 15 120 minecraft:iron_block keep
-/fill 121 13 111 129 15 119 minecraft:air replace minecraft:iron_block
-/fill 130 12 110 140 15 120 minecraft:iron_block keep
-/fill 131 13 111 139 15 119 minecraft:air replace minecraft:iron_block
-/fill 90 12 120 100 15 130 minecraft:cobblestone keep
-/fill 91 13 121 99 15 129 minecraft:air replace minecraft:cobblestone
-/fill 100 12 120 110 15 130 minecraft:iron_block keep
-/fill 101 13 121 109 15 129 minecraft:air replace minecraft:iron_block
-/fill 110 12 120 120 15 130 minecraft:iron_block keep
-/fill 111 13 121 119 15 129 minecraft:air replace minecraft:iron_block
-/fill 120 12 120 130 15 130 minecraft:iron_block keep
-/fill 121 13 121 129 15 129 minecraft:air replace minecraft:iron_block
-/fill 90 12 130 100 15 140 minecraft:cobblestone keep
-/fill 91 13 131 99 15 139 minecraft:air replace minecraft:cobblestone
-/fill 100 12 130 110 15 140 minecraft:cobblestone keep
-/fill 101 13 131 109 15 139 minecraft:air replace minecraft:cobblestone
-/fill 110 12 130 120 15 140 minecraft:iron_block keep
-/fill 111 13 131 119 15 139 minecraft:air replace minecraft:iron_block
-/fill 120 12 130 130 15 140 minecraft:iron_block keep
-/fill 121 13 131 129 15 139 minecraft:air replace minecraft:iron_block
-/fill 40 12 140 50 15 150 minecraft:netherrack keep
-/fill 41 13 141 49 15 149 minecraft:air replace minecraft:netherrack
-/fill 50 12 140 60 15 150 minecraft:netherrack keep
-/fill 51 13 141 59 15 149 minecraft:air replace minecraft:netherrack
-/fill 80 12 140 90 15 150 minecraft:cobblestone keep
-/fill 81 13 141 89 15 149 minecraft:air replace minecraft:cobblestone
-/fill 90 12 140 100 15 150 minecraft:cobblestone keep
-/fill 91 13 141 99 15 149 minecraft:air replace minecraft:cobblestone
-/fill 100 12 140 110 15 150 minecraft:cobblestone keep
-/fill 101 13 141 109 15 149 minecraft:air replace minecraft:cobblestone
-/fill 110 12 140 120 15 150 minecraft:iron_block keep
-/fill 111 13 141 119 15 149 minecraft:air replace minecraft:iron_block
-/fill 120 12 140 130 15 150 minecraft:iron_block keep
-/fill 121 13 141 129 15 149 minecraft:air replace minecraft:iron_block
-/fill 50 12 150 60 15 160 minecraft:netherrack keep
-/fill 51 13 151 59 15 159 minecraft:air replace minecraft:netherrack
-/setblock 55 13 155 minecraft:oak_sign[rotation=0]{{}Text1:"\"Start\""{}}
-/fill 60 12 150 70 15 160 minecraft:netherrack keep
-/fill 61 13 151 69 15 159 minecraft:air replace minecraft:netherrack
-/fill 70 12 150 80 15 160 minecraft:stone keep
-/fill 71 13 151 79 15 159 minecraft:air replace minecraft:stone
-/fill 80 12 150 90 15 160 minecraft:stone keep
-/fill 81 13 151 89 15 159 minecraft:air replace minecraft:stone
-/fill 90 12 150 100 15 160 minecraft:cobblestone keep
-/fill 91 13 151 99 15 159 minecraft:air replace minecraft:cobblestone
-/fill 50 12 160 60 15 170 minecraft:netherrack keep
-/fill 51 13 161 59 15 169 minecraft:air replace minecraft:netherrack
-/fill 60 12 160 70 15 170 minecraft:netherrack keep
-/fill 61 13 161 69 15 169 minecraft:air replace minecraft:netherrack
-/fill 70 12 160 80 15 170 minecraft:stone keep
-/fill 71 13 161 79 15 169 minecraft:air replace minecraft:stone
-/fill 80 12 160 90 15 170 minecraft:stone keep
-/fill 81 13 161 89 15 169 minecraft:air replace minecraft:stone
-/fill 50 12 170 60 15 180 minecraft:netherrack keep
-/fill 51 13 171 59 15 179 minecraft:air replace minecraft:netherrack
-/fill 60 12 170 70 15 180 minecraft:netherrack keep
-/fill 61 13 171 69 15 179 minecraft:air replace minecraft:netherrack
-/fill 61 11 171 69 6 179 minecraft:air replace
-/fill 64 12 174 66 12 176 minecraft:barrier replace
-/fill 61 11 171 69 11 179 minecraft:obsidian replace
-/fill 62 11 172 68 11 178 minecraft:air replace minecraft:obsidian
-/fill 62 11 174 62 11 176 minecraft:sticky_piston[facing=down] replace
-/fill 68 11 174 68 11 176 minecraft:sticky_piston[facing=down] replace
-/fill 64 11 172 66 11 172 minecraft:sticky_piston[facing=down] replace
-/fill 64 11 178 66 11 178 minecraft:sticky_piston[facing=down] replace
-/fill 62 12 174 62 12 176 minecraft:powered_rail replace
-/fill 68 12 174 68 12 176 minecraft:powered_rail replace
-/fill 64 12 172 66 12 172 minecraft:powered_rail replace
-/fill 64 12 178 66 12 178 minecraft:powered_rail replace
-/fill 63 11 174 63 11 176 minecraft:sticky_piston[facing=north] replace
-/fill 67 11 174 67 11 176 minecraft:sticky_piston[facing=south] replace
-/fill 64 11 173 66 11 173 minecraft:sticky_piston[facing=west] replace
-/fill 64 11 177 66 11 177 minecraft:sticky_piston[facing=east] replace
-/fill 64 11 175 64 11 176 minecraft:smooth_quartz replace
-/fill 66 11 175 66 11 176 minecraft:smooth_quartz replace
-/fill 65 11 174 65 11 176 minecraft:redstone_block replace
-/setblock 66 11 174 minecraft:redstone_block replace
-/fill 62 10 174 62 10 176 minecraft:observer[facing=south] replace
-/fill 68 10 174 68 10 176 minecraft:observer[facing=north] replace
-/fill 64 10 172 66 10 172 minecraft:observer[facing=east] replace
-/fill 64 10 178 66 10 178 minecraft:observer[facing=west] replace
-/fill 63 10 174 63 10 176 minecraft:stone_bricks replace
-/fill 67 10 174 67 10 176 minecraft:stone_bricks replace
-/fill 64 10 173 66 10 173 minecraft:stone_bricks replace
-/fill 64 10 177 66 10 177 minecraft:stone_bricks replace
-/setblock 64 9 176 minecraft:stone_bricks replace
-/setblock 66 9 176 minecraft:stone_bricks replace
-/setblock 66 9 174 minecraft:stone_bricks replace
-/setblock 64 9 174 minecraft:stone_bricks replace
-/setblock 65 9 176 minecraft:redstone_wall_torch[facing=north] replace
-/setblock 66 9 175 minecraft:redstone_wall_torch[facing=east] replace
-/setblock 65 9 174 minecraft:redstone_wall_torch[facing=south] replace
-/setblock 64 9 175 minecraft:redstone_wall_torch[facing=west] replace
-/setblock 64 10 176 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
-/setblock 66 10 176 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
-/setblock 66 10 174 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
-/setblock 64 10 174 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
-/fill 64 7 174 66 7 176 minecraft:stone_bricks replace
-/fill 64 8 174 66 8 176 minecraft:redstone_wire replace
-/setblock 65 8 175 minecraft:air replace
-/setblock 65 7 177 minecraft:redstone_wall_torch[facing=west] replace
-/setblock 65 6 178 minecraft:stone_bricks replace
-/setblock 65 7 179 minecraft:stone_bricks replace
-/setblock 65 8 180 minecraft:stone_bricks replace
-/setblock 65 10 180 minecraft:stone_bricks replace
-/setblock 65 7 178 minecraft:redstone_wire replace
-/setblock 65 8 179 minecraft:redstone_wire replace
-/setblock 65 9 180 minecraft:redstone_torch replace
-/setblock 65 11 180 minecraft:redstone_torch replace
-/fill 62 13 174 62 13 176 netherrack replace
-/fill 68 13 174 68 13 176 netherrack replace
-/fill 64 13 172 66 13 172 netherrack replace
-/fill 64 13 178 66 13 178 netherrack replace
-/fill 62 14 174 62 14 176 minecraft:stone_button[face=floor, facing=south] replace
-/fill 68 14 174 68 14 176 minecraft:stone_button[face=floor, facing=north] replace
-/fill 64 14 172 66 14 172 minecraft:stone_button[face=floor, facing=east] replace
-/fill 64 14 178 66 14 178 minecraft:stone_button[face=floor, facing=west] replace
-/fill 70 12 170 80 15 180 minecraft:stone keep
-/fill 71 13 171 79 15 179 minecraft:air replace minecraft:stone
-/fill 80 12 170 90 15 180 minecraft:stone keep
-/fill 81 13 171 89 15 179 minecraft:air replace minecraft:stone
-/fill 90 12 170 100 15 180 minecraft:stone keep
-/fill 91 13 171 99 15 179 minecraft:air replace minecraft:stone
-/fill 60 12 180 70 15 190 minecraft:netherrack keep
-/fill 61 13 181 69 15 189 minecraft:air replace minecraft:netherrack
-/fill 70 12 180 80 15 190 minecraft:netherrack keep
-/fill 71 13 181 79 15 189 minecraft:air replace minecraft:netherrack
+/fill 80 12 70 90 15 80 minecraft:slime_block keep
+/fill 81 13 71 89 15 79 minecraft:air replace minecraft:slime_block
+/fill 90 12 70 100 15 80 minecraft:ice keep
+/fill 91 13 71 99 15 79 minecraft:air replace minecraft:ice
+/fill 100 12 70 110 15 80 minecraft:ice keep
+/fill 101 13 71 109 15 79 minecraft:air replace minecraft:ice
+/fill 110 12 70 120 15 80 minecraft:netherrack keep
+/fill 111 13 71 119 15 79 minecraft:air replace minecraft:netherrack
+/setblock 115 13 75 minecraft:oak_sign[rotation=0]{{}Text1:"\"Start\""{}}
+/fill 120 12 70 130 15 80 minecraft:netherrack keep
+/fill 121 13 71 129 15 79 minecraft:air replace minecraft:netherrack
+/fill 130 12 70 140 15 80 minecraft:stone keep
+/fill 131 13 71 139 15 79 minecraft:air replace minecraft:stone
+/fill 140 12 70 150 15 80 minecraft:stone keep
+/fill 141 13 71 149 15 79 minecraft:air replace minecraft:stone
+/fill 160 12 70 170 15 80 minecraft:stone keep
+/fill 161 13 71 169 15 79 minecraft:air replace minecraft:stone
+/fill 10 12 80 20 15 90 minecraft:quartz_block keep
+/fill 11 13 81 19 15 89 minecraft:air replace minecraft:quartz_block
+/fill 20 12 80 30 15 90 minecraft:quartz_block keep
+/fill 21 13 81 29 15 89 minecraft:air replace minecraft:quartz_block
+/fill 40 12 80 50 15 90 minecraft:end_stone keep
+/fill 41 13 81 49 15 89 minecraft:air replace minecraft:end_stone
+/fill 50 12 80 60 15 90 minecraft:end_stone keep
+/fill 51 13 81 59 15 89 minecraft:air replace minecraft:end_stone
+/fill 60 12 80 70 15 90 minecraft:end_stone keep
+/fill 61 13 81 69 15 89 minecraft:air replace minecraft:end_stone
+/fill 80 12 80 90 15 90 minecraft:slime_block keep
+/fill 81 13 81 89 15 89 minecraft:air replace minecraft:slime_block
+/fill 100 12 80 110 15 90 minecraft:netherrack keep
+/fill 101 13 81 109 15 89 minecraft:air replace minecraft:netherrack
+/fill 110 12 80 120 15 90 minecraft:netherrack keep
+/fill 111 13 81 119 15 89 minecraft:air replace minecraft:netherrack
+/fill 120 12 80 130 15 90 minecraft:netherrack keep
+/fill 121 13 81 129 15 89 minecraft:air replace minecraft:netherrack
+/fill 130 12 80 140 15 90 minecraft:stone keep
+/fill 131 13 81 139 15 89 minecraft:air replace minecraft:stone
+/fill 140 12 80 150 15 90 minecraft:stone keep
+/fill 141 13 81 149 15 89 minecraft:air replace minecraft:stone
+/fill 50 12 90 60 15 100 minecraft:end_stone keep
+/fill 51 13 91 59 15 99 minecraft:air replace minecraft:end_stone
+/fill 60 12 90 70 15 100 minecraft:end_stone keep
+/fill 61 13 91 69 15 99 minecraft:air replace minecraft:end_stone
+/fill 110 12 90 120 15 100 minecraft:netherrack keep
+/fill 111 13 91 119 15 99 minecraft:air replace minecraft:netherrack
+/fill 110 12 100 120 15 110 minecraft:netherrack keep
+/fill 111 13 101 119 15 109 minecraft:air replace minecraft:netherrack
+/fill 120 12 90 130 15 100 minecraft:netherrack keep
+/fill 121 13 91 129 15 99 minecraft:air replace minecraft:netherrack
+/setblock 125 12 95 minecraft:command_block{{}Command:"/give @p minecraft:lever{CanPlaceOn:['minecraft:lime_wool']{}}"} destroy
+/setblock 125 13 95 minecraft:stone_pressure_plate
+/fill 150 12 70 160 15 80 minecraft:stone keep
+/fill 151 13 71 159 15 79 minecraft:air replace minecraft:stone
+/setblock 155 12 75 minecraft:command_block{{}Command:"/give @p minecraft:lever{CanPlaceOn:['minecraft:light_blue_terracotta']{}}"} destroy
+/setblock 155 13 75 minecraft:stone_pressure_plate
+/fill 140 12 20 150 15 30 minecraft:iron_block keep
+/fill 141 13 21 149 15 29 minecraft:air replace minecraft:iron_block
+/setblock 145 12 25 minecraft:command_block{{}Command:"/give @p minecraft:lever{CanPlaceOn:['minecraft:lime_terracotta']{}}"} destroy
+/setblock 145 13 25 minecraft:stone_pressure_plate
+/fill 90 12 40 100 15 50 minecraft:ice keep
+/fill 91 13 41 99 15 49 minecraft:air replace minecraft:ice
+/setblock 95 12 45 minecraft:command_block{{}Command:"/give @p minecraft:lever{CanPlaceOn:['minecraft:brown_wool']{}}"} destroy
+/setblock 95 13 45 minecraft:stone_pressure_plate
+/fill 70 12 60 80 15 70 minecraft:slime_block keep
+/fill 71 13 61 79 15 69 minecraft:air replace minecraft:slime_block
+/setblock 75 12 65 minecraft:command_block{{}Command:"/give @p minecraft:lever{CanPlaceOn:['minecraft:magenta_terracotta']{}}"} destroy
+/setblock 75 13 65 minecraft:stone_pressure_plate
+/fill 20 12 40 30 15 50 minecraft:purpur_block keep
+/fill 21 13 41 29 15 49 minecraft:air replace minecraft:purpur_block
+/setblock 25 12 45 minecraft:command_block{{}Command:"/give @p minecraft:lever{CanPlaceOn:['minecraft:white_wool']{}}"} destroy
+/setblock 25 13 45 minecraft:stone_pressure_plate
