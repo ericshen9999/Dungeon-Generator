@@ -397,6 +397,7 @@ def getTape(x,y,z):
 
 puzzleType = {
     "3x3": get3x3
+    "Tape": getTape
 }
 
 # (x,y,z,direction,block) [-100, 3, 120, "north", "white_wool"]
