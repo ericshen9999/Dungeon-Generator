@@ -174,7 +174,6 @@ class Section:      # Class for a section - a connected set of rooms
             if parentRoomPosition is None:
                 break
             self.addRoom(parentRoomPosition, parentRoomExit)
-        self.writeSection()
         self.commitSection()
         while random() <= self.newChildChance() and self.map.sectionCount < maxSections and self.getUnassignedRooms() and self.roomCount() >= minSectionSize:
             parentRoomPosition, parentRoomExit = self.getNextRoom(True)
@@ -260,13 +259,6 @@ class Section:      # Class for a section - a connected set of rooms
         if not unassigned:
             return False
         return unassigned
-
-    def writeSection(self):
-        f = open("section.txt" ,"a")
-        for key in self.sectionMap.keys(): 
-            output = str(key) + ": " + str(self.id) + "\n"
-            f.write(output)
-        f.close()
 
 
 
@@ -399,7 +391,6 @@ class Map:
         return section.id
 
     def writeDungeon(self):
-        print(())
         self.setOffsetandSize()
         textMap = ''
         y = self.maxy
@@ -459,8 +450,12 @@ class Map:
         return textMap
 
 
-
-
+    def writeSection(self):
+        output = ""
+        for key in self.sectionDict:
+            for i in self.sectionDict[key].sectionMap:
+                output += str(useOffset(i, self.offsetVal)) + " " + str(key) + "\n"
+        return output
 
 
 def areConnected(room1, room2):
@@ -577,4 +572,10 @@ if __name__ == "__main__":
     #dungeon = populateDungeon(dungeon)
     f = open("map.txt", "w")
     f.write(dungeonMap)
+    f.close()
+
+    secMap = dungeon.writeSection()
+    #dungeon = populateDungeon(dungeon)
+    f = open("section.txt", "w")
+    f.write(secMap)
     f.close()
