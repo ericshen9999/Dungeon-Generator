@@ -20,7 +20,38 @@ options = [
 ]
 
 keyBlocks = [
-      #please fill this with the names of blocks used
+    "minecraft:white_terracotta",
+    "minecraft:orange_terracotta",
+    "minecraft:magenta_terracotta",
+    "minecraft:light_blue_terracotta",
+    "minecraft:yellow_terracotta",
+    "minecraft:lime_terracotta",
+    "minecraft:pink_terracotta",
+    "minecraft:gray_terracotta",
+    "minecraft:light_gray_terracotta",
+    "minecraft:cyan_terracotta",
+    "minecraft:purple_terracotta",
+    "minecraft:blue_terracotta",
+    "minecraft:brown_terracotta",
+    "minecraft:green_terracotta",
+    "minecraft:red_terracotta",
+    "minecraft:black_terracotta",
+    "minecraft:white_wool",
+    "minecraft:orange_wool",
+    "minecraft:magenta_wool",
+    "minecraft:light_blue_wool",
+    "minecraft:yellow_wool",
+    "minecraft:lime_wool",
+    "minecraft:pink_wool",
+    "minecraft:gray_wool",
+    "minecraft:light_gray_wool",
+    "minecraft:cyan_wool",
+    "minecraft:purple_wool",
+    "minecraft:blue_wool",
+    "minecraft:brown_wool",
+    "minecraft:green_wool",
+    "minecraft:red_wool",
+    "minecraft:black_wool",
 ]
 
 maxSections = 10        #maximum number of sections the dungeon can have
@@ -269,8 +300,8 @@ class Map:
     def assignEmptyRooms(self):
         for roomID in list(self.map):
             room = self.map[roomID]
-            if room.type is None or room.type == '0' or room.type == '1':
-                room.type = choice(options)
+            """if room.type is None or room.type == '0' or room.type == '1':
+                room.type = choice(options)"""
 
     def setOffsetandSize(self):
         minx = 0
@@ -505,7 +536,6 @@ def populateDungeon(dungeon):
             check other room requirements/generation requirements here:
                 pass = 0
                 continue
-
 
 
         
