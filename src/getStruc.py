@@ -396,6 +396,14 @@ def getTape(x,y,z):
 puzzleType = {
     "3x3": get3x3
 }
+def getKeyRoom(x,y,z,block):
+    commandlist = []
+    command = "/setblock " + str(x+5) + " " + str(y) + " " + str(z+5) + " minecraft:command_block{Command:\"/give @p minecraft:lever{CanPlaceOn:[" + "'" + "minecraft:" + block + "']}\"} destroy"
+    commandlist.append(command)
+    command = "/setblock " + str(x+5) + " " + str(y+1) + " " + str(z+5) + " minecraft:stone_pressure_plate"
+    commandlist.append(command)
+    return commandlist
+
 # (x,y,z,direction,block) [-100, 3, 120, "north", "white_wool"]
 def getpuzzle(x,y,z,name):
     if name in puzzleType:
@@ -431,5 +439,6 @@ def getBlock(section):
 
 if __name__ == "__main__":
     # Test location (-100, 3, 120)
-    print(getBlock(getSection(0,0)))
+    for command in getKeyRoom(-100,3,120,"ice"):
+        print(command)
     
