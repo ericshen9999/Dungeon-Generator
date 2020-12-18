@@ -499,7 +499,7 @@ if __name__ == "__main__":
     curry = 12
     currzf = 0.0
     stage = 1
-    s3pos = 0
+    s4pos = 0
 
     comf = open("commands.txt", "w")
     with open("map.txt") as mapf:
@@ -511,6 +511,7 @@ if __name__ == "__main__":
                     currz = int(currzf)
                     if c == '*':
                         stage = 2
+                        s4pos += 3
                         break
                     if c == 'S':
                         for command in getStart((10 * currx), (curry), (10 * currz),
@@ -529,31 +530,42 @@ if __name__ == "__main__":
                                                                                     getBlock(getSection(currx, currz))):
                             comf.write(command + "\n")
                     currxf += 0.5
+                    s4pos += 1
 
                 if stage == 2:
                     if c == '*':
                         stage = 3
-                        s3pos = mapf.tell()
                         mapf.seek(0)
                         currzf = -0.5
+                        s4pos += 3
                         break
                     temp = re.sub(r'[(,)]', '', line)
                     locationList = temp.split()
                     for command in getKey(10 * int(locationList[0]),curry,10 * int(locationList[1]),
                                             getBlock(getSection(locationList[0],locationList[1])),locationList[2]):
                         comf.write(command + "\n")
+                    s4pos += len(line)
                     break
 
                 if stage == 3:
                     currx = int(currxf)
                     currz = int(currzf)
+                    if c == '*':
+                        stage = 4
+                        mapf.seek(s4pos)
+                        break
                     if c == '|':
-                        for command in generateDoor((10 * currx), (curry), (10 * currz), "south"):
+                        for command in generateDoor((10 * currx), (curry), (10 * currz), "north"):
                             comf.write(command + "\n")
                     if c == '-':
-                        for command in generateDoor((10 * currx), (curry), (10 * currz), "east"):
+                        for command in generateDoor((10 * currx), (curry), (10 * currz), "west"):
                             comf.write(command + "\n")
                     currxf += 0.5
+
+                if stage == 4:
+                    print(line)
+                    break
+
             currxf = 0
             currzf += 0.5
 
