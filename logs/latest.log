@@ -1,60 +1,1031 @@
-[16:24:48] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[16:24:48] [main/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[16:24:48] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[16:24:48] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[16:24:48] [main/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[16:24:48] [main/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[16:24:48] [main/INFO]: Reloading ResourceManager: Default
-[16:24:49] [Worker-Main-12/INFO]: Loaded 7 recipes
-[16:24:49] [Worker-Main-12/INFO]: Loaded 927 advancements
-[16:24:51] [Server thread/INFO]: Starting minecraft server version 1.16.4
-[16:24:51] [Server thread/INFO]: Loading properties
-[16:24:51] [Server thread/INFO]: Default game type: SURVIVAL
-[16:24:51] [Server thread/INFO]: Generating keypair
-[16:24:51] [Server thread/INFO]: Starting Minecraft server on *:25565
-[16:24:51] [Server thread/INFO]: Using default channel type
-[16:24:52] [Server thread/INFO]: Preparing level "world"
-[16:24:52] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[16:24:53] [Server thread/INFO]: Preparing spawn area: 0%
-[16:24:53] [Server thread/INFO]: Preparing spawn area: 0%
-[16:24:53] [Server thread/INFO]: Preparing spawn area: 54%
-[16:24:54] [Server thread/INFO]: Time elapsed: 1695 ms
-[16:24:54] [Server thread/INFO]: Done (1.849s)! For help, type "help"
-[17:21:03] [User Authenticator #1/INFO]: UUID of player NinjaKhan is 868979b1-3961-476a-912a-56c08c1648f7
-[17:21:03] [Server thread/INFO]: NinjaKhan[/192.168.1.71:59048] logged in with entity id 5 at (1.7299837414878576, 4.0, -1.5817808708553316)
-[17:21:03] [Server thread/INFO]: NinjaKhan joined the game
-[17:22:11] [Server thread/INFO]: Set the weather to clear
-[17:22:41] [Server thread/INFO]: Changed the block at 0, 5, 0
-[17:23:50] [Server thread/INFO]: Changed the block at 0, 5, 0
-[17:24:02] [Server thread/INFO]: Changed the block at 0, 5, 0
-[17:27:44] [Server thread/INFO]: [NinjaKhan: Set the weather to clear]
-[17:32:52] [Server thread/INFO]: NinjaKhan lost connection: Disconnected
-[17:32:52] [Server thread/INFO]: NinjaKhan left the game
-[17:37:52] [User Authenticator #2/INFO]: UUID of player NinjaKhan is 868979b1-3961-476a-912a-56c08c1648f7
-[17:37:52] [Server thread/INFO]: NinjaKhan[/192.168.1.71:61138] logged in with entity id 8 at (1.7299837414878576, 4.0, -1.5817808708553316)
-[17:37:52] [Server thread/INFO]: NinjaKhan joined the game
-[17:38:05] [Server thread/INFO]: Set the weather to clear
-[17:38:23] [Server thread/INFO]: Changed the block at 0, 5, 0
-[17:38:23] [Server thread/INFO]: Changed the block at 0, 6, 0
-[17:38:23] [Server thread/INFO]: Changed the block at 0, 7, 0
-[17:38:23] [Server thread/INFO]: Changed the block at 1, 5, 0
-[17:38:23] [Server thread/INFO]: Changed the block at -1, 5, 0
-[17:43:28] [Server thread/INFO]: [NinjaKhan: Set the weather to clear]
-[17:50:08] [Server thread/INFO]: [NinjaKhan: Set the weather to clear]
-[17:51:44] [Server thread/INFO]: Successfully filled 363 blocks
-[17:51:44] [Server thread/INFO]: Successfully filled 243 blocks
-[17:53:29] [Server thread/INFO]: Changed the block at 5, 4, 5
-[17:54:21] [Server thread/INFO]: Successfully filled 267 blocks
-[17:54:21] [Server thread/INFO]: Successfully filled 243 blocks
-[17:55:46] [Server thread/INFO]: NinjaKhan lost connection: Disconnected
-[17:55:46] [Server thread/INFO]: NinjaKhan left the game
-[18:01:33] [Server thread/INFO]: Expected whitespace to end one argument, but found trailing data
-[18:01:33] [Server thread/INFO]: ...otation=0]/fill 0 3 0 10 6 10 minecraft:netherrack keep<--[HERE]
-[18:01:33] [Server thread/INFO]: No blocks were filled
-[18:01:33] [Server thread/INFO]: Changed the block at 5, 4, 5
-[18:01:48] [User Authenticator #3/INFO]: UUID of player NinjaKhan is 868979b1-3961-476a-912a-56c08c1648f7
-[18:01:48] [Server thread/INFO]: NinjaKhan[/192.168.1.71:63298] logged in with entity id 19 at (4.42227321377468, 4.0, 4.83240936606276)
-[18:01:48] [Server thread/INFO]: NinjaKhan joined the game
-[18:02:06] [Server thread/INFO]: [NinjaKhan: Set the weather to clear]
-[18:02:42] [Server thread/INFO]: [NinjaKhan: Gamerule doWeatherCycle is now set to: false]
-[18:03:07] [Server thread/INFO]: [NinjaKhan: Gamerule doDaylightCycle is now set to: false]
+[00:09:38] [Server thread/INFO]: Successfully filled 484 blocks
+[00:09:38] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:38] [Server thread/INFO]: Successfully filled 440 blocks
+[00:09:38] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:38] [Server thread/INFO]: Successfully filled 440 blocks
+[00:09:38] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:38] [Server thread/INFO]: Changed the block at 35, 31, 5
+[00:09:38] [Server thread/INFO]: Successfully filled 440 blocks
+[00:09:38] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:38] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:38] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:38] [Server thread/INFO]: Successfully filled 484 blocks
+[00:09:38] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:38] [Server thread/INFO]: Successfully filled 436 blocks
+[00:09:38] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:38] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:38] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:38] [Server thread/INFO]: Successfully filled 480 blocks
+[00:09:38] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:38] [Server thread/INFO]: Successfully filled 440 blocks
+[00:09:38] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:38] [Server thread/INFO]: Successfully filled 440 blocks
+[00:09:38] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:38] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:38] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:39] [Server thread/INFO]: Successfully filled 436 blocks
+[00:09:39] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:39] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:39] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:39] [Server thread/INFO]: Successfully filled 480 blocks
+[00:09:39] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:39] [Server thread/INFO]: Successfully filled 440 blocks
+[00:09:39] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:39] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:39] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:39] [Server thread/INFO]: Successfully filled 436 blocks
+[00:09:39] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:39] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:39] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:39] [Server thread/INFO]: Successfully filled 440 blocks
+[00:09:39] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:39] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:39] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:39] [Server thread/INFO]: No blocks were filled
+[00:09:39] [Server thread/INFO]: Successfully filled 27 blocks
+[00:09:39] [Server thread/INFO]: Successfully filled 18 blocks
+[00:09:39] [Server thread/INFO]: Changed the block at 44, 30, 54
+[00:09:39] [Server thread/INFO]: Changed the block at 46, 30, 54
+[00:09:39] [Server thread/INFO]: Changed the block at 44, 30, 56
+[00:09:39] [Server thread/INFO]: Changed the block at 46, 30, 56
+[00:09:39] [Server thread/INFO]: Changed the block at 48, 31, 59
+[00:09:39] [Server thread/INFO]: Changed the block at 49, 31, 58
+[00:09:39] [Server thread/INFO]: Successfully filled 2 blocks
+[00:09:39] [Server thread/INFO]: Changed the block at 43, 29, 52
+[00:09:39] [Server thread/INFO]: Successfully filled 2 blocks
+[00:09:40] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:40] [Server thread/INFO]: Successfully filled 2 blocks
+[00:09:40] [Server thread/INFO]: Successfully filled 2 blocks
+[00:09:40] [Server thread/INFO]: Changed the block at 45, 29, 52
+[00:09:40] [Server thread/INFO]: Successfully filled 5 blocks
+[00:09:40] [Server thread/INFO]: Successfully filled 6 blocks
+[00:09:40] [Server thread/INFO]: Successfully filled 2 blocks
+[00:09:40] [Server thread/INFO]: Changed the block at 42, 29, 55
+[00:09:40] [Server thread/INFO]: Successfully filled 2 blocks
+[00:09:40] [Server thread/INFO]: Changed the block at 45, 29, 58
+[00:09:40] [Server thread/INFO]: Successfully filled 2 blocks
+[00:09:40] [Server thread/INFO]: Changed the block at 48, 29, 55
+[00:09:40] [Server thread/INFO]: Changed the block at 47, 29, 56
+[00:09:40] [Server thread/INFO]: Changed the block at 44, 29, 51
+[00:09:40] [Server thread/INFO]: Changed the block at 47, 29, 52
+[00:09:40] [Server thread/INFO]: Changed the block at 42, 29, 53
+[00:09:40] [Server thread/INFO]: Changed the block at 49, 29, 54
+[00:09:40] [Server thread/INFO]: Changed the block at 41, 29, 56
+[00:09:40] [Server thread/INFO]: Changed the block at 48, 29, 57
+[00:09:40] [Server thread/INFO]: Changed the block at 49, 29, 58
+[00:09:40] [Server thread/INFO]: Changed the block at 43, 29, 58
+[00:09:40] [Server thread/INFO]: Changed the block at 46, 29, 59
+[00:09:40] [Server thread/INFO]: Successfully filled 9 blocks
+[00:09:40] [Server thread/INFO]: Successfully filled 6 blocks
+[00:09:40] [Server thread/INFO]: Changed the block at 42, 28, 54
+[00:09:40] [Server thread/INFO]: Changed the block at 45, 28, 55
+[00:09:40] [Server thread/INFO]: Successfully filled 4 blocks
+[00:09:40] [Server thread/INFO]: Successfully filled 12 blocks
+[00:09:40] [Server thread/INFO]: Changed the block at 49, 28, 54
+[00:09:40] [Server thread/INFO]: Changed the block at 48, 28, 59
+[00:09:40] [Server thread/INFO]: Changed the block at 49, 28, 58
+[00:09:40] [Server thread/INFO]: Changed the block at 44, 28, 51
+[00:09:40] [Server thread/INFO]: Changed the block at 45, 28, 52
+[00:09:40] [Server thread/INFO]: Changed the block at 47, 28, 52
+[00:09:40] [Server thread/INFO]: Changed the block at 42, 28, 53
+[00:09:40] [Server thread/INFO]: Changed the block at 46, 28, 53
+[00:09:40] [Server thread/INFO]: Changed the block at 43, 28, 54
+[00:09:40] [Server thread/INFO]: Changed the block at 42, 28, 55
+[00:09:41] [Server thread/INFO]: Changed the block at 47, 28, 56
+[00:09:41] [Server thread/INFO]: Changed the block at 41, 28, 56
+[00:09:41] [Server thread/INFO]: Changed the block at 44, 28, 57
+[00:09:41] [Server thread/INFO]: Changed the block at 48, 28, 57
+[00:09:41] [Server thread/INFO]: Changed the block at 49, 28, 57
+[00:09:41] [Server thread/INFO]: Changed the block at 43, 28, 58
+[00:09:41] [Server thread/INFO]: Changed the block at 48, 29, 59
+[00:09:41] [Server thread/INFO]: Changed the block at 45, 27, 51
+[00:09:41] [Server thread/INFO]: Changed the block at 43, 27, 53
+[00:09:41] [Server thread/INFO]: Changed the block at 47, 27, 53
+[00:09:41] [Server thread/INFO]: Changed the block at 41, 27, 55
+[00:09:41] [Server thread/INFO]: Changed the block at 43, 27, 57
+[00:09:41] [Server thread/INFO]: Changed the block at 47, 27, 57
+[00:09:41] [Server thread/INFO]: Changed the block at 48, 27, 59
+[00:09:41] [Server thread/INFO]: Changed the block at 45, 27, 52
+[00:09:41] [Server thread/INFO]: Successfully filled 2 blocks
+[00:09:41] [Server thread/INFO]: Successfully filled 2 blocks
+[00:09:41] [Server thread/INFO]: Changed the block at 42, 27, 55
+[00:09:41] [Server thread/INFO]: Changed the block at 49, 27, 55
+[00:09:41] [Server thread/INFO]: Successfully filled 2 blocks
+[00:09:41] [Server thread/INFO]: Successfully filled 2 blocks
+[00:09:41] [Server thread/INFO]: Changed the block at 45, 27, 56
+[00:09:41] [Server thread/INFO]: Changed the block at 46, 27, 55
+[00:09:41] [Server thread/INFO]: Changed the block at 45, 27, 54
+[00:09:41] [Server thread/INFO]: Changed the block at 44, 27, 55
+[00:09:41] [Server thread/INFO]: Changed the block at 47, 27, 59
+[00:09:41] [Server thread/INFO]: Changed the block at 44, 28, 54
+[00:09:42] [Server thread/INFO]: Changed the block at 44, 28, 56
+[00:09:42] [Server thread/INFO]: Changed the block at 46, 28, 54
+[00:09:42] [Server thread/INFO]: Changed the block at 46, 28, 56
+[00:09:42] [Server thread/INFO]: Changed the block at 49, 28, 55
+[00:09:42] [Server thread/INFO]: Successfully filled 9 blocks
+[00:09:42] [Server thread/INFO]: Successfully filled 9 blocks
+[00:09:42] [Server thread/INFO]: Changed the block at 45, 26, 55
+[00:09:42] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:42] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:42] [Server thread/INFO]: Changed the block at 45, 26, 60
+[00:09:42] [Server thread/INFO]: Changed the block at 45, 27, 60
+[00:09:42] [Server thread/INFO]: Changed the block at 45, 28, 60
+[00:09:42] [Server thread/INFO]: Changed the block at 45, 29, 60
+[00:09:42] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:42] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:42] [Server thread/INFO]: Successfully filled 480 blocks
+[00:09:42] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:42] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:42] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:42] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:42] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:42] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:42] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:42] [Server thread/INFO]: Successfully filled 440 blocks
+[00:09:42] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:42] [Server thread/INFO]: Successfully filled 440 blocks
+[00:09:42] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:42] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:43] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:43] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:43] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:43] [Server thread/INFO]: Successfully filled 480 blocks
+[00:09:43] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:43] [Server thread/INFO]: Successfully filled 440 blocks
+[00:09:43] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:43] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:43] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:43] [Server thread/INFO]: Successfully filled 436 blocks
+[00:09:43] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:43] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:43] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:43] [Server thread/INFO]: That position is not loaded
+[00:09:43] [Server thread/INFO]: That position is not loaded
+[00:09:43] [Server thread/INFO]: Successfully filled 440 blocks
+[00:09:43] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:43] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:43] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:43] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:43] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:43] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:43] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:43] [Server thread/INFO]: Successfully filled 440 blocks
+[00:09:43] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:43] [Server thread/INFO]: That position is not loaded
+[00:09:43] [Server thread/INFO]: That position is not loaded
+[00:09:43] [Server thread/INFO]: That position is not loaded
+[00:09:44] [Server thread/INFO]: That position is not loaded
+[00:09:44] [Server thread/INFO]: Successfully filled 440 blocks
+[00:09:44] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:44] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:44] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:44] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:44] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:44] [Server thread/INFO]: That position is not loaded
+[00:09:44] [Server thread/INFO]: That position is not loaded
+[00:09:44] [Server thread/INFO]: That position is not loaded
+[00:09:44] [Server thread/INFO]: That position is not loaded
+[00:09:44] [Server thread/INFO]: That position is not loaded
+[00:09:44] [Server thread/INFO]: That position is not loaded
+[00:09:44] [Server thread/INFO]: Successfully filled 440 blocks
+[00:09:44] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:44] [Server thread/INFO]: That position is not loaded
+[00:09:44] [Server thread/INFO]: That position is not loaded
+[00:09:44] [Server thread/INFO]: That position is not loaded
+[00:09:44] [Server thread/INFO]: That position is not loaded
+[00:09:44] [Server thread/INFO]: Unknown block type 'minecraft:wool'
+[00:09:44] [Server thread/INFO]: ...30 33 120 minecraft:wool keep<--[HERE]
+[00:09:44] [Server thread/INFO]: Unknown block type 'minecraft:wool'
+[00:09:44] [Server thread/INFO]: ...r replace minecraft:wool<--[HERE]
+[00:09:44] [Server thread/INFO]: Unknown block type 'minecraft:wool'
+[00:09:44] [Server thread/INFO]: ...40 33 120 minecraft:wool keep<--[HERE]
+[00:09:44] [Server thread/INFO]: Unknown block type 'minecraft:wool'
+[00:09:44] [Server thread/INFO]: ...r replace minecraft:wool<--[HERE]
+[00:09:44] [Server thread/INFO]: That position is not loaded
+[00:09:44] [Server thread/INFO]: That position is not loaded
+[00:09:44] [Server thread/INFO]: Unknown block type 'minecraft:wool'
+[00:09:44] [Server thread/INFO]: ...10 33 130 minecraft:wool keep<--[HERE]
+[00:09:44] [Server thread/INFO]: Unknown block type 'minecraft:wool'
+[00:09:44] [Server thread/INFO]: ...r replace minecraft:wool<--[HERE]
+[00:09:44] [Server thread/INFO]: Unknown block type 'minecraft:wool'
+[00:09:44] [Server thread/INFO]: ...20 33 130 minecraft:wool keep<--[HERE]
+[00:09:44] [Server thread/INFO]: Unknown block type 'minecraft:wool'
+[00:09:44] [Server thread/INFO]: ...r replace minecraft:wool<--[HERE]
+[00:09:44] [Server thread/INFO]: Unknown block type 'minecraft:wool'
+[00:09:44] [Server thread/INFO]: ...30 33 130 minecraft:wool keep<--[HERE]
+[00:09:45] [Server thread/INFO]: Unknown block type 'minecraft:wool'
+[00:09:45] [Server thread/INFO]: ...r replace minecraft:wool<--[HERE]
+[00:09:45] [Server thread/INFO]: That position is not loaded
+[00:09:45] [Server thread/INFO]: That position is not loaded
+[00:09:45] [Server thread/INFO]: That position is not loaded
+[00:09:45] [Server thread/INFO]: That position is not loaded
+[00:09:45] [Server thread/INFO]: Unknown block type 'minecraft:wool'
+[00:09:45] [Server thread/INFO]: ...20 33 140 minecraft:wool keep<--[HERE]
+[00:09:45] [Server thread/INFO]: Unknown block type 'minecraft:wool'
+[00:09:45] [Server thread/INFO]: ...r replace minecraft:wool<--[HERE]
+[00:09:45] [Server thread/INFO]: Unknown block type 'minecraft:wool'
+[00:09:45] [Server thread/INFO]: ...30 33 140 minecraft:wool keep<--[HERE]
+[00:09:45] [Server thread/INFO]: Unknown block type 'minecraft:wool'
+[00:09:45] [Server thread/INFO]: ...r replace minecraft:wool<--[HERE]
+[00:09:45] [Server thread/INFO]: Successfully filled 484 blocks
+[00:09:45] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:45] [Server thread/INFO]: Successfully filled 440 blocks
+[00:09:45] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:45] [Server thread/INFO]: Successfully filled 484 blocks
+[00:09:45] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:45] [Server thread/INFO]: That position is not loaded
+[00:09:45] [Server thread/INFO]: That position is not loaded
+[00:09:45] [Server thread/INFO]: That position is not loaded
+[00:09:45] [Server thread/INFO]: That position is not loaded
+[00:09:45] [Server thread/INFO]: Unknown block type 'minecraft:wool'
+[00:09:45] [Server thread/INFO]: ...20 33 150 minecraft:wool keep<--[HERE]
+[00:09:45] [Server thread/INFO]: Unknown block type 'minecraft:wool'
+[00:09:45] [Server thread/INFO]: ...r replace minecraft:wool<--[HERE]
+[00:09:45] [Server thread/INFO]: Unknown block type 'minecraft:wool'
+[00:09:45] [Server thread/INFO]: ...30 33 150 minecraft:wool keep<--[HERE]
+[00:09:45] [Server thread/INFO]: Unknown block type 'minecraft:wool'
+[00:09:45] [Server thread/INFO]: ...r replace minecraft:wool<--[HERE]
+[00:09:45] [Server thread/INFO]: Successfully filled 440 blocks
+[00:09:45] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:45] [Server thread/INFO]: Changed the block at 55, 31, 155
+[00:09:45] [Server thread/INFO]: Successfully filled 440 blocks
+[00:09:45] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:45] [Server thread/INFO]: Successfully filled 436 blocks
+[00:09:45] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:46] [Server thread/INFO]: That position is not loaded
+[00:09:46] [Server thread/INFO]: That position is not loaded
+[00:09:46] [Server thread/INFO]: Successfully filled 440 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 440 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:46] [Server thread/INFO]: No blocks were filled
+[00:09:46] [Server thread/INFO]: Successfully filled 9 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 81 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 49 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 2 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 2 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:46] [Server thread/INFO]: Changed the block at 66, 29, 174
+[00:09:46] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:46] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:47] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:47] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:47] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:47] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:47] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:47] [Server thread/INFO]: Changed the block at 64, 27, 176
+[00:09:47] [Server thread/INFO]: Changed the block at 66, 27, 176
+[00:09:47] [Server thread/INFO]: Changed the block at 66, 27, 174
+[00:09:47] [Server thread/INFO]: Changed the block at 64, 27, 174
+[00:09:47] [Server thread/INFO]: Changed the block at 65, 27, 176
+[00:09:47] [Server thread/INFO]: Changed the block at 66, 27, 175
+[00:09:47] [Server thread/INFO]: Changed the block at 65, 27, 174
+[00:09:47] [Server thread/INFO]: Changed the block at 64, 27, 175
+[00:09:47] [Server thread/INFO]: Changed the block at 64, 28, 176
+[00:09:47] [Server thread/INFO]: Changed the block at 66, 28, 176
+[00:09:47] [Server thread/INFO]: Changed the block at 66, 28, 174
+[00:09:47] [Server thread/INFO]: Changed the block at 64, 28, 174
+[00:09:47] [Server thread/INFO]: Successfully filled 9 blocks
+[00:09:47] [Server thread/INFO]: Successfully filled 9 blocks
+[00:09:47] [Server thread/INFO]: Changed the block at 65, 26, 175
+[00:09:47] [Server thread/INFO]: Changed the block at 65, 25, 177
+[00:09:47] [Server thread/INFO]: Changed the block at 65, 24, 178
+[00:09:47] [Server thread/INFO]: Changed the block at 65, 25, 179
+[00:09:47] [Server thread/INFO]: Changed the block at 65, 26, 180
+[00:09:47] [Server thread/INFO]: Changed the block at 65, 28, 180
+[00:09:47] [Server thread/INFO]: Changed the block at 65, 25, 178
+[00:09:47] [Server thread/INFO]: Changed the block at 65, 26, 179
+[00:09:47] [Server thread/INFO]: Changed the block at 65, 27, 180
+[00:09:47] [Server thread/INFO]: Changed the block at 65, 29, 180
+[00:09:47] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:47] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:47] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:47] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:47] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:47] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:47] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:48] [Server thread/INFO]: Successfully filled 3 blocks
+[00:09:48] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:48] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:48] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:48] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:48] [Server thread/INFO]: That position is not loaded
+[00:09:48] [Server thread/INFO]: That position is not loaded
+[00:09:48] [Server thread/INFO]: Successfully filled 440 blocks
+[00:09:48] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:48] [Server thread/INFO]: Successfully filled 400 blocks
+[00:09:48] [Server thread/INFO]: Successfully filled 243 blocks
+[00:09:54] [User Authenticator #4/INFO]: UUID of player NinjaKhan is 868979b1-3961-476a-912a-56c08c1648f7
+[00:09:54] [Server thread/INFO]: NinjaKhan[/192.168.1.71:60259] logged in with entity id 20 at (3.458199264487379, 8.316487695453322, 4.390381530877137)
+[00:09:54] [Server thread/INFO]: NinjaKhan joined the game
+[00:14:48] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:48] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:48] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:48] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:48] [Server thread/INFO]: Successfully filled 242 blocks
+[00:14:48] [Server thread/INFO]: Successfully filled 242 blocks
+[00:14:48] [Server thread/INFO]: Could not set the block
+[00:14:48] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:49] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 241 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 241 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 126 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 4 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 81 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 49 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 2 blocks
+[00:14:50] [Server thread/INFO]: Successfully filled 2 blocks
+[00:14:51] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:51] [Server thread/INFO]: Changed the block at 46, 29, 54
+[00:14:51] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:51] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:51] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:51] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:51] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:51] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:51] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:51] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:51] [Server thread/INFO]: Changed the block at 44, 27, 56
+[00:14:51] [Server thread/INFO]: Changed the block at 46, 27, 56
+[00:14:51] [Server thread/INFO]: Changed the block at 46, 27, 54
+[00:14:51] [Server thread/INFO]: Changed the block at 44, 27, 54
+[00:14:51] [Server thread/INFO]: Changed the block at 45, 27, 56
+[00:14:51] [Server thread/INFO]: Changed the block at 46, 27, 55
+[00:14:51] [Server thread/INFO]: Changed the block at 45, 27, 54
+[00:14:51] [Server thread/INFO]: Changed the block at 44, 27, 55
+[00:14:51] [Server thread/INFO]: Changed the block at 44, 28, 56
+[00:14:51] [Server thread/INFO]: Changed the block at 46, 28, 56
+[00:14:52] [Server thread/INFO]: Changed the block at 46, 28, 54
+[00:14:52] [Server thread/INFO]: Changed the block at 44, 28, 54
+[00:14:52] [Server thread/INFO]: Successfully filled 9 blocks
+[00:14:52] [Server thread/INFO]: Successfully filled 9 blocks
+[00:14:52] [Server thread/INFO]: Changed the block at 45, 26, 55
+[00:14:52] [Server thread/INFO]: Changed the block at 45, 25, 57
+[00:14:52] [Server thread/INFO]: Changed the block at 45, 24, 58
+[00:14:52] [Server thread/INFO]: Changed the block at 45, 25, 59
+[00:14:52] [Server thread/INFO]: Could not set the block
+[00:14:52] [Server thread/INFO]: Could not set the block
+[00:14:52] [Server thread/INFO]: Changed the block at 45, 25, 58
+[00:14:52] [Server thread/INFO]: Changed the block at 45, 26, 59
+[00:14:52] [Server thread/INFO]: Could not set the block
+[00:14:52] [Server thread/INFO]: Changed the block at 45, 29, 60
+[00:14:52] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:52] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:52] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:52] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:52] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:52] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:52] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:52] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:52] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:52] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:52] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:52] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:52] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:52] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:52] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:52] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:52] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 484 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 480 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 400 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 440 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 436 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 400 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 440 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 400 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 440 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 440 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 480 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:54] [Server thread/INFO]: Successfully filled 400 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 400 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 400 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 436 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 400 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 400 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 400 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 400 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 400 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 400 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 400 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 242 blocks
+[00:14:55] [Server thread/INFO]: Successfully filled 242 blocks
+[00:14:56] [Server thread/INFO]: Could not set the block
+[00:14:56] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:56] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:56] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:56] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:56] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:56] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:56] [Server thread/INFO]: Successfully filled 400 blocks
+[00:14:56] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:56] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:56] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:56] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:56] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:56] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:56] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:56] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:56] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:56] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:56] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:56] [Server thread/INFO]: Successfully filled 219 blocks
+[00:14:56] [Server thread/INFO]: Successfully filled 231 blocks
+[00:14:56] [Server thread/INFO]: Successfully filled 115 blocks
+[00:14:56] [Server thread/INFO]: Successfully filled 18 blocks
+[00:14:56] [Server thread/INFO]: Successfully filled 18 blocks
+[00:14:56] [Server thread/INFO]: Changed the block at 64, 30, 174
+[00:14:56] [Server thread/INFO]: Changed the block at 66, 30, 174
+[00:14:56] [Server thread/INFO]: Changed the block at 64, 30, 176
+[00:14:56] [Server thread/INFO]: Changed the block at 66, 30, 176
+[00:14:56] [Server thread/INFO]: Changed the block at 68, 31, 179
+[00:14:56] [Server thread/INFO]: Changed the block at 69, 31, 178
+[00:14:57] [Server thread/INFO]: Successfully filled 2 blocks
+[00:14:57] [Server thread/INFO]: Changed the block at 63, 29, 172
+[00:14:57] [Server thread/INFO]: Successfully filled 2 blocks
+[00:14:57] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:57] [Server thread/INFO]: Successfully filled 2 blocks
+[00:14:57] [Server thread/INFO]: Successfully filled 2 blocks
+[00:14:57] [Server thread/INFO]: Changed the block at 65, 29, 172
+[00:14:57] [Server thread/INFO]: Successfully filled 5 blocks
+[00:14:57] [Server thread/INFO]: Successfully filled 6 blocks
+[00:14:57] [Server thread/INFO]: Successfully filled 2 blocks
+[00:14:57] [Server thread/INFO]: Changed the block at 62, 29, 175
+[00:14:57] [Server thread/INFO]: Successfully filled 2 blocks
+[00:14:57] [Server thread/INFO]: Changed the block at 65, 29, 178
+[00:14:57] [Server thread/INFO]: Successfully filled 2 blocks
+[00:14:57] [Server thread/INFO]: Changed the block at 68, 29, 175
+[00:14:57] [Server thread/INFO]: Changed the block at 67, 29, 176
+[00:14:57] [Server thread/INFO]: Changed the block at 64, 29, 171
+[00:14:57] [Server thread/INFO]: Changed the block at 67, 29, 172
+[00:14:57] [Server thread/INFO]: Changed the block at 62, 29, 173
+[00:14:57] [Server thread/INFO]: Changed the block at 69, 29, 174
+[00:14:57] [Server thread/INFO]: Changed the block at 61, 29, 176
+[00:14:57] [Server thread/INFO]: Changed the block at 68, 29, 177
+[00:14:57] [Server thread/INFO]: Changed the block at 69, 29, 178
+[00:14:57] [Server thread/INFO]: Changed the block at 63, 29, 178
+[00:14:57] [Server thread/INFO]: Changed the block at 66, 29, 179
+[00:14:57] [Server thread/INFO]: Successfully filled 9 blocks
+[00:14:57] [Server thread/INFO]: Successfully filled 6 blocks
+[00:14:57] [Server thread/INFO]: Changed the block at 62, 28, 174
+[00:14:57] [Server thread/INFO]: Changed the block at 65, 28, 175
+[00:14:57] [Server thread/INFO]: Successfully filled 4 blocks
+[00:14:57] [Server thread/INFO]: Successfully filled 12 blocks
+[00:14:57] [Server thread/INFO]: Changed the block at 69, 28, 174
+[00:14:57] [Server thread/INFO]: Changed the block at 68, 28, 179
+[00:14:57] [Server thread/INFO]: Changed the block at 69, 28, 178
+[00:14:58] [Server thread/INFO]: Changed the block at 64, 28, 171
+[00:14:58] [Server thread/INFO]: Changed the block at 65, 28, 172
+[00:14:58] [Server thread/INFO]: Changed the block at 67, 28, 172
+[00:14:58] [Server thread/INFO]: Changed the block at 62, 28, 173
+[00:14:58] [Server thread/INFO]: Changed the block at 66, 28, 173
+[00:14:58] [Server thread/INFO]: Changed the block at 63, 28, 174
+[00:14:58] [Server thread/INFO]: Changed the block at 62, 28, 175
+[00:14:58] [Server thread/INFO]: Changed the block at 67, 28, 176
+[00:14:58] [Server thread/INFO]: Changed the block at 61, 28, 176
+[00:14:58] [Server thread/INFO]: Changed the block at 64, 28, 177
+[00:14:58] [Server thread/INFO]: Changed the block at 68, 28, 177
+[00:14:58] [Server thread/INFO]: Changed the block at 69, 28, 177
+[00:14:58] [Server thread/INFO]: Changed the block at 63, 28, 178
+[00:14:58] [Server thread/INFO]: Changed the block at 68, 29, 179
+[00:14:58] [Server thread/INFO]: Changed the block at 65, 27, 171
+[00:14:58] [Server thread/INFO]: Changed the block at 63, 27, 173
+[00:14:58] [Server thread/INFO]: Changed the block at 67, 27, 173
+[00:14:58] [Server thread/INFO]: Changed the block at 61, 27, 175
+[00:14:58] [Server thread/INFO]: Changed the block at 63, 27, 177
+[00:14:58] [Server thread/INFO]: Changed the block at 67, 27, 177
+[00:14:58] [Server thread/INFO]: Changed the block at 68, 27, 179
+[00:14:58] [Server thread/INFO]: Changed the block at 65, 27, 172
+[00:14:58] [Server thread/INFO]: Successfully filled 2 blocks
+[00:14:58] [Server thread/INFO]: Successfully filled 2 blocks
+[00:14:59] [Server thread/INFO]: Changed the block at 62, 27, 175
+[00:14:59] [Server thread/INFO]: Changed the block at 69, 27, 175
+[00:14:59] [Server thread/INFO]: Successfully filled 2 blocks
+[00:14:59] [Server thread/INFO]: Successfully filled 2 blocks
+[00:14:59] [Server thread/INFO]: Changed the block at 65, 27, 176
+[00:14:59] [Server thread/INFO]: Changed the block at 66, 27, 175
+[00:14:59] [Server thread/INFO]: Changed the block at 65, 27, 174
+[00:14:59] [Server thread/INFO]: Changed the block at 64, 27, 175
+[00:14:59] [Server thread/INFO]: Changed the block at 67, 27, 179
+[00:14:59] [Server thread/INFO]: Changed the block at 64, 28, 174
+[00:14:59] [Server thread/INFO]: Changed the block at 64, 28, 176
+[00:14:59] [Server thread/INFO]: Changed the block at 66, 28, 174
+[00:14:59] [Server thread/INFO]: Changed the block at 66, 28, 176
+[00:14:59] [Server thread/INFO]: Changed the block at 69, 28, 175
+[00:14:59] [Server thread/INFO]: Successfully filled 9 blocks
+[00:14:59] [Server thread/INFO]: Successfully filled 9 blocks
+[00:14:59] [Server thread/INFO]: Changed the block at 65, 26, 175
+[00:14:59] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:59] [Server thread/INFO]: Successfully filled 3 blocks
+[00:14:59] [Server thread/INFO]: Could not set the block
+[00:14:59] [Server thread/INFO]: Changed the block at 65, 27, 180
+[00:14:59] [Server thread/INFO]: Could not set the block
+[00:14:59] [Server thread/INFO]: Changed the block at 65, 29, 180
+[00:14:59] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:59] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:59] [Server thread/INFO]: Successfully filled 243 blocks
+[00:14:59] [Server thread/INFO]: Successfully filled 243 blocks
+[00:15:00] [Server thread/INFO]: Successfully filled 440 blocks
+[00:15:00] [Server thread/INFO]: Successfully filled 243 blocks
+[00:15:00] [Server thread/INFO]: Successfully filled 243 blocks
+[00:15:00] [Server thread/INFO]: Successfully filled 243 blocks
+[00:15:00] [Server thread/INFO]: Successfully filled 243 blocks
+[00:15:00] [Server thread/INFO]: Successfully filled 243 blocks
+[00:24:58] [Server thread/INFO]: [NinjaKhan: Successfully filled 325 blocks]
+[00:25:36] [Server thread/INFO]: [NinjaKhan: Successfully filled 631 blocks]
+[00:25:47] [Server thread/INFO]: [NinjaKhan: Successfully filled 981 blocks]
+[00:25:53] [Server thread/INFO]: [NinjaKhan: Successfully filled 1339 blocks]
+[00:26:01] [Server thread/INFO]: [NinjaKhan: Successfully filled 1738 blocks]
+[00:26:08] [Server thread/INFO]: [NinjaKhan: Successfully filled 1963 blocks]
+[00:26:17] [Server thread/INFO]: [NinjaKhan: Successfully filled 1934 blocks]
+[00:26:30] [Server thread/INFO]: [NinjaKhan: Successfully filled 1533 blocks]
+[00:26:37] [Server thread/INFO]: [NinjaKhan: Successfully filled 1102 blocks]
+[00:26:44] [Server thread/INFO]: [NinjaKhan: Successfully filled 1098 blocks]
+[00:27:10] [Server thread/INFO]: [NinjaKhan: Successfully filled 865 blocks]
+[00:27:18] [Server thread/INFO]: [NinjaKhan: Successfully filled 1022 blocks]
+[00:27:42] [Server thread/INFO]: [NinjaKhan: Successfully filled 1022 blocks]
+[00:27:52] [Server thread/INFO]: [NinjaKhan: Successfully filled 197 blocks]
+[00:29:45] [Server thread/INFO]: Successfully filled 484 blocks
+[00:29:45] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:45] [Server thread/INFO]: Successfully filled 440 blocks
+[00:29:45] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:45] [Server thread/INFO]: Successfully filled 440 blocks
+[00:29:45] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:45] [Server thread/INFO]: Changed the block at 35, 13, 5
+[00:29:45] [Server thread/INFO]: Successfully filled 440 blocks
+[00:29:45] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:45] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:45] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:45] [Server thread/INFO]: Successfully filled 484 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 436 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 480 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 440 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 440 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 436 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 480 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 440 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 436 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:46] [Server thread/INFO]: Successfully filled 440 blocks
+[00:29:47] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:47] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:47] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:47] [Server thread/INFO]: No blocks were filled
+[00:29:47] [Server thread/INFO]: Successfully filled 27 blocks
+[00:29:47] [Server thread/INFO]: Successfully filled 18 blocks
+[00:29:47] [Server thread/INFO]: Changed the block at 44, 12, 54
+[00:29:47] [Server thread/INFO]: Changed the block at 46, 12, 54
+[00:29:47] [Server thread/INFO]: Changed the block at 44, 12, 56
+[00:29:47] [Server thread/INFO]: Changed the block at 46, 12, 56
+[00:29:47] [Server thread/INFO]: Changed the block at 48, 13, 59
+[00:29:47] [Server thread/INFO]: Changed the block at 49, 13, 58
+[00:29:47] [Server thread/INFO]: Successfully filled 2 blocks
+[00:29:47] [Server thread/INFO]: Changed the block at 43, 11, 52
+[00:29:47] [Server thread/INFO]: Successfully filled 2 blocks
+[00:29:47] [Server thread/INFO]: Successfully filled 3 blocks
+[00:29:47] [Server thread/INFO]: Successfully filled 2 blocks
+[00:29:47] [Server thread/INFO]: Successfully filled 2 blocks
+[00:29:47] [Server thread/INFO]: Changed the block at 45, 11, 52
+[00:29:47] [Server thread/INFO]: Successfully filled 5 blocks
+[00:29:47] [Server thread/INFO]: Successfully filled 6 blocks
+[00:29:47] [Server thread/INFO]: Successfully filled 2 blocks
+[00:29:47] [Server thread/INFO]: Changed the block at 42, 11, 55
+[00:29:47] [Server thread/INFO]: Successfully filled 2 blocks
+[00:29:47] [Server thread/INFO]: Changed the block at 45, 11, 58
+[00:29:47] [Server thread/INFO]: Successfully filled 2 blocks
+[00:29:47] [Server thread/INFO]: Changed the block at 48, 11, 55
+[00:29:47] [Server thread/INFO]: Changed the block at 47, 11, 56
+[00:29:47] [Server thread/INFO]: Changed the block at 44, 11, 51
+[00:29:47] [Server thread/INFO]: Changed the block at 47, 11, 52
+[00:29:47] [Server thread/INFO]: Changed the block at 42, 11, 53
+[00:29:47] [Server thread/INFO]: Changed the block at 49, 11, 54
+[00:29:47] [Server thread/INFO]: Changed the block at 41, 11, 56
+[00:29:47] [Server thread/INFO]: Changed the block at 48, 11, 57
+[00:29:48] [Server thread/INFO]: Changed the block at 49, 11, 58
+[00:29:48] [Server thread/INFO]: Changed the block at 43, 11, 58
+[00:29:48] [Server thread/INFO]: Changed the block at 46, 11, 59
+[00:29:48] [Server thread/INFO]: Successfully filled 9 blocks
+[00:29:48] [Server thread/INFO]: Successfully filled 6 blocks
+[00:29:48] [Server thread/INFO]: Changed the block at 42, 10, 54
+[00:29:48] [Server thread/INFO]: Changed the block at 45, 10, 55
+[00:29:48] [Server thread/INFO]: Successfully filled 4 blocks
+[00:29:48] [Server thread/INFO]: Successfully filled 12 blocks
+[00:29:48] [Server thread/INFO]: Changed the block at 49, 10, 54
+[00:29:48] [Server thread/INFO]: Changed the block at 48, 10, 59
+[00:29:48] [Server thread/INFO]: Changed the block at 49, 10, 58
+[00:29:48] [Server thread/INFO]: Changed the block at 44, 10, 51
+[00:29:48] [Server thread/INFO]: Changed the block at 45, 10, 52
+[00:29:48] [Server thread/INFO]: Changed the block at 47, 10, 52
+[00:29:48] [Server thread/INFO]: Changed the block at 42, 10, 53
+[00:29:48] [Server thread/INFO]: Changed the block at 46, 10, 53
+[00:29:48] [Server thread/INFO]: Changed the block at 43, 10, 54
+[00:29:48] [Server thread/INFO]: Changed the block at 42, 10, 55
+[00:29:48] [Server thread/INFO]: Changed the block at 47, 10, 56
+[00:29:48] [Server thread/INFO]: Changed the block at 41, 10, 56
+[00:29:48] [Server thread/INFO]: Changed the block at 44, 10, 57
+[00:29:48] [Server thread/INFO]: Changed the block at 48, 10, 57
+[00:29:48] [Server thread/INFO]: Changed the block at 49, 10, 57
+[00:29:48] [Server thread/INFO]: Changed the block at 43, 10, 58
+[00:29:48] [Server thread/INFO]: Changed the block at 48, 11, 59
+[00:29:49] [Server thread/INFO]: Changed the block at 45, 9, 51
+[00:29:49] [Server thread/INFO]: Changed the block at 43, 9, 53
+[00:29:49] [Server thread/INFO]: Changed the block at 47, 9, 53
+[00:29:49] [Server thread/INFO]: Changed the block at 41, 9, 55
+[00:29:49] [Server thread/INFO]: Changed the block at 43, 9, 57
+[00:29:49] [Server thread/INFO]: Changed the block at 47, 9, 57
+[00:29:49] [Server thread/INFO]: Changed the block at 48, 9, 59
+[00:29:49] [Server thread/INFO]: Changed the block at 45, 9, 52
+[00:29:49] [Server thread/INFO]: Successfully filled 2 blocks
+[00:29:49] [Server thread/INFO]: Successfully filled 2 blocks
+[00:29:49] [Server thread/INFO]: Changed the block at 42, 9, 55
+[00:29:49] [Server thread/INFO]: Changed the block at 49, 9, 55
+[00:29:49] [Server thread/INFO]: Successfully filled 2 blocks
+[00:29:49] [Server thread/INFO]: Successfully filled 2 blocks
+[00:29:49] [Server thread/INFO]: Changed the block at 45, 9, 56
+[00:29:49] [Server thread/INFO]: Changed the block at 46, 9, 55
+[00:29:49] [Server thread/INFO]: Changed the block at 45, 9, 54
+[00:29:49] [Server thread/INFO]: Changed the block at 44, 9, 55
+[00:29:49] [Server thread/INFO]: Changed the block at 47, 9, 59
+[00:29:49] [Server thread/INFO]: Changed the block at 44, 10, 54
+[00:29:49] [Server thread/INFO]: Changed the block at 44, 10, 56
+[00:29:49] [Server thread/INFO]: Changed the block at 46, 10, 54
+[00:29:49] [Server thread/INFO]: Changed the block at 46, 10, 56
+[00:29:49] [Server thread/INFO]: Changed the block at 49, 10, 55
+[00:29:49] [Server thread/INFO]: Successfully filled 9 blocks
+[00:29:49] [Server thread/INFO]: Successfully filled 9 blocks
+[00:29:49] [Server thread/INFO]: Changed the block at 45, 8, 55
+[00:29:49] [Server thread/INFO]: Successfully filled 3 blocks
+[00:29:49] [Server thread/INFO]: Successfully filled 3 blocks
+[00:29:50] [Server thread/INFO]: Changed the block at 45, 8, 60
+[00:29:50] [Server thread/INFO]: Changed the block at 45, 9, 60
+[00:29:50] [Server thread/INFO]: Changed the block at 45, 10, 60
+[00:29:50] [Server thread/INFO]: Changed the block at 45, 11, 60
+[00:29:50] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:50] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:50] [Server thread/INFO]: Successfully filled 480 blocks
+[00:29:50] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:50] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:50] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:50] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:50] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:50] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:50] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:50] [Server thread/INFO]: Successfully filled 440 blocks
+[00:29:50] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:50] [Server thread/INFO]: Successfully filled 440 blocks
+[00:29:50] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:50] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:50] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:50] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:50] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:50] [Server thread/INFO]: Successfully filled 480 blocks
+[00:29:50] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:50] [Server thread/INFO]: Successfully filled 440 blocks
+[00:29:50] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:50] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:50] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:50] [Server thread/INFO]: Successfully filled 436 blocks
+[00:29:50] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 484 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 440 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 440 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 480 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 440 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 440 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:51] [Server thread/INFO]: Successfully filled 436 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 440 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 440 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 440 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 440 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 480 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 440 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:52] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 484 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 440 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 480 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 440 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:53] [Server thread/INFO]: Changed the block at 55, 13, 155
+[00:29:53] [Server thread/INFO]: Successfully filled 440 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 436 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 440 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:53] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:54] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:54] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:54] [Server thread/INFO]: Successfully filled 440 blocks
+[00:29:54] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:54] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:54] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:54] [Server thread/INFO]: No blocks were filled
+[00:29:54] [Server thread/INFO]: Successfully filled 27 blocks
+[00:29:54] [Server thread/INFO]: Successfully filled 18 blocks
+[00:29:54] [Server thread/INFO]: Changed the block at 64, 12, 174
+[00:29:54] [Server thread/INFO]: Changed the block at 66, 12, 174
+[00:29:54] [Server thread/INFO]: Changed the block at 64, 12, 176
+[00:29:54] [Server thread/INFO]: Changed the block at 66, 12, 176
+[00:29:54] [Server thread/INFO]: Changed the block at 68, 13, 179
+[00:29:54] [Server thread/INFO]: Changed the block at 69, 13, 178
+[00:29:54] [Server thread/INFO]: Successfully filled 2 blocks
+[00:29:54] [Server thread/INFO]: Changed the block at 63, 11, 172
+[00:29:54] [Server thread/INFO]: Successfully filled 2 blocks
+[00:29:54] [Server thread/INFO]: Successfully filled 3 blocks
+[00:29:54] [Server thread/INFO]: Successfully filled 2 blocks
+[00:29:54] [Server thread/INFO]: Successfully filled 2 blocks
+[00:29:54] [Server thread/INFO]: Changed the block at 65, 11, 172
+[00:29:54] [Server thread/INFO]: Successfully filled 5 blocks
+[00:29:54] [Server thread/INFO]: Successfully filled 6 blocks
+[00:29:54] [Server thread/INFO]: Successfully filled 2 blocks
+[00:29:54] [Server thread/INFO]: Changed the block at 62, 11, 175
+[00:29:54] [Server thread/INFO]: Successfully filled 2 blocks
+[00:29:54] [Server thread/INFO]: Changed the block at 65, 11, 178
+[00:29:54] [Server thread/INFO]: Successfully filled 2 blocks
+[00:29:54] [Server thread/INFO]: Changed the block at 68, 11, 175
+[00:29:54] [Server thread/INFO]: Changed the block at 67, 11, 176
+[00:29:54] [Server thread/INFO]: Changed the block at 64, 11, 171
+[00:29:54] [Server thread/INFO]: Changed the block at 67, 11, 172
+[00:29:54] [Server thread/INFO]: Changed the block at 62, 11, 173
+[00:29:54] [Server thread/INFO]: Changed the block at 69, 11, 174
+[00:29:54] [Server thread/INFO]: Changed the block at 61, 11, 176
+[00:29:54] [Server thread/INFO]: Changed the block at 68, 11, 177
+[00:29:54] [Server thread/INFO]: Changed the block at 69, 11, 178
+[00:29:54] [Server thread/INFO]: Changed the block at 63, 11, 178
+[00:29:54] [Server thread/INFO]: Changed the block at 66, 11, 179
+[00:29:55] [Server thread/INFO]: Successfully filled 9 blocks
+[00:29:55] [Server thread/INFO]: Successfully filled 6 blocks
+[00:29:55] [Server thread/INFO]: Changed the block at 62, 10, 174
+[00:29:55] [Server thread/INFO]: Changed the block at 65, 10, 175
+[00:29:55] [Server thread/INFO]: Successfully filled 4 blocks
+[00:29:55] [Server thread/INFO]: Successfully filled 12 blocks
+[00:29:55] [Server thread/INFO]: Changed the block at 69, 10, 174
+[00:29:55] [Server thread/INFO]: Changed the block at 68, 10, 179
+[00:29:55] [Server thread/INFO]: Changed the block at 69, 10, 178
+[00:29:55] [Server thread/INFO]: Changed the block at 64, 10, 171
+[00:29:55] [Server thread/INFO]: Changed the block at 65, 10, 172
+[00:29:55] [Server thread/INFO]: Changed the block at 67, 10, 172
+[00:29:55] [Server thread/INFO]: Changed the block at 62, 10, 173
+[00:29:55] [Server thread/INFO]: Changed the block at 66, 10, 173
+[00:29:55] [Server thread/INFO]: Changed the block at 63, 10, 174
+[00:29:55] [Server thread/INFO]: Changed the block at 62, 10, 175
+[00:29:55] [Server thread/INFO]: Changed the block at 67, 10, 176
+[00:29:55] [Server thread/INFO]: Changed the block at 61, 10, 176
+[00:29:55] [Server thread/INFO]: Changed the block at 64, 10, 177
+[00:29:55] [Server thread/INFO]: Changed the block at 68, 10, 177
+[00:29:55] [Server thread/INFO]: Changed the block at 69, 10, 177
+[00:29:55] [Server thread/INFO]: Changed the block at 63, 10, 178
+[00:29:55] [Server thread/INFO]: Changed the block at 68, 11, 179
+[00:29:55] [Server thread/INFO]: Changed the block at 65, 9, 171
+[00:29:55] [Server thread/INFO]: Changed the block at 63, 9, 173
+[00:29:55] [Server thread/INFO]: Changed the block at 67, 9, 173
+[00:29:55] [Server thread/INFO]: Changed the block at 61, 9, 175
+[00:29:55] [Server thread/INFO]: Changed the block at 63, 9, 177
+[00:29:55] [Server thread/INFO]: Changed the block at 67, 9, 177
+[00:29:55] [Server thread/INFO]: Changed the block at 68, 9, 179
+[00:29:55] [Server thread/INFO]: Changed the block at 65, 9, 172
+[00:29:55] [Server thread/INFO]: Successfully filled 2 blocks
+[00:29:55] [Server thread/INFO]: Successfully filled 2 blocks
+[00:29:55] [Server thread/INFO]: Changed the block at 62, 9, 175
+[00:29:55] [Server thread/INFO]: Changed the block at 69, 9, 175
+[00:29:55] [Server thread/INFO]: Successfully filled 2 blocks
+[00:29:55] [Server thread/INFO]: Successfully filled 2 blocks
+[00:29:55] [Server thread/INFO]: Changed the block at 65, 9, 176
+[00:29:55] [Server thread/INFO]: Changed the block at 66, 9, 175
+[00:29:55] [Server thread/INFO]: Changed the block at 65, 9, 174
+[00:29:55] [Server thread/INFO]: Changed the block at 64, 9, 175
+[00:29:56] [Server thread/INFO]: Changed the block at 67, 9, 179
+[00:29:56] [Server thread/INFO]: Changed the block at 64, 10, 174
+[00:29:56] [Server thread/INFO]: Changed the block at 64, 10, 176
+[00:29:56] [Server thread/INFO]: Changed the block at 66, 10, 174
+[00:29:56] [Server thread/INFO]: Changed the block at 66, 10, 176
+[00:29:56] [Server thread/INFO]: Changed the block at 69, 10, 175
+[00:29:56] [Server thread/INFO]: Successfully filled 9 blocks
+[00:29:56] [Server thread/INFO]: Successfully filled 9 blocks
+[00:29:56] [Server thread/INFO]: Changed the block at 65, 8, 175
+[00:29:56] [Server thread/INFO]: Successfully filled 3 blocks
+[00:29:56] [Server thread/INFO]: Successfully filled 3 blocks
+[00:29:56] [Server thread/INFO]: Changed the block at 65, 8, 180
+[00:29:56] [Server thread/INFO]: Changed the block at 65, 9, 180
+[00:29:56] [Server thread/INFO]: Changed the block at 65, 10, 180
+[00:29:56] [Server thread/INFO]: Changed the block at 65, 11, 180
+[00:29:56] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:56] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:56] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:56] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:56] [Server thread/INFO]: That position is not loaded
+[00:29:56] [Server thread/INFO]: That position is not loaded
+[00:29:56] [Server thread/INFO]: Successfully filled 440 blocks
+[00:29:56] [Server thread/INFO]: Successfully filled 243 blocks
+[00:29:56] [Server thread/INFO]: Successfully filled 400 blocks
+[00:29:56] [Server thread/INFO]: Successfully filled 243 blocks

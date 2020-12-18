@@ -495,7 +495,7 @@ if __name__ == "__main__":
         #f.write(command + "\n")
     #f.close()
     currxf = 0.0
-    curry = 3
+    curry = 12
     currzf = 0.0
     stage = 1
 
@@ -511,19 +511,19 @@ if __name__ == "__main__":
                         stage = 2
                         break
                     if c == 'S':
-                        for command in getStart((10 * currx), (10 * curry), (10 * currz),
+                        for command in getStart((10 * currx), (curry), (10 * currz),
                                                                                     getBlock(getSection(currx, currz))):
                             comf.write(command + "\n")
                     if c == 'E':
-                        for command in getEnd((10 * currx), (10 * curry), (10 * currz),
+                        for command in getEnd((10 * currx), (curry), (10 * currz),
                                                                                     getBlock(getSection(currx, currz))):
                             comf.write(command + "\n")
                     if c == 'R':
-                        for command in getRoom((10 * currx), (10 * curry), (10 * currz),
+                        for command in getRoom((10 * currx), (curry), (10 * currz),
                                                                                     getBlock(getSection(currx, currz))):
                             comf.write(command + "\n")
                     if c == 'P':
-                        for command in getPuzzle((10 * currx), (10 * curry), (10 * currz),
+                        for command in getPuzzle((10 * currx), (curry), (10 * currz),
                                                                                     getBlock(getSection(currx, currz))):
                             comf.write(command + "\n")
                     currxf += 0.5
