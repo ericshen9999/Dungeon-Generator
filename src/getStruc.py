@@ -499,6 +499,7 @@ if __name__ == "__main__":
     curry = 12
     currzf = 0.0
     stage = 1
+    s3pos = 0
 
     comf = open("commands.txt", "w")
     with open("map.txt") as mapf:
@@ -532,6 +533,9 @@ if __name__ == "__main__":
                 if stage == 2:
                     if c == '*':
                         stage = 3
+                        s3pos = mapf.tell()
+                        mapf.seek(0)
+                        currzf = -0.5
                         break
                     temp = re.sub(r'[(,)]', '', line)
                     locationList = temp.split()
@@ -541,7 +545,15 @@ if __name__ == "__main__":
                     break
 
                 if stage == 3:
-                    break
+                    currx = int(currxf)
+                    currz = int(currzf)
+                    if c == '|':
+                        for command in generateDoor((10 * currx), (curry), (10 * currz), "south"):
+                            comf.write(command + "\n")
+                    if c == '-':
+                        for command in generateDoor((10 * currx), (curry), (10 * currz), "east"):
+                            comf.write(command + "\n")
+                    currxf += 0.5
             currxf = 0
             currzf += 0.5
 
