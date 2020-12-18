@@ -472,6 +472,7 @@ if __name__ == "__main__":
     absolutey = 3
     absolutez = localy * 11
     block = roomType[getSection(localx,localy)]
+    f = open("commands.txt", "w")
     for command in getStart(absolutex,absolutey,absolutez,block):
-        print(command)
-    
+        f.write(command + "\n")
+    f.close()
