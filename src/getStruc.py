@@ -84,13 +84,13 @@ def get3x3(x,y,z,block):
     command = "/fill " + str(x+4) + " " + str(y) + " " + str(z+8) + " " + str(x+6) + " " + str(y) + " " + str(z+8) + " minecraft:powered_rail replace"
     commandlist.append(command)
 
-    command = "/fill " + str(x+3) + " " + str(y-1) + " " + str(z+4) + " " + str(x+3) + " " + str(y-1) + " " + str(z+6) + " minecraft:sticky_piston[facing=north] replace"
+    command = "/fill " + str(x+3) + " " + str(y-1) + " " + str(z+4) + " " + str(x+3) + " " + str(y-1) + " " + str(z+6) + " minecraft:sticky_piston[facing=east] replace"
     commandlist.append(command)
-    command = "/fill " + str(x+7) + " " + str(y-1) + " " + str(z+4) + " " + str(x+7) + " " + str(y-1) + " " + str(z+6) + " minecraft:sticky_piston[facing=south] replace"
+    command = "/fill " + str(x+7) + " " + str(y-1) + " " + str(z+4) + " " + str(x+7) + " " + str(y-1) + " " + str(z+6) + " minecraft:sticky_piston[facing=west] replace"
     commandlist.append(command)
-    command = "/fill " + str(x+4) + " " + str(y-1) + " " + str(z+3) + " " + str(x+6) + " " + str(y-1) + " " + str(z+3) + " minecraft:sticky_piston[facing=west] replace"
+    command = "/fill " + str(x+4) + " " + str(y-1) + " " + str(z+3) + " " + str(x+6) + " " + str(y-1) + " " + str(z+3) + " minecraft:sticky_piston[facing=south] replace"
     commandlist.append(command)
-    command = "/fill " + str(x+4) + " " + str(y-1) + " " + str(z+7) + " " + str(x+6) + " " + str(y-1) + " " + str(z+7) + " minecraft:sticky_piston[facing=east] replace"
+    command = "/fill " + str(x+4) + " " + str(y-1) + " " + str(z+7) + " " + str(x+6) + " " + str(y-1) + " " + str(z+7) + " minecraft:sticky_piston[facing=north] replace"
     commandlist.append(command)
 
     command = "/fill " + str(x+4) + " " + str(y-1) + " " + str(z+5) + " " + str(x+4) + " " + str(y-1) + " " + str(z+6) + " minecraft:smooth_quartz replace"
@@ -102,13 +102,13 @@ def get3x3(x,y,z,block):
     command = "/setblock " + str(x+6) + " " + str(y-1) + " " + str(z+4) + " minecraft:redstone_block replace"
     commandlist.append(command)
 
-    command = "/fill " + str(x+2) + " " + str(y-2) + " " + str(z+4) + " " + str(x+2) + " " + str(y-2) + " " + str(z+6) + " minecraft:observer[facing=south] replace"
+    command = "/fill " + str(x+2) + " " + str(y-2) + " " + str(z+4) + " " + str(x+2) + " " + str(y-2) + " " + str(z+6) + " minecraft:observer[facing=west] replace"
     commandlist.append(command)
-    command = "/fill " + str(x+8) + " " + str(y-2) + " " + str(z+4) + " " + str(x+8) + " " + str(y-2) + " " + str(z+6) + " minecraft:observer[facing=north] replace"
+    command = "/fill " + str(x+8) + " " + str(y-2) + " " + str(z+4) + " " + str(x+8) + " " + str(y-2) + " " + str(z+6) + " minecraft:observer[facing=east] replace"
     commandlist.append(command)
-    command = "/fill " + str(x+4) + " " + str(y-2) + " " + str(z+2) + " " + str(x+6) + " " + str(y-2) + " " + str(z+2) + " minecraft:observer[facing=east] replace"
+    command = "/fill " + str(x+4) + " " + str(y-2) + " " + str(z+2) + " " + str(x+6) + " " + str(y-2) + " " + str(z+2) + " minecraft:observer[facing=north] replace"
     commandlist.append(command)
-    command = "/fill " + str(x+4) + " " + str(y-2) + " " + str(z+8) + " " + str(x+6) + " " + str(y-2) + " " + str(z+8) + " minecraft:observer[facing=west] replace"
+    command = "/fill " + str(x+4) + " " + str(y-2) + " " + str(z+8) + " " + str(x+6) + " " + str(y-2) + " " + str(z+8) + " minecraft:observer[facing=south] replace"
     commandlist.append(command)
 
     command = "/fill " + str(x+3) + " " + str(y-2) + " " + str(z+4) + " " + str(x+3) + " " + str(y-2) + " " + str(z+6) + " minecraft:stone_bricks replace"
@@ -129,13 +129,13 @@ def get3x3(x,y,z,block):
     command = "/setblock " + str(x+4) + " " + str(y-3) + " " + str(z+4) + " minecraft:stone_bricks replace"
     commandlist.append(command)
 
-    command = "/setblock " + str(x+5) + " " + str(y-3) + " " + str(z+6) + " minecraft:redstone_wall_torch[facing=north] replace"
+    command = "/setblock " + str(x+5) + " " + str(y-3) + " " + str(z+6) + " minecraft:redstone_wall_torch[facing=west] replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+6) + " " + str(y-3) + " " + str(z+5) + " minecraft:redstone_wall_torch[facing=east] replace"
+    command = "/setblock " + str(x+6) + " " + str(y-3) + " " + str(z+5) + " minecraft:redstone_wall_torch[facing=south] replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+5) + " " + str(y-3) + " " + str(z+4) + " minecraft:redstone_wall_torch[facing=south] replace"
+    command = "/setblock " + str(x+5) + " " + str(y-3) + " " + str(z+4) + " minecraft:redstone_wall_torch[facing=east] replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+4) + " " + str(y-3) + " " + str(z+5) + " minecraft:redstone_wall_torch[facing=west] replace"
+    command = "/setblock " + str(x+4) + " " + str(y-3) + " " + str(z+5) + " minecraft:redstone_wall_torch[facing=north] replace"
     commandlist.append(command)
     
     command = "/setblock " + str(x+4) + " " + str(y-2) + " " + str(z+6) + " minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace"
@@ -178,13 +178,13 @@ def get3x3(x,y,z,block):
     command = "/setblock " + str(x+5) + " " + str(y-1) + " " + str(z+10) + " minecraft:redstone_torch replace"
     commandlist.append(command)
 
-    command = "/fill " + str(x+2) + " " + str(y+1) + " " + str(z+4) + " " + str(x+2) + " " + str(y+1) + " " + str(z+6) + " " + block + " replace"
+    command = "/fill " + str(x+2) + " " + str(y+1) + " " + str(z+4) + " " + str(x+2) + " " + str(y+1) + " " + str(z+6) + " minecraft:quartz_block replace"
     commandlist.append(command)
-    command = "/fill " + str(x+8) + " " + str(y+1) + " " + str(z+4) + " " + str(x+8) + " " + str(y+1) + " " + str(z+6) + " " + block + " replace"
+    command = "/fill " + str(x+8) + " " + str(y+1) + " " + str(z+4) + " " + str(x+8) + " " + str(y+1) + " " + str(z+6) + " minecraft:quartz_block replace"
     commandlist.append(command)
-    command = "/fill " + str(x+4) + " " + str(y+1) + " " + str(z+2) + " " + str(x+6) + " " + str(y+1) + " " + str(z+2) + " " + block + " replace"
+    command = "/fill " + str(x+4) + " " + str(y+1) + " " + str(z+2) + " " + str(x+6) + " " + str(y+1) + " " + str(z+2) + " minecraft:quartz_block replace"
     commandlist.append(command)
-    command = "/fill " + str(x+4) + " " + str(y+1) + " " + str(z+8) + " " + str(x+6) + " " + str(y+1) + " " + str(z+8) + " " + block + " replace"
+    command = "/fill " + str(x+4) + " " + str(y+1) + " " + str(z+8) + " " + str(x+6) + " " + str(y+1) + " " + str(z+8) + " minecraft:quartz_block replace"
     commandlist.append(command)
     
     command = "/fill " + str(x+2) + " " + str(y+2) + " " + str(z+4) + " " + str(x+2) + " " + str(y+2) + " " + str(z+6) + " minecraft:stone_button[face=floor, facing=south] replace"
@@ -257,23 +257,23 @@ def getTape(x,y,z,block):
     command = "/setblock " + str(x+7) + " " + str(y-1) + " " + str(z+6) + " minecraft:redstone_block replace"
     commandlist.append(command)
 
-    command = "/setblock " + str(x+4) + " " + str(y-1) + " " + str(z+1) + " minecraft:piston[facing=north] replace"
+    command = "/setblock " + str(x+4) + " " + str(y-1) + " " + str(z+1) + " minecraft:piston[facing=south] replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+7) + " " + str(y-1) + " " + str(z+2) + " minecraft:piston[facing=west] replace"
+    command = "/setblock " + str(x+7) + " " + str(y-1) + " " + str(z+2) + " minecraft:piston[facing=east] replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+2) + " " + str(y-1) + " " + str(z+3) + " minecraft:piston[facing=north] replace"
+    command = "/setblock " + str(x+2) + " " + str(y-1) + " " + str(z+3) + " minecraft:piston[facing=south] replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+9) + " " + str(y-1) + " " + str(z+4) + " minecraft:piston[facing=west] replace"
+    command = "/setblock " + str(x+9) + " " + str(y-1) + " " + str(z+4) + " minecraft:piston[facing=east] replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+1) + " " + str(y-1) + " " + str(z+6) + " minecraft:piston[facing=east] replace"
+    command = "/setblock " + str(x+1) + " " + str(y-1) + " " + str(z+6) + " minecraft:piston[facing=west] replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+8) + " " + str(y-1) + " " + str(z+7) + " minecraft:piston[facing=south] replace"
+    command = "/setblock " + str(x+8) + " " + str(y-1) + " " + str(z+7) + " minecraft:piston[facing=north] replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+9) + " " + str(y-1) + " " + str(z+8) + " minecraft:piston[facing=south] replace"
+    command = "/setblock " + str(x+9) + " " + str(y-1) + " " + str(z+8) + " minecraft:piston[facing=north] replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+3) + " " + str(y-1) + " " + str(z+8) + " minecraft:piston[facing=east] replace"
+    command = "/setblock " + str(x+3) + " " + str(y-1) + " " + str(z+8) + " minecraft:piston[facing=west] replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+6) + " " + str(y-1) + " " + str(z+9) + " minecraft:piston[facing=south] replace"
+    command = "/setblock " + str(x+6) + " " + str(y-1) + " " + str(z+9) + " minecraft:piston[facing=north] replace"
     commandlist.append(command)
 
     command = "/fill " + str(x+4) + " " + str(y-2) + " " + str(z+1) + " " + str(x+6) + " " + str(y-2) + " " + str(z+3) + " minecraft:black_concrete replace"
@@ -293,7 +293,7 @@ def getTape(x,y,z,block):
     commandlist.append(command)
     command = "/setblock " + str(x+8) + " " + str(y-2) + " " + str(z+9) + " minecraft:stone_bricks replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+9) + " " + str(y-2) + " " + str(z+8) + " minecraft:sticky_piston[facing=south] replace"
+    command = "/setblock " + str(x+9) + " " + str(y-2) + " " + str(z+8) + " minecraft:sticky_piston[facing=north] replace"
     commandlist.append(command)
 
     command = "/setblock " + str(x+4) + " " + str(y-2) + " " + str(z+1) + " minecraft:observer[facing=down] replace"
@@ -318,7 +318,7 @@ def getTape(x,y,z,block):
     commandlist.append(command)
     command = "/setblock " + str(x+8) + " " + str(y-2) + " " + str(z+7) + " minecraft:observer[facing=down] replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+9) + " " + str(y-2) + " " + str(z+7) + " minecraft:observer[facing=north] replace"
+    command = "/setblock " + str(x+9) + " " + str(y-2) + " " + str(z+7) + " minecraft:observer[facing=south] replace"
     commandlist.append(command)
     command = "/setblock " + str(x+3) + " " + str(y-2) + " " + str(z+8) + " minecraft:observer[facing=down] replace"
     commandlist.append(command)
@@ -326,19 +326,19 @@ def getTape(x,y,z,block):
     command = "/setblock " + str(x+8) + " " + str(y-1) + " " + str(z+9) + " minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace"
     commandlist.append(command)
 
-    command = "/setblock " + str(x+5) + " " + str(y-3) + " " + str(z+1) + " minecraft:piston[facing=west] replace"
+    command = "/setblock " + str(x+5) + " " + str(y-3) + " " + str(z+1) + " minecraft:piston[facing=east] replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+3) + " " + str(y-3) + " " + str(z+3) + " minecraft:piston[facing=west] replace"
+    command = "/setblock " + str(x+3) + " " + str(y-3) + " " + str(z+3) + " minecraft:piston[facing=east] replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+7) + " " + str(y-3) + " " + str(z+3) + " minecraft:piston[facing=south] replace"
+    command = "/setblock " + str(x+7) + " " + str(y-3) + " " + str(z+3) + " minecraft:piston[facing=north] replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+1) + " " + str(y-3) + " " + str(z+5) + " minecraft:piston[facing=north] replace"
+    command = "/setblock " + str(x+1) + " " + str(y-3) + " " + str(z+5) + " minecraft:piston[facing=south] replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+3) + " " + str(y-3) + " " + str(z+7) + " minecraft:piston[facing=north] replace"
+    command = "/setblock " + str(x+3) + " " + str(y-3) + " " + str(z+7) + " minecraft:piston[facing=south] replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+7) + " " + str(y-3) + " " + str(z+7) + " minecraft:piston[facing=east] replace"
+    command = "/setblock " + str(x+7) + " " + str(y-3) + " " + str(z+7) + " minecraft:piston[facing=west] replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+8) + " " + str(y-3) + " " + str(z+9) + " minecraft:piston[facing=west] replace"
+    command = "/setblock " + str(x+8) + " " + str(y-3) + " " + str(z+9) + " minecraft:piston[facing=east] replace"
     commandlist.append(command)
     
     command = "/setblock " + str(x+5) + " " + str(y-3) + " " + str(z+2) + " minecraft:stone_bricks replace"
@@ -356,13 +356,13 @@ def getTape(x,y,z,block):
     command = "/fill " + str(x+6) + " " + str(y-3) + " " + str(z+6) + " " + str(x+7) + " " + str(y-3) + " " + str(z+6) + " minecraft:stone_bricks replace"
     commandlist.append(command)
 
-    command = "/setblock " + str(x+5) + " " + str(y-3) + " " + str(z+6) + " minecraft:redstone_wall_torch[facing=east] replace"
+    command = "/setblock " + str(x+5) + " " + str(y-3) + " " + str(z+6) + " minecraft:redstone_wall_torch[facing=west] replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+6) + " " + str(y-3) + " " + str(z+5) + " minecraft:redstone_wall_torch[facing=south] replace"
+    command = "/setblock " + str(x+6) + " " + str(y-3) + " " + str(z+5) + " minecraft:redstone_wall_torch[facing=north] replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+5) + " " + str(y-3) + " " + str(z+4) + " minecraft:redstone_wall_torch[facing=west] replace"
+    command = "/setblock " + str(x+5) + " " + str(y-3) + " " + str(z+4) + " minecraft:redstone_wall_torch[facing=east] replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+4) + " " + str(y-3) + " " + str(z+5) + " minecraft:redstone_wall_torch[facing=north] replace"
+    command = "/setblock " + str(x+4) + " " + str(y-3) + " " + str(z+5) + " minecraft:redstone_wall_torch[facing=south] replace"
     commandlist.append(command)
     command = "/setblock " + str(x+7) + " " + str(y-3) + " " + str(z+9) + " minecraft:observer[facing=down] replace"
     commandlist.append(command)
@@ -462,10 +462,10 @@ def getPuzzle(x,y,z,block):
     return generateRoom(x,y,z,block) + findPuzzle(x,y,z,choice(list(puzzleType.keys())),block)
         
 getDirection = {
-    (-1,0): "W",
-    (1,0): "E",
-    (0,-1): "S",
-    (0,1): "N"
+    (-1,0): "east",
+    (1,0): "west",
+    (0,-1): "south",
+    (0,1): "north"
 }
 def findDirection(x1,y1,x2,y2):
     return getDirection[x2-x1,y2-y1]
@@ -499,11 +499,13 @@ if __name__ == "__main__":
     curry = 12
     currzf = 0.0
     stage = 1
+    currpos = 0
     s4pos = 0
 
     comf = open("commands.txt", "w")
     with open("map.txt") as mapf:
         for line in mapf:
+            currpos += len(line) + 1
             for c in line:
 
                 if stage == 1:
@@ -511,7 +513,6 @@ if __name__ == "__main__":
                     currz = int(currzf)
                     if c == '*':
                         stage = 2
-                        s4pos += 3
                         break
                     if c == 'S':
                         for command in getStart((10 * currx), (curry), (10 * currz),
@@ -530,21 +531,19 @@ if __name__ == "__main__":
                                                                                     getBlock(getSection(currx, currz))):
                             comf.write(command + "\n")
                     currxf += 0.5
-                    s4pos += 1
 
                 if stage == 2:
                     if c == '*':
                         stage = 3
                         mapf.seek(0)
                         currzf = -0.5
-                        s4pos += 3
+                        s4pos = currpos
                         break
                     temp = re.sub(r'[(,)]', '', line)
                     locationList = temp.split()
                     for command in getKey(10 * int(locationList[0]),curry,10 * int(locationList[1]),
                                             getBlock(getSection(locationList[0],locationList[1])),locationList[2]):
                         comf.write(command + "\n")
-                    s4pos += len(line)
                     break
 
                 if stage == 3:
@@ -563,7 +562,13 @@ if __name__ == "__main__":
                     currxf += 0.5
 
                 if stage == 4:
-                    print(line)
+                    temp = re.sub(r'[(,)]', '', line)
+                    locationList = temp.split()
+                    if locationList[0] == 'Key':
+                        for command in generateLockedDoor(10 * int(locationList[1]), curry, 10 * int(locationList[2]),
+                                            findDirection(int(locationList[1]), int(locationList[2]),
+                                            int(locationList[3]), int(locationList[4])), locationList[5]):
+                            comf.write(command + "\n")
                     break
 
             currxf = 0
