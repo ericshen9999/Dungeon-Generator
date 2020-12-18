@@ -1,26 +1,37 @@
-        X       
-        |       
-  X-<-X-<-X-X   
-  | |   |   |   
-  X X X-X   O-X 
-    |           
-  X-v-X-X       
-      |         
-  X-X-X->-X     
-        |       
-        X       
-        |       
-      X-X-X     
-        |       
-    X-X-v-X     
-      |   |     
-  X-X X X-X     
-    |     |     
-X-<-^ X-X-v     
-| | |   |       
-X X X-X v-X     
-  |   | |       
-X-X   X-X       
-  |     |       
-  X     X       
-                
+R   R K                             
+|   | |                             
+R-R-R-R-R-R                         
+|     | |                           
+P-R-R R R-R-R-R                     
+    |   |                           
+  R-S R-R-R           R R-E-R R     
+    | |   |           |     | |     
+    R R-R P         R R-R-R R R     
+    |     |         | |     | |     
+    R-R R-R-R     R-P-R-K R-R-R-R   
+        | | |     |   |       |     
+      R-R K R R R-R-R R-R R   R R   
+        | |   | |   | |   |   | |   
+        R R-R-R-R-K R R-R-R-R R-R R 
+            |       |   | | | |   | 
+            R-R-R   R R-K R R-R-R-K 
+                              |     
+                              R     
+                                    
+***
+Puzzle (0, 2) (0, 1) 
+Key (4, 1) (4, 2) minecraft:gray_terracotta 
+Puzzle (5, 4) (5, 5) 
+Key (5, 7) (6, 7) minecraft:lime_wool 
+Key (8, 7) (8, 6) minecraft:light_gray_wool 
+Puzzle (10, 5) (11, 5) 
+Key (11, 6) (11, 7) minecraft:white_wool 
+Key (14, 7) (14, 8) minecraft:pink_terracotta 
+Key (15, 6) (15, 5) minecraft:cyan_terracotta 
+***
+(3, 0) minecraft:gray_terracotta
+(5, 6) minecraft:lime_wool
+(9, 7) minecraft:light_gray_wool
+(12, 5) minecraft:white_wool
+(12, 8) minecraft:pink_terracotta
+(17, 8) minecraft:cyan_terracotta
