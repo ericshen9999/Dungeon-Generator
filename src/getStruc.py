@@ -1,4 +1,5 @@
 from random import choice
+import re
 
 # Rooms are 11x11 with 9x9 insides (+10 for the next room since walls overlap)
 # (x,z,y) [-100, 3, 120]
@@ -532,6 +533,11 @@ if __name__ == "__main__":
                     if c == '*':
                         stage = 3
                         break
+                    temp = re.sub(r'[(,)]', '', line)
+                    locationList = temp.split()
+                    for command in getKey(10 * int(locationList[0]),curry,10 * int(locationList[1]),
+                                            getBlock(getSection(locationList[0],locationList[1])),locationList[2]):
+                        comf.write(command + "\n")
 
                 if stage == 3:
                     break
