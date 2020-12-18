@@ -460,6 +460,12 @@ def getKey(x,y,z,block,keyblock):
 def getPuzzle(x,y,z,block):
     return generateRoom(x,y,z,block) + findPuzzle(x,y,z,choice(list(puzzleType.keys())),block)
 
+def removeAll(x,y,z,localx,localy):
+    commandlist = []
+    for i in range(localy):
+        command = "/fill " + str(x) + " " + str(y) + " " + str(z + 10 * i-1) + str(x + localx*10) + " " + str(y) + " " + str(z + 10 * i) + " minecraft:air"
+        commandlist.append(command)
+        
 # Where the start block is
 # /setblock x y+4 z minecraft:pink_carpet
 
