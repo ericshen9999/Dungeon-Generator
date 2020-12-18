@@ -410,7 +410,7 @@ def findPuzzle(x,y,z,name):
 
 def getKeyRoom(x,y,z,block):
     commandlist = []
-    command = "/setblock " + str(x+5) + " " + str(y) + " " + str(z+5) + " minecraft:command_block{Command:\"/give @p minecraft:lever{CanPlaceOn:[" + "'" + "minecraft:" + block + "']}\"} destroy"
+    command = "/setblock " + str(x+5) + " " + str(y) + " " + str(z+5) + " minecraft:command_block{{}Command:\"/give @p minecraft:lever{CanPlaceOn:[" + "'" + "minecraft:" + block + "']{}}\"} destroy"
     commandlist.append(command)
     command = "/setblock " + str(x+5) + " " + str(y+1) + " " + str(z+5) + " minecraft:stone_pressure_plate"
     commandlist.append(command)
@@ -440,10 +440,10 @@ def getBlock(section):
 
 
 def getStart(x,y,z,block):
-    commandlist = ["/setblock " + str(x+5) + " " + str(y+1) + " " + str(z+5) + " minecraft:oak_sign[rotation=0]{Text1:\"\\\"Start\\\"\"}"]
+    commandlist = ["/setblock " + str(x+5) + " " + str(y+1) + " " + str(z+5) + " minecraft:oak_sign[rotation=0]{{}Text1:\"\\\"Start\\\"\"{}}"]
     return generateRoom(x,y,z,block) + commandlist
 def getEnd(x,y,z,block):
-    commandlist = ["/setblock " + str(x+5) + " " + str(y+1) + " " + str(z+5) + " minecraft:oak_sign[rotation=0]{Text1:\"\\\"End\\\"\"}"]
+    commandlist = ["/setblock " + str(x+5) + " " + str(y+1) + " " + str(z+5) + " minecraft:oak_sign[rotation=0]{{}Text1:\"\\\"End\\\"\"{}}"]
     return generateRoom(x,y,z,block) + commandlist
 def getRoom(x,y,z,block):
     return generateRoom(x,y,z,block)
