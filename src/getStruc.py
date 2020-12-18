@@ -197,7 +197,7 @@ def get3x3(x,y,z,block):
 
     return commandlist
 
-def getTape(x,y,z):
+def getTape(x,y,z,block):
     commandlist = []
     command = "/fill " + str(x+1) + " " + str(y-1) + " " + str(z+1) + " " + str(x+9) + " " + str(y-6) + " " + str(z+9) + " minecraft:air replace"
     commandlist.append(command)
@@ -409,9 +409,9 @@ puzzleType = {
 }
 
 # (x,y,z,direction,block) [-100, 3, 120, "north", "white_wool"]
-def findPuzzle(x,y,z,name):
+def findPuzzle(x,y,z,name,block):
     if name in puzzleType:
-        return puzzleType[name](x,y,z)
+        return puzzleType[name](x,y,z,block)
     else:
         print("ERROR:", x, ",", y, ",", z, ",", name, "not found")
         return None
@@ -458,7 +458,7 @@ def getRoom(x,y,z,block):
 def getKey(x,y,z,block,keyblock):
     return generateRoom(x,y,z,block) + getKeyRoom(x,y,z,keyblock)
 def getPuzzle(x,y,z,block):
-    return generateRoom(x,y,z,block) + findPuzzle(x,y,z,choice(list(puzzleType.keys())))
+    return generateRoom(x,y,z,block) + findPuzzle(x,y,z,choice(list(puzzleType.keys())),block)
 
 # Where the start block is
 # /setblock x y+4 z minecraft:pink_carpet
