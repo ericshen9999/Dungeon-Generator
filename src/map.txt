@@ -1,56 +1,42 @@
-  R-R-E                     
-    |                       
-    R-R                     
-    |                       
-R-R-R   R-R                 
-    |     |                 
-  R-R-R-R-K R               
-        |   |               
-      R-R-R-R               
-        |                   
-      R P R                 
-      | | |                 
-    R-R R R R               
-      | | | |               
-      R-R-R K-R             
-          | |               
-        R-R-R R         R   
-          | | |         |   
-        R-R R-R-R     R-R   
-            | |       |     
-            R R-R-R R R     
-              |   | | |     
-            K-R   K-R-R R-R 
-                      | |   
-                  R R-R R   
-                  |   | |   
-                K-R-R R R   
-                  |   | |   
-        R-R     R-R-R-R-R   
-          |       |   |     
-          S-R R-R-R   K     
-          |   |             
-          R-R R R-K         
-          |   | |           
-          R-P-R-R-R         
-            |               
-            R-R             
-                            
+                                R               
+                                |               
+                              R-R-R             
+                                  |             
+                              R-R-R     R       
+                                  |     |       
+                          R K-R-P-R-R-R-R R R   
+                          |   |         | | |   
+                      R-R-R-R-R-R R-K-R-R R-R-R 
+                          | | |       | |   |   
+                    R R K-R R R       R R-K-S   
+                    | | | | |               |   
+R-R               R-R-R-R R R               R   
+  |                   |                         
+R-R   R-R R-R-K-R-R-P-R                         
+  |     |   |   | | | |                         
+E-R-R-R K-R-R   R R R R                         
+|     |   |       | |                           
+R R-R-R-K R       R R                           
+|   |   | |                                     
+R   R   R-R                                     
+        | |                                     
+        R R-R                                   
+                                                
 ***
-Puzzle (6, 17) (7, 17) 
-Key (8, 15) (9, 15) minecraft:lime_terracotta 
-Key (10, 14) (11, 14) minecraft:pink_wool 
-Key (11, 12) (11, 11) minecraft:green_wool 
-Key (9, 10) (8, 10) minecraft:yellow_terracotta 
-Key (6, 9) (6, 8) minecraft:orange_terracotta 
-Key (5, 8) (5, 7) minecraft:blue_terracotta 
-Puzzle (4, 5) (4, 4) 
-Key (3, 3) (2, 3) minecraft:white_terracotta 
+(21, 5) blue_wool
+(18, 4) brown_wool
+(14, 3) blue_terracotta
+(12, 5) black_wool
+(7, 7) red_wool
+(4, 8) orange_wool
+(4, 9) yellow_terracotta
 ***
-(9, 16) minecraft:lime_terracotta
-(8, 13) minecraft:pink_wool
-(11, 15) minecraft:green_wool
-(9, 11) minecraft:yellow_terracotta
-(6, 11) minecraft:orange_terracotta
-(6, 7) minecraft:blue_terracotta
-(5, 3) minecraft:white_terracotta
+Key (20, 5) (20, 4) blue_wool 
+Key (18, 3) (17, 3) brown_wool 
+Puzzle (16, 3) (15, 3) 
+Key (14, 4) (13, 4) blue_terracotta 
+Key (12, 6) (11, 6) black_wool 
+Puzzle (10, 7) (9, 7) 
+Key (6, 8) (5, 8) red_wool 
+Key (5, 10) (4, 10) orange_wool 
+Key (2, 8) (1, 8) yellow_terracotta 
