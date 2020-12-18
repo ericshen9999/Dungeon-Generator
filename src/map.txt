@@ -1,42 +1,39 @@
-                                R               
-                                |               
-                              R-R-R             
-                                  |             
-                              R-R-R     R       
-                                  |     |       
-                          R K-R-P-R-R-R-R R R   
-                          |   |         | | |   
-                      R-R-R-R-R-R R-K-R-R R-R-R 
-                          | | |       | |   |   
-                    R R K-R R R       R R-K-S   
-                    | | | | |               |   
-R-R               R-R-R-R R R               R   
-  |                   |                         
-R-R   R-R R-R-K-R-R-P-R                         
-  |     |   |   | | | |                         
-E-R-R-R K-R-R   R R R R                         
-|     |   |       | |                           
-R R-R-R-K R       R R                           
-|   |   | |                                     
-R   R   R-R                                     
-        | |                                     
-        R R-R                                   
-                                                
+                            R     
+                            |     
+                        R R-R-R   
+                        |     |   
+                      R-R-R-K-R-R 
+                      | |     |   
+      R             P-R R R-R R R 
+      |             |   |   | | | 
+    K-R R         K-R R-R-R R P-R 
+      | |           |   |   | |   
+  R   R-R R     R-R-R-R R R-R-R   
+  |   | | |     |   |     |   |   
+R-R-R-R P-R R-K-R R-R R R-R R R-R 
+  |   |   |   | |   | |   | |     
+R-R-E R R-R R-R R R-R S-R-R-R-K-R 
+  | |     | |   |     | | |       
+  R R   R-R-R   R   R-R R R-R     
+            |         |           
+          R-R         R-K         
+                      |           
+                      R           
+                                  
 ***
-(21, 5) blue_wool
-(18, 4) brown_wool
-(14, 3) blue_terracotta
-(12, 5) black_wool
-(7, 7) red_wool
-(4, 8) orange_wool
-(4, 9) yellow_terracotta
+(12, 9) lime_wool
+(15, 7) light_blue_terracotta
+(14, 2) lime_terracotta
+(9, 4) brown_wool
+(7, 6) magenta_terracotta
+(2, 4) white_wool
 ***
-Key (20, 5) (20, 4) blue_wool 
-Key (18, 3) (17, 3) brown_wool 
-Puzzle (16, 3) (15, 3) 
-Key (14, 4) (13, 4) blue_terracotta 
-Key (12, 6) (11, 6) black_wool 
-Puzzle (10, 7) (9, 7) 
-Key (6, 8) (5, 8) red_wool 
-Key (5, 10) (4, 10) orange_wool 
-Key (2, 8) (1, 8) yellow_terracotta 
+Key (12, 7) (13, 7) lime_wool 
+Key (13, 5) (14, 5) light_blue_terracotta 
+Puzzle (15, 4) (15, 3) 
+Key (13, 2) (12, 2) lime_terracotta 
+Puzzle (10, 3) (10, 4) 
+Key (10, 5) (9, 5) brown_wool 
+Key (6, 7) (6, 8) magenta_terracotta 
+Puzzle (4, 6) (4, 5) 
+Key (3, 6) (2, 6) white_wool 
