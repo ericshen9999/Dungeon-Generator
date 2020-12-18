@@ -1,39 +1,40 @@
-                            R     
-                            |     
-                        R R-R-R   
-                        |     |   
-                      R-R-R-K-R-R 
-                      | |     |   
-      R             P-R R R-R R R 
-      |             |   |   | | | 
-    K-R R         K-R R-R-R R P-R 
-      | |           |   |   | |   
-  R   R-R R     R-R-R-R R R-R-R   
-  |   | | |     |   |     |   |   
-R-R-R-R P-R R-K-R R-R R R-R R R-R 
-  |   |   |   | |   | |   | |     
-R-R-E R R-R R-R R R-R S-R-R-R-K-R 
-  | |     | |   |     | | |       
-  R R   R-R-R   R   R-R R R-R     
-            |         |           
-          R-R         R-K         
-                      |           
-                      R           
-                                  
+        R     R-R   R       
+        |     |     |       
+      R-R-R   R     R       
+        |     |     |       
+      R-E-R-R-R-P-R-R-R     
+        |     | | |         
+        R R-K-R R R-R-R R   
+        |             | |   
+      R-R         R P-R-R-R 
+                  | |   |   
+R K R     R K-R R-R R   R-K 
+| | |     | |     | |       
+R-S-R R R-R-R-R-R R-R-R     
+  |   | |     | |   |       
+  R-R-R-R-R-R R R-R R       
+  | |   | |   |     |       
+  R K-R R K   R-R-R-R       
+    |     |     | |         
+    R-R-R R R-R-R R         
+                |           
+              K-R           
+                            
 ***
-(12, 9) lime_wool
-(15, 7) light_blue_terracotta
-(14, 2) lime_terracotta
-(9, 4) brown_wool
-(7, 6) magenta_terracotta
-(2, 4) white_wool
+(1, 5) pink_terracotta
+(2, 8) brown_wool
+(5, 8) light_gray_terracotta
+(6, 5) yellow_wool
+(7, 10) light_blue_wool
+(13, 5) blue_terracotta
+(6, 3) green_terracotta
 ***
-Key (12, 7) (13, 7) lime_wool 
-Key (13, 5) (14, 5) light_blue_terracotta 
-Puzzle (15, 4) (15, 3) 
-Key (13, 2) (12, 2) lime_terracotta 
-Puzzle (10, 3) (10, 4) 
-Key (10, 5) (9, 5) brown_wool 
-Key (6, 7) (6, 8) magenta_terracotta 
-Puzzle (4, 6) (4, 5) 
-Key (3, 6) (2, 6) white_wool 
+Key (1, 7) (2, 7) pink_terracotta 
+Key (3, 7) (4, 7) brown_wool 
+Key (5, 6) (6, 6) light_gray_terracotta 
+Key (7, 8) (8, 8) yellow_wool 
+Key (10, 8) (10, 7) light_blue_wool 
+Puzzle (10, 4) (11, 4) 
+Key (9, 3) (9, 2) blue_terracotta 
+Puzzle (8, 2) (7, 2) 
+Key (5, 2) (4, 2) green_terracotta 

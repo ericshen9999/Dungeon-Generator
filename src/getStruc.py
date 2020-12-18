@@ -419,7 +419,7 @@ def findPuzzle(x,y,z,name,block):
 
 def getKeyRoom(x,y,z,block):
     commandlist = []
-    command = "/setblock " + str(x+5) + " " + str(y) + " " + str(z+5) + " minecraft:command_block{{}Command:\"/give @p minecraft:lever{{}CanPlaceOn:[" + "'" + "minecraft:" + block + "']{}}\"{}} destroy"
+    command = "/setblock " + str(x+5) + " " + str(y) + " " + str(z+5) + " minecraft:command_block{{}Command:\"/give @p minecraft:lever{{}CanPlaceOn:[" + "'" + "minecraft:" + block + "']{}}\"{}} replace"
     commandlist.append(command)
     command = "/setblock " + str(x+5) + " " + str(y+1) + " " + str(z+5) + " minecraft:stone_pressure_plate"
     commandlist.append(command)
