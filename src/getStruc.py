@@ -466,6 +466,12 @@ roomFunction = {
 }
 if __name__ == "__main__":
     # Test location (-100, 3, 120)
-    for command in getStart(-100,3,120,"ice"):
+    localx = 0
+    localy = 0
+    absolutex = localx * 11
+    absolutey = 3
+    absolutez = localy * 11
+    block = roomType[getSection(localx,localy)]
+    for command in getStart(absolutex,absolutey,absolutez,block):
         print(command)
     
