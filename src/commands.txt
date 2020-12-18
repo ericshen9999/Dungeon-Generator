@@ -1,543 +1,86 @@
-/fill 40 12 0 50 15 10 minecraft:quartz_block keep
-/fill 41 13 1 49 15 9 minecraft:air replace minecraft:quartz_block
-/fill 70 12 0 80 15 10 minecraft:purpur_block keep
-/fill 71 13 1 79 15 9 minecraft:air replace minecraft:purpur_block
-/fill 80 12 0 90 15 10 minecraft:purpur_block keep
-/fill 81 13 1 89 15 9 minecraft:air replace minecraft:purpur_block
-/fill 100 12 0 110 15 10 minecraft:end_stone keep
-/fill 101 13 1 109 15 9 minecraft:air replace minecraft:end_stone
-/fill 30 12 10 40 15 20 minecraft:quartz_block keep
-/fill 31 13 11 39 15 19 minecraft:air replace minecraft:quartz_block
-/fill 40 12 10 50 15 20 minecraft:quartz_block keep
-/fill 41 13 11 49 15 19 minecraft:air replace minecraft:quartz_block
-/fill 50 12 10 60 15 20 minecraft:quartz_block keep
-/fill 51 13 11 59 15 19 minecraft:air replace minecraft:quartz_block
-/fill 70 12 10 80 15 20 minecraft:purpur_block keep
-/fill 71 13 11 79 15 19 minecraft:air replace minecraft:purpur_block
-/fill 100 12 10 110 15 20 minecraft:end_stone keep
-/fill 101 13 11 109 15 19 minecraft:air replace minecraft:end_stone
-/fill 30 12 20 40 15 30 minecraft:quartz_block keep
-/fill 31 13 21 39 15 29 minecraft:air replace minecraft:quartz_block
-/fill 40 12 20 50 15 30 minecraft:quartz_block keep
-/fill 41 13 21 49 15 29 minecraft:air replace minecraft:quartz_block
-/setblock 45 13 25 minecraft:oak_sign[rotation=0]{{}Text1:"\"End\""{}}
-/fill 50 12 20 60 15 30 minecraft:purpur_block keep
-/fill 51 13 21 59 15 29 minecraft:air replace minecraft:purpur_block
-/fill 60 12 20 70 15 30 minecraft:purpur_block keep
-/fill 61 13 21 69 15 29 minecraft:air replace minecraft:purpur_block
-/fill 70 12 20 80 15 30 minecraft:purpur_block keep
-/fill 71 13 21 79 15 29 minecraft:air replace minecraft:purpur_block
-/fill 80 12 20 90 15 30 minecraft:end_stone keep
-/fill 81 13 21 89 15 29 minecraft:air replace minecraft:end_stone
-/fill 81 11 21 89 6 29 minecraft:air replace
-/fill 84 12 24 86 12 26 minecraft:barrier replace
-/fill 81 11 21 89 11 29 minecraft:obsidian replace
-/fill 82 11 22 88 11 28 minecraft:air replace minecraft:obsidian
-/fill 82 11 24 82 11 26 minecraft:sticky_piston[facing=down] replace
-/fill 88 11 24 88 11 26 minecraft:sticky_piston[facing=down] replace
-/fill 84 11 22 86 11 22 minecraft:sticky_piston[facing=down] replace
-/fill 84 11 28 86 11 28 minecraft:sticky_piston[facing=down] replace
-/fill 82 12 24 82 12 26 minecraft:powered_rail replace
-/fill 88 12 24 88 12 26 minecraft:powered_rail replace
-/fill 84 12 22 86 12 22 minecraft:powered_rail replace
-/fill 84 12 28 86 12 28 minecraft:powered_rail replace
-/fill 83 11 24 83 11 26 minecraft:sticky_piston[facing=east] replace
-/fill 87 11 24 87 11 26 minecraft:sticky_piston[facing=west] replace
-/fill 84 11 23 86 11 23 minecraft:sticky_piston[facing=south] replace
-/fill 84 11 27 86 11 27 minecraft:sticky_piston[facing=north] replace
-/fill 84 11 25 84 11 26 minecraft:smooth_quartz replace
-/fill 86 11 25 86 11 26 minecraft:smooth_quartz replace
-/fill 85 11 24 85 11 26 minecraft:redstone_block replace
-/setblock 86 11 24 minecraft:redstone_block replace
-/fill 82 10 24 82 10 26 minecraft:observer[facing=west] replace
-/fill 88 10 24 88 10 26 minecraft:observer[facing=east] replace
-/fill 84 10 22 86 10 22 minecraft:observer[facing=north] replace
-/fill 84 10 28 86 10 28 minecraft:observer[facing=south] replace
-/fill 83 10 24 83 10 26 minecraft:stone_bricks replace
-/fill 87 10 24 87 10 26 minecraft:stone_bricks replace
-/fill 84 10 23 86 10 23 minecraft:stone_bricks replace
-/fill 84 10 27 86 10 27 minecraft:stone_bricks replace
-/setblock 84 9 26 minecraft:stone_bricks replace
-/setblock 86 9 26 minecraft:stone_bricks replace
-/setblock 86 9 24 minecraft:stone_bricks replace
-/setblock 84 9 24 minecraft:stone_bricks replace
-/setblock 85 9 26 minecraft:redstone_wall_torch[facing=west] replace
-/setblock 86 9 25 minecraft:redstone_wall_torch[facing=south] replace
-/setblock 85 9 24 minecraft:redstone_wall_torch[facing=east] replace
-/setblock 84 9 25 minecraft:redstone_wall_torch[facing=north] replace
-/setblock 84 10 26 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
-/setblock 86 10 26 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
-/setblock 86 10 24 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
-/setblock 84 10 24 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
-/fill 84 7 24 86 7 26 minecraft:stone_bricks replace
-/fill 84 8 24 86 8 26 minecraft:redstone_wire replace
-/setblock 85 8 25 minecraft:air replace
-/setblock 85 7 27 minecraft:redstone_wall_torch[facing=west] replace
-/setblock 85 6 28 minecraft:stone_bricks replace
-/setblock 85 7 29 minecraft:stone_bricks replace
-/setblock 85 8 30 minecraft:stone_bricks replace
-/setblock 85 10 30 minecraft:stone_bricks replace
-/setblock 85 7 28 minecraft:redstone_wire replace
-/setblock 85 8 29 minecraft:redstone_wire replace
-/setblock 85 9 30 minecraft:redstone_torch replace
-/setblock 85 11 30 minecraft:redstone_torch replace
-/fill 82 13 24 82 13 26 minecraft:quartz_block replace
-/fill 88 13 24 88 13 26 minecraft:quartz_block replace
-/fill 84 13 22 86 13 22 minecraft:quartz_block replace
-/fill 84 13 28 86 13 28 minecraft:quartz_block replace
-/fill 82 14 24 82 14 26 minecraft:stone_button[face=floor, facing=south] replace
-/fill 88 14 24 88 14 26 minecraft:stone_button[face=floor, facing=north] replace
-/fill 84 14 22 86 14 22 minecraft:stone_button[face=floor, facing=east] replace
-/fill 84 14 28 86 14 28 minecraft:stone_button[face=floor, facing=west] replace
-/fill 90 12 20 100 15 30 minecraft:end_stone keep
-/fill 91 13 21 99 15 29 minecraft:air replace minecraft:end_stone
-/fill 100 12 20 110 15 30 minecraft:end_stone keep
-/fill 101 13 21 109 15 29 minecraft:air replace minecraft:end_stone
-/fill 110 12 20 120 15 30 minecraft:end_stone keep
-/fill 111 13 21 119 15 29 minecraft:air replace minecraft:end_stone
-/fill 40 12 30 50 15 40 minecraft:quartz_block keep
-/fill 41 13 31 49 15 39 minecraft:air replace minecraft:quartz_block
-/fill 50 12 30 60 15 40 minecraft:purpur_block keep
-/fill 51 13 31 59 15 39 minecraft:air replace minecraft:purpur_block
-/fill 70 12 30 80 15 40 minecraft:purpur_block keep
-/fill 71 13 31 79 15 39 minecraft:air replace minecraft:purpur_block
-/fill 80 12 30 90 15 40 minecraft:end_stone keep
-/fill 81 13 31 89 15 39 minecraft:air replace minecraft:end_stone
-/fill 90 12 30 100 15 40 minecraft:slime_block keep
-/fill 91 13 31 99 15 39 minecraft:air replace minecraft:slime_block
-/fill 100 12 30 110 15 40 minecraft:slime_block keep
-/fill 101 13 31 109 15 39 minecraft:air replace minecraft:slime_block
-/fill 110 12 30 120 15 40 minecraft:slime_block keep
-/fill 111 13 31 119 15 39 minecraft:air replace minecraft:slime_block
-/fill 120 12 30 130 15 40 minecraft:slime_block keep
-/fill 121 13 31 129 15 39 minecraft:air replace minecraft:slime_block
-/fill 30 12 40 40 15 50 minecraft:quartz_block keep
-/fill 31 13 41 39 15 49 minecraft:air replace minecraft:quartz_block
-/fill 40 12 40 50 15 50 minecraft:quartz_block keep
-/fill 41 13 41 49 15 49 minecraft:air replace minecraft:quartz_block
-/fill 90 12 40 100 15 50 minecraft:ice keep
-/fill 91 13 41 99 15 49 minecraft:air replace minecraft:ice
-/fill 100 12 40 110 15 50 minecraft:ice keep
-/fill 101 13 41 109 15 49 minecraft:air replace minecraft:ice
-/fill 101 11 41 109 6 49 minecraft:air replace
-/fill 104 12 41 106 12 49 minecraft:barrier replace
-/fill 101 12 44 109 12 46 minecraft:barrier replace
-/setblock 104 12 44 minecraft:red_stained_glass replace
-/setblock 106 12 44 minecraft:red_stained_glass replace
-/setblock 104 12 46 minecraft:red_stained_glass replace
-/setblock 106 12 46 minecraft:red_stained_glass replace
-/setblock 108 13 49 minecraft:stone_button[face=floor, facing=west] replace
-/setblock 109 13 48 minecraft:stone_button[face=floor, facing=north] replace
-/fill 105 11 41 106 11 41 minecraft:black_concrete replace
-/setblock 103 11 42 minecraft:black_concrete replace
-/fill 101 11 44 101 11 45 minecraft:black_concrete replace
-/fill 101 11 47 103 11 47 minecraft:black_concrete replace
-/fill 109 11 45 109 11 46 minecraft:black_concrete replace
-/fill 104 11 49 105 11 49 minecraft:black_concrete replace
-/setblock 105 11 42 minecraft:white_concrete replace
-/fill 104 11 43 104 11 47 minecraft:white_concrete replace
-/fill 106 11 43 106 11 48 minecraft:white_concrete replace
-/fill 103 11 44 106 11 44 minecraft:white_concrete replace
-/setblock 102 11 45 minecraft:white_concrete replace
-/fill 103 11 46 106 11 46 minecraft:white_concrete replace
-/setblock 105 11 48 minecraft:white_concrete replace
-/fill 107 11 44 108 11 44 minecraft:redstone_block replace
-/setblock 108 11 45 minecraft:redstone_block replace
-/setblock 107 11 46 minecraft:redstone_block replace
-/setblock 104 11 41 minecraft:piston[facing=south] replace
-/setblock 107 11 42 minecraft:piston[facing=east] replace
-/setblock 102 11 43 minecraft:piston[facing=south] replace
-/setblock 109 11 44 minecraft:piston[facing=east] replace
-/setblock 101 11 46 minecraft:piston[facing=west] replace
-/setblock 108 11 47 minecraft:piston[facing=north] replace
-/setblock 109 11 48 minecraft:piston[facing=north] replace
-/setblock 103 11 48 minecraft:piston[facing=west] replace
-/setblock 106 11 49 minecraft:piston[facing=north] replace
-/fill 104 10 41 106 10 43 minecraft:black_concrete replace
-/fill 101 10 45 103 10 46 minecraft:black_concrete replace
-/setblock 102 10 44 minecraft:black_concrete replace
-/setblock 105 10 45 minecraft:black_concrete replace
-/fill 107 10 45 108 10 46 minecraft:black_concrete replace
-/fill 103 10 47 106 10 49 minecraft:black_concrete replace
-/setblock 109 10 44 minecraft:stone_bricks replace
-/setblock 108 10 49 minecraft:stone_bricks replace
-/setblock 109 10 48 minecraft:sticky_piston[facing=north] replace
-/setblock 104 10 41 minecraft:observer[facing=down] replace
-/setblock 105 10 42 minecraft:observer[facing=up] replace
-/setblock 107 10 42 minecraft:observer[facing=down] replace
-/setblock 102 10 43 minecraft:observer[facing=down] replace
-/setblock 106 10 43 minecraft:observer[facing=up] replace
-/setblock 103 10 44 minecraft:observer[facing=up] replace
-/setblock 102 10 45 minecraft:observer[facing=up] replace
-/setblock 107 10 46 minecraft:observer[facing=up] replace
-/setblock 101 10 46 minecraft:observer[facing=down] replace
-/setblock 104 10 47 minecraft:observer[facing=up] replace
-/setblock 108 10 47 minecraft:observer[facing=down] replace
-/setblock 109 10 47 minecraft:observer[facing=south] replace
-/setblock 103 10 48 minecraft:observer[facing=down] replace
-/setblock 108 11 49 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
-/setblock 105 9 41 minecraft:piston[facing=east] replace
-/setblock 103 9 43 minecraft:piston[facing=east] replace
-/setblock 107 9 43 minecraft:piston[facing=north] replace
-/setblock 101 9 45 minecraft:piston[facing=south] replace
-/setblock 103 9 47 minecraft:piston[facing=south] replace
-/setblock 107 9 47 minecraft:piston[facing=west] replace
-/setblock 108 9 49 minecraft:piston[facing=east] replace
-/setblock 105 9 42 minecraft:stone_bricks replace
-/fill 106 9 43 106 9 44 minecraft:stone_bricks replace
-/fill 103 9 44 104 9 44 minecraft:stone_bricks replace
-/setblock 102 9 45 minecraft:stone_bricks replace
-/setblock 109 9 45 minecraft:stone_bricks replace
-/fill 104 9 46 104 9 47 minecraft:stone_bricks replace
-/fill 106 9 46 107 9 46 minecraft:stone_bricks replace
-/setblock 105 9 46 minecraft:redstone_wall_torch[facing=west] replace
-/setblock 106 9 45 minecraft:redstone_wall_torch[facing=north] replace
-/setblock 105 9 44 minecraft:redstone_wall_torch[facing=east] replace
-/setblock 104 9 45 minecraft:redstone_wall_torch[facing=south] replace
-/setblock 107 9 49 minecraft:observer[facing=down] replace
-/setblock 104 10 44 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
-/setblock 104 10 46 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
-/setblock 106 10 44 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
-/setblock 106 10 46 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
-/setblock 109 10 45 minecraft:redstone_wire[east=side, north=side, south=side, west=side] replace
-/fill 104 7 44 106 7 46 minecraft:stone_bricks replace
-/fill 104 8 44 106 8 46 minecraft:redstone_wire replace
-/setblock 105 8 45 minecraft:air replace
-/fill 105 7 47 105 7 49 minecraft:stone_bricks replace
-/fill 105 8 47 105 8 49 minecraft:redstone_wire replace
-/setblock 105 8 50 minecraft:stone_bricks replace
-/setblock 105 9 50 minecraft:redstone_torch replace
-/setblock 105 10 50 minecraft:stone_bricks replace
-/setblock 105 11 50 minecraft:redstone_torch replace
-/fill 110 12 40 120 15 50 minecraft:slime_block keep
-/fill 111 13 41 119 15 49 minecraft:air replace minecraft:slime_block
-/fill 120 12 40 130 15 50 minecraft:slime_block keep
-/fill 121 13 41 129 15 49 minecraft:air replace minecraft:slime_block
-/fill 130 12 40 140 15 50 minecraft:slime_block keep
-/fill 131 13 41 139 15 49 minecraft:air replace minecraft:slime_block
-/fill 0 12 50 10 15 60 minecraft:netherrack keep
-/fill 1 13 51 9 15 59 minecraft:air replace minecraft:netherrack
-/fill 20 12 50 30 15 60 minecraft:netherrack keep
-/fill 21 13 51 29 15 59 minecraft:air replace minecraft:netherrack
-/fill 50 12 50 60 15 60 minecraft:cobblestone keep
-/fill 51 13 51 59 15 59 minecraft:air replace minecraft:cobblestone
-/fill 70 12 50 80 15 60 minecraft:iron_block keep
-/fill 71 13 51 79 15 59 minecraft:air replace minecraft:iron_block
-/fill 80 12 50 90 15 60 minecraft:ice keep
-/fill 81 13 51 89 15 59 minecraft:air replace minecraft:ice
-/fill 90 12 50 100 15 60 minecraft:ice keep
-/fill 91 13 51 99 15 59 minecraft:air replace minecraft:ice
-/fill 100 12 50 110 15 60 minecraft:ice keep
-/fill 101 13 51 109 15 59 minecraft:air replace minecraft:ice
-/fill 120 12 50 130 15 60 minecraft:slime_block keep
-/fill 121 13 51 129 15 59 minecraft:air replace minecraft:slime_block
-/fill 0 12 60 10 15 70 minecraft:netherrack keep
-/fill 1 13 61 9 15 69 minecraft:air replace minecraft:netherrack
-/fill 10 12 60 20 15 70 minecraft:netherrack keep
-/fill 11 13 61 19 15 69 minecraft:air replace minecraft:netherrack
-/setblock 15 13 65 minecraft:oak_sign[rotation=0]{{}Text1:"\"Start\""{}}
-/fill 20 12 60 30 15 70 minecraft:netherrack keep
-/fill 21 13 61 29 15 69 minecraft:air replace minecraft:netherrack
-/fill 30 12 60 40 15 70 minecraft:stone keep
-/fill 31 13 61 39 15 69 minecraft:air replace minecraft:stone
-/fill 40 12 60 50 15 70 minecraft:cobblestone keep
-/fill 41 13 61 49 15 69 minecraft:air replace minecraft:cobblestone
-/fill 50 12 60 60 15 70 minecraft:cobblestone keep
-/fill 51 13 61 59 15 69 minecraft:air replace minecraft:cobblestone
-/fill 60 12 60 70 15 70 minecraft:iron_block keep
-/fill 61 13 61 69 15 69 minecraft:air replace minecraft:iron_block
-/fill 70 12 60 80 15 70 minecraft:iron_block keep
-/fill 71 13 61 79 15 69 minecraft:air replace minecraft:iron_block
-/fill 80 12 60 90 15 70 minecraft:iron_block keep
-/fill 81 13 61 89 15 69 minecraft:air replace minecraft:iron_block
-/fill 90 12 60 100 15 70 minecraft:ice keep
-/fill 91 13 61 99 15 69 minecraft:air replace minecraft:ice
-/fill 100 12 60 110 15 70 minecraft:ice keep
-/fill 101 13 61 109 15 69 minecraft:air replace minecraft:ice
-/fill 110 12 60 120 15 70 minecraft:ice keep
-/fill 111 13 61 119 15 69 minecraft:air replace minecraft:ice
-/fill 10 12 70 20 15 80 minecraft:netherrack keep
-/fill 11 13 71 19 15 79 minecraft:air replace minecraft:netherrack
-/fill 20 12 70 30 15 80 minecraft:stone keep
-/fill 21 13 71 29 15 79 minecraft:air replace minecraft:stone
-/fill 30 12 70 40 15 80 minecraft:stone keep
-/fill 31 13 71 39 15 79 minecraft:air replace minecraft:stone
-/fill 40 12 70 50 15 80 minecraft:cobblestone keep
-/fill 41 13 71 49 15 79 minecraft:air replace minecraft:cobblestone
-/fill 50 12 70 60 15 80 minecraft:cobblestone keep
-/fill 51 13 71 59 15 79 minecraft:air replace minecraft:cobblestone
-/fill 60 12 70 70 15 80 minecraft:cobblestone keep
-/fill 61 13 71 69 15 79 minecraft:air replace minecraft:cobblestone
-/fill 70 12 70 80 15 80 minecraft:iron_block keep
-/fill 71 13 71 79 15 79 minecraft:air replace minecraft:iron_block
-/fill 80 12 70 90 15 80 minecraft:iron_block keep
-/fill 81 13 71 89 15 79 minecraft:air replace minecraft:iron_block
-/fill 90 12 70 100 15 80 minecraft:iron_block keep
-/fill 91 13 71 99 15 79 minecraft:air replace minecraft:iron_block
-/fill 100 12 70 110 15 80 minecraft:ice keep
-/fill 101 13 71 109 15 79 minecraft:air replace minecraft:ice
-/fill 10 12 80 20 15 90 minecraft:netherrack keep
-/fill 11 13 81 19 15 89 minecraft:air replace minecraft:netherrack
-/fill 30 12 80 40 15 90 minecraft:stone keep
-/fill 31 13 81 39 15 89 minecraft:air replace minecraft:stone
-/fill 40 12 80 50 15 90 minecraft:cobblestone keep
-/fill 41 13 81 49 15 89 minecraft:air replace minecraft:cobblestone
-/fill 70 12 80 80 15 90 minecraft:iron_block keep
-/fill 71 13 81 79 15 89 minecraft:air replace minecraft:iron_block
-/fill 80 12 80 90 15 90 minecraft:sandstone keep
-/fill 81 13 81 89 15 89 minecraft:air replace minecraft:sandstone
-/fill 90 12 80 100 15 90 minecraft:sandstone keep
-/fill 91 13 81 99 15 89 minecraft:air replace minecraft:sandstone
-/fill 100 12 80 110 15 90 minecraft:sandstone keep
-/fill 101 13 81 109 15 89 minecraft:air replace minecraft:sandstone
-/fill 20 12 90 30 15 100 minecraft:stone keep
-/fill 21 13 91 29 15 99 minecraft:air replace minecraft:stone
-/fill 30 12 90 40 15 100 minecraft:stone keep
-/fill 31 13 91 39 15 99 minecraft:air replace minecraft:stone
-/fill 40 12 90 50 15 100 minecraft:stone keep
-/fill 41 13 91 49 15 99 minecraft:air replace minecraft:stone
-/fill 50 12 90 60 15 100 minecraft:cobblestone keep
-/fill 51 13 91 59 15 99 minecraft:air replace minecraft:cobblestone
-/fill 60 12 90 70 15 100 minecraft:sandstone keep
-/fill 61 13 91 69 15 99 minecraft:air replace minecraft:sandstone
-/fill 70 12 90 80 15 100 minecraft:sandstone keep
-/fill 71 13 91 79 15 99 minecraft:air replace minecraft:sandstone
-/fill 80 12 90 90 15 100 minecraft:sandstone keep
-/fill 81 13 91 89 15 99 minecraft:air replace minecraft:sandstone
-/fill 90 12 90 100 15 100 minecraft:sandstone keep
-/fill 91 13 91 99 15 99 minecraft:air replace minecraft:sandstone
-/fill 80 12 100 90 15 110 minecraft:sandstone keep
-/fill 81 13 101 89 15 109 minecraft:air replace minecraft:sandstone
-/fill 10 12 50 20 15 60 minecraft:netherrack keep
-/fill 11 13 51 19 15 59 minecraft:air replace minecraft:netherrack
-/setblock 15 12 55 minecraft:command_block{{}Command:"/give @p minecraft:lever{{}CanPlaceOn:['minecraft:pink_terracotta']{}}"{}} replace
-/setblock 15 13 55 minecraft:stone_pressure_plate
-/fill 20 12 80 30 15 90 minecraft:stone keep
-/fill 21 13 81 29 15 89 minecraft:air replace minecraft:stone
-/setblock 25 12 85 minecraft:command_block{{}Command:"/give @p minecraft:lever{{}CanPlaceOn:['minecraft:brown_wool']{}}"{}} replace
-/setblock 25 13 85 minecraft:stone_pressure_plate
-/fill 50 12 80 60 15 90 minecraft:cobblestone keep
-/fill 51 13 81 59 15 89 minecraft:air replace minecraft:cobblestone
-/setblock 55 12 85 minecraft:command_block{{}Command:"/give @p minecraft:lever{{}CanPlaceOn:['minecraft:light_gray_terracotta']{}}"{}} replace
-/setblock 55 13 85 minecraft:stone_pressure_plate
-/fill 60 12 50 70 15 60 minecraft:iron_block keep
-/fill 61 13 51 69 15 59 minecraft:air replace minecraft:iron_block
-/setblock 65 12 55 minecraft:command_block{{}Command:"/give @p minecraft:lever{{}CanPlaceOn:['minecraft:yellow_wool']{}}"{}} replace
-/setblock 65 13 55 minecraft:stone_pressure_plate
-/fill 70 12 100 80 15 110 minecraft:sandstone keep
-/fill 71 13 101 79 15 109 minecraft:air replace minecraft:sandstone
-/setblock 75 12 105 minecraft:command_block{{}Command:"/give @p minecraft:lever{{}CanPlaceOn:['minecraft:light_blue_wool']{}}"{}} replace
-/setblock 75 13 105 minecraft:stone_pressure_plate
-/fill 130 12 50 140 15 60 minecraft:slime_block keep
-/fill 131 13 51 139 15 59 minecraft:air replace minecraft:slime_block
-/setblock 135 12 55 minecraft:command_block{{}Command:"/give @p minecraft:lever{{}CanPlaceOn:['minecraft:blue_terracotta']{}}"{}} replace
-/setblock 135 13 55 minecraft:stone_pressure_plate
-/fill 60 12 30 70 15 40 minecraft:purpur_block keep
-/fill 61 13 31 69 15 39 minecraft:air replace minecraft:purpur_block
-/setblock 65 12 35 minecraft:command_block{{}Command:"/give @p minecraft:lever{{}CanPlaceOn:['minecraft:green_terracotta']{}}"{}} replace
-/setblock 65 13 35 minecraft:stone_pressure_plate
-/setblock 80 13 5 minecraft:oak_door[half=lower, facing=east]
-/setblock 80 14 5 minecraft:oak_door[half=upper, facing=east]
-/setblock 45 13 10 minecraft:oak_door[half=lower, facing=south]
-/setblock 45 14 10 minecraft:oak_door[half=upper, facing=south]
-/setblock 75 13 10 minecraft:oak_door[half=lower, facing=south]
-/setblock 75 14 10 minecraft:oak_door[half=upper, facing=south]
-/setblock 105 13 10 minecraft:oak_door[half=lower, facing=south]
-/setblock 105 14 10 minecraft:oak_door[half=upper, facing=south]
-/setblock 40 13 15 minecraft:oak_door[half=lower, facing=east]
-/setblock 40 14 15 minecraft:oak_door[half=upper, facing=east]
-/setblock 50 13 15 minecraft:oak_door[half=lower, facing=east]
-/setblock 50 14 15 minecraft:oak_door[half=upper, facing=east]
-/setblock 45 13 20 minecraft:oak_door[half=lower, facing=south]
-/setblock 45 14 20 minecraft:oak_door[half=upper, facing=south]
-/setblock 75 13 20 minecraft:oak_door[half=lower, facing=south]
-/setblock 75 14 20 minecraft:oak_door[half=upper, facing=south]
-/setblock 105 13 20 minecraft:oak_door[half=lower, facing=south]
-/setblock 105 14 20 minecraft:oak_door[half=upper, facing=south]
-/setblock 40 13 25 minecraft:oak_door[half=lower, facing=east]
-/setblock 40 14 25 minecraft:oak_door[half=upper, facing=east]
-/setblock 50 13 25 minecraft:oak_door[half=lower, facing=east]
-/setblock 50 14 25 minecraft:oak_door[half=upper, facing=east]
-/setblock 60 13 25 minecraft:oak_door[half=lower, facing=east]
-/setblock 60 14 25 minecraft:oak_door[half=upper, facing=east]
-/setblock 70 13 25 minecraft:oak_door[half=lower, facing=east]
-/setblock 70 14 25 minecraft:oak_door[half=upper, facing=east]
-/setblock 80 13 25 minecraft:oak_door[half=lower, facing=east]
-/setblock 80 14 25 minecraft:oak_door[half=upper, facing=east]
-/setblock 90 13 25 minecraft:oak_door[half=lower, facing=east]
-/setblock 90 14 25 minecraft:oak_door[half=upper, facing=east]
-/setblock 100 13 25 minecraft:oak_door[half=lower, facing=east]
-/setblock 100 14 25 minecraft:oak_door[half=upper, facing=east]
-/setblock 110 13 25 minecraft:oak_door[half=lower, facing=east]
-/setblock 110 14 25 minecraft:oak_door[half=upper, facing=east]
-/setblock 45 13 30 minecraft:oak_door[half=lower, facing=south]
-/setblock 45 14 30 minecraft:oak_door[half=upper, facing=south]
-/setblock 75 13 30 minecraft:oak_door[half=lower, facing=south]
-/setblock 75 14 30 minecraft:oak_door[half=upper, facing=south]
-/setblock 85 13 30 minecraft:oak_door[half=lower, facing=south]
-/setblock 85 14 30 minecraft:oak_door[half=upper, facing=south]
-/setblock 95 13 30 minecraft:oak_door[half=lower, facing=south]
-/setblock 95 14 30 minecraft:oak_door[half=upper, facing=south]
-/setblock 60 13 35 minecraft:oak_door[half=lower, facing=east]
-/setblock 60 14 35 minecraft:oak_door[half=upper, facing=east]
-/setblock 70 13 35 minecraft:oak_door[half=lower, facing=east]
-/setblock 70 14 35 minecraft:oak_door[half=upper, facing=east]
-/setblock 100 13 35 minecraft:oak_door[half=lower, facing=east]
-/setblock 100 14 35 minecraft:oak_door[half=upper, facing=east]
-/setblock 110 13 35 minecraft:oak_door[half=lower, facing=east]
-/setblock 110 14 35 minecraft:oak_door[half=upper, facing=east]
-/setblock 45 13 40 minecraft:oak_door[half=lower, facing=south]
-/setblock 45 14 40 minecraft:oak_door[half=upper, facing=south]
-/setblock 115 13 40 minecraft:oak_door[half=lower, facing=south]
-/setblock 115 14 40 minecraft:oak_door[half=upper, facing=south]
-/setblock 125 13 40 minecraft:oak_door[half=lower, facing=south]
-/setblock 125 14 40 minecraft:oak_door[half=upper, facing=south]
-/setblock 40 13 45 minecraft:oak_door[half=lower, facing=east]
-/setblock 40 14 45 minecraft:oak_door[half=upper, facing=east]
-/setblock 110 13 45 minecraft:oak_door[half=lower, facing=east]
-/setblock 110 14 45 minecraft:oak_door[half=upper, facing=east]
-/setblock 120 13 45 minecraft:oak_door[half=lower, facing=east]
-/setblock 120 14 45 minecraft:oak_door[half=upper, facing=east]
-/setblock 130 13 45 minecraft:oak_door[half=lower, facing=east]
-/setblock 130 14 45 minecraft:oak_door[half=upper, facing=east]
-/setblock 95 13 50 minecraft:oak_door[half=lower, facing=south]
-/setblock 95 14 50 minecraft:oak_door[half=upper, facing=south]
-/setblock 105 13 50 minecraft:oak_door[half=lower, facing=south]
-/setblock 105 14 50 minecraft:oak_door[half=upper, facing=south]
-/setblock 125 13 50 minecraft:oak_door[half=lower, facing=south]
-/setblock 125 14 50 minecraft:oak_door[half=upper, facing=south]
-/setblock 70 13 55 minecraft:oak_door[half=lower, facing=east]
-/setblock 70 14 55 minecraft:oak_door[half=upper, facing=east]
-/setblock 90 13 55 minecraft:oak_door[half=lower, facing=east]
-/setblock 90 14 55 minecraft:oak_door[half=upper, facing=east]
-/setblock 130 13 55 minecraft:oak_door[half=lower, facing=east]
-/setblock 130 14 55 minecraft:oak_door[half=upper, facing=east]
-/setblock 5 13 60 minecraft:oak_door[half=lower, facing=south]
-/setblock 5 14 60 minecraft:oak_door[half=upper, facing=south]
-/setblock 15 13 60 minecraft:oak_door[half=lower, facing=south]
-/setblock 15 14 60 minecraft:oak_door[half=upper, facing=south]
-/setblock 25 13 60 minecraft:oak_door[half=lower, facing=south]
-/setblock 25 14 60 minecraft:oak_door[half=upper, facing=south]
-/setblock 55 13 60 minecraft:oak_door[half=lower, facing=south]
-/setblock 55 14 60 minecraft:oak_door[half=upper, facing=south]
-/setblock 65 13 60 minecraft:oak_door[half=lower, facing=south]
-/setblock 65 14 60 minecraft:oak_door[half=upper, facing=south]
-/setblock 95 13 60 minecraft:oak_door[half=lower, facing=south]
-/setblock 95 14 60 minecraft:oak_door[half=upper, facing=south]
-/setblock 105 13 60 minecraft:oak_door[half=lower, facing=south]
-/setblock 105 14 60 minecraft:oak_door[half=upper, facing=south]
-/setblock 10 13 65 minecraft:oak_door[half=lower, facing=east]
-/setblock 10 14 65 minecraft:oak_door[half=upper, facing=east]
-/setblock 20 13 65 minecraft:oak_door[half=lower, facing=east]
-/setblock 20 14 65 minecraft:oak_door[half=upper, facing=east]
-/setblock 50 13 65 minecraft:oak_door[half=lower, facing=east]
-/setblock 50 14 65 minecraft:oak_door[half=upper, facing=east]
-/setblock 60 13 65 minecraft:oak_door[half=lower, facing=east]
-/setblock 60 14 65 minecraft:oak_door[half=upper, facing=east]
-/setblock 70 13 65 minecraft:oak_door[half=lower, facing=east]
-/setblock 70 14 65 minecraft:oak_door[half=upper, facing=east]
-/setblock 80 13 65 minecraft:oak_door[half=lower, facing=east]
-/setblock 80 14 65 minecraft:oak_door[half=upper, facing=east]
-/setblock 100 13 65 minecraft:oak_door[half=lower, facing=east]
-/setblock 100 14 65 minecraft:oak_door[half=upper, facing=east]
-/setblock 110 13 65 minecraft:oak_door[half=lower, facing=east]
-/setblock 110 14 65 minecraft:oak_door[half=upper, facing=east]
-/setblock 15 13 70 minecraft:oak_door[half=lower, facing=south]
-/setblock 15 14 70 minecraft:oak_door[half=upper, facing=south]
-/setblock 35 13 70 minecraft:oak_door[half=lower, facing=south]
-/setblock 35 14 70 minecraft:oak_door[half=upper, facing=south]
-/setblock 45 13 70 minecraft:oak_door[half=lower, facing=south]
-/setblock 45 14 70 minecraft:oak_door[half=upper, facing=south]
-/setblock 75 13 70 minecraft:oak_door[half=lower, facing=south]
-/setblock 75 14 70 minecraft:oak_door[half=upper, facing=south]
-/setblock 85 13 70 minecraft:oak_door[half=lower, facing=south]
-/setblock 85 14 70 minecraft:oak_door[half=upper, facing=south]
-/setblock 105 13 70 minecraft:oak_door[half=lower, facing=south]
-/setblock 105 14 70 minecraft:oak_door[half=upper, facing=south]
-/setblock 20 13 75 minecraft:oak_door[half=lower, facing=east]
-/setblock 20 14 75 minecraft:oak_door[half=upper, facing=east]
-/setblock 30 13 75 minecraft:oak_door[half=lower, facing=east]
-/setblock 30 14 75 minecraft:oak_door[half=upper, facing=east]
-/setblock 40 13 75 minecraft:oak_door[half=lower, facing=east]
-/setblock 40 14 75 minecraft:oak_door[half=upper, facing=east]
-/setblock 50 13 75 minecraft:oak_door[half=lower, facing=east]
-/setblock 50 14 75 minecraft:oak_door[half=upper, facing=east]
-/setblock 60 13 75 minecraft:oak_door[half=lower, facing=east]
-/setblock 60 14 75 minecraft:oak_door[half=upper, facing=east]
-/setblock 90 13 75 minecraft:oak_door[half=lower, facing=east]
-/setblock 90 14 75 minecraft:oak_door[half=upper, facing=east]
-/setblock 15 13 80 minecraft:oak_door[half=lower, facing=south]
-/setblock 15 14 80 minecraft:oak_door[half=upper, facing=south]
-/setblock 25 13 80 minecraft:oak_door[half=lower, facing=south]
-/setblock 25 14 80 minecraft:oak_door[half=upper, facing=south]
-/setblock 45 13 80 minecraft:oak_door[half=lower, facing=south]
-/setblock 45 14 80 minecraft:oak_door[half=upper, facing=south]
-/setblock 55 13 80 minecraft:oak_door[half=lower, facing=south]
-/setblock 55 14 80 minecraft:oak_door[half=upper, facing=south]
-/setblock 75 13 80 minecraft:oak_door[half=lower, facing=south]
-/setblock 75 14 80 minecraft:oak_door[half=upper, facing=south]
-/setblock 105 13 80 minecraft:oak_door[half=lower, facing=south]
-/setblock 105 14 80 minecraft:oak_door[half=upper, facing=south]
-/setblock 30 13 85 minecraft:oak_door[half=lower, facing=east]
-/setblock 30 14 85 minecraft:oak_door[half=upper, facing=east]
-/setblock 80 13 85 minecraft:oak_door[half=lower, facing=east]
-/setblock 80 14 85 minecraft:oak_door[half=upper, facing=east]
-/setblock 90 13 85 minecraft:oak_door[half=lower, facing=east]
-/setblock 90 14 85 minecraft:oak_door[half=upper, facing=east]
-/setblock 100 13 85 minecraft:oak_door[half=lower, facing=east]
-/setblock 100 14 85 minecraft:oak_door[half=upper, facing=east]
-/setblock 25 13 90 minecraft:oak_door[half=lower, facing=south]
-/setblock 25 14 90 minecraft:oak_door[half=upper, facing=south]
-/setblock 55 13 90 minecraft:oak_door[half=lower, facing=south]
-/setblock 55 14 90 minecraft:oak_door[half=upper, facing=south]
-/setblock 85 13 90 minecraft:oak_door[half=lower, facing=south]
-/setblock 85 14 90 minecraft:oak_door[half=upper, facing=south]
-/setblock 95 13 90 minecraft:oak_door[half=lower, facing=south]
-/setblock 95 14 90 minecraft:oak_door[half=upper, facing=south]
-/setblock 30 13 95 minecraft:oak_door[half=lower, facing=east]
-/setblock 30 14 95 minecraft:oak_door[half=upper, facing=east]
-/setblock 40 13 95 minecraft:oak_door[half=lower, facing=east]
-/setblock 40 14 95 minecraft:oak_door[half=upper, facing=east]
-/setblock 70 13 95 minecraft:oak_door[half=lower, facing=east]
-/setblock 70 14 95 minecraft:oak_door[half=upper, facing=east]
-/setblock 80 13 95 minecraft:oak_door[half=lower, facing=east]
-/setblock 80 14 95 minecraft:oak_door[half=upper, facing=east]
-/setblock 85 13 100 minecraft:oak_door[half=lower, facing=south]
-/setblock 85 14 100 minecraft:oak_door[half=upper, facing=south]
-/setblock 80 13 105 minecraft:oak_door[half=lower, facing=east]
-/setblock 80 14 105 minecraft:oak_door[half=upper, facing=east]
-/setblock 20 13 75 minecraft:air
-/setblock 20 14 75 minecraft:air
-/setblock 20 13 75 minecraft:iron_door[half=lower, facing=east]
-/setblock 20 14 75 minecraft:iron_door[half=upper, facing=east]
-/setblock 20 14 76 minecraft:pink_terracotta
-/setblock 40 13 75 minecraft:air
-/setblock 40 14 75 minecraft:air
-/setblock 40 13 75 minecraft:iron_door[half=lower, facing=east]
-/setblock 40 14 75 minecraft:iron_door[half=upper, facing=east]
-/setblock 40 14 76 minecraft:brown_wool
-/setblock 60 13 65 minecraft:air
-/setblock 60 14 65 minecraft:air
-/setblock 60 13 65 minecraft:iron_door[half=lower, facing=east]
-/setblock 60 14 65 minecraft:iron_door[half=upper, facing=east]
-/setblock 60 14 66 minecraft:light_gray_terracotta
-/setblock 80 13 85 minecraft:air
-/setblock 80 14 85 minecraft:air
-/setblock 80 13 85 minecraft:iron_door[half=lower, facing=east]
-/setblock 80 14 85 minecraft:iron_door[half=upper, facing=east]
-/setblock 80 14 86 minecraft:yellow_wool
-/setblock 105 13 80 minecraft:air
-/setblock 105 14 80 minecraft:air
-/setblock 105 13 80 minecraft:iron_door[half=lower, facing=north]
-/setblock 105 14 80 minecraft:iron_door[half=upper, facing=north]
-/setblock 106 14 80 minecraft:light_blue_wool
-/setblock 95 13 30 minecraft:air
-/setblock 95 14 30 minecraft:air
-/setblock 95 13 30 minecraft:iron_door[half=lower, facing=north]
-/setblock 95 14 30 minecraft:iron_door[half=upper, facing=north]
-/setblock 96 14 30 minecraft:blue_terracotta
-/setblock 50 13 25 minecraft:air
-/setblock 50 14 25 minecraft:air
-/setblock 50 13 25 minecraft:iron_door[half=lower, facing=west]
-/setblock 50 14 25 minecraft:iron_door[half=upper, facing=west]
-/setblock 50 14 24 minecraft:green_terracotta
+/fill 40 12 0 50 15 10 minecraft:air replace
+/fill 70 12 0 80 15 10 minecraft:air replace
+/fill 80 12 0 90 15 10 minecraft:air replace
+/fill 100 12 0 110 15 10 minecraft:air replace
+/fill 30 12 10 40 15 20 minecraft:air replace
+/fill 40 12 10 50 15 20 minecraft:air replace
+/fill 50 12 10 60 15 20 minecraft:air replace
+/fill 70 12 10 80 15 20 minecraft:air replace
+/fill 100 12 10 110 15 20 minecraft:air replace
+/fill 30 12 20 40 15 30 minecraft:air replace
+/fill 40 12 20 50 15 30 minecraft:air replace
+/fill 50 12 20 60 15 30 minecraft:air replace
+/fill 60 12 20 70 15 30 minecraft:air replace
+/fill 70 12 20 80 15 30 minecraft:air replace
+/fill 80 6 20 90 15 30 minecraft:air replace
+/fill 90 12 20 100 15 30 minecraft:air replace
+/fill 100 12 20 110 15 30 minecraft:air replace
+/fill 110 12 20 120 15 30 minecraft:air replace
+/fill 40 12 30 50 15 40 minecraft:air replace
+/fill 50 12 30 60 15 40 minecraft:air replace
+/fill 60 12 30 70 15 40 minecraft:air replace
+/fill 70 12 30 80 15 40 minecraft:air replace
+/fill 80 12 30 90 15 40 minecraft:air replace
+/fill 90 12 30 100 15 40 minecraft:air replace
+/fill 100 12 30 110 15 40 minecraft:air replace
+/fill 110 12 30 120 15 40 minecraft:air replace
+/fill 120 12 30 130 15 40 minecraft:air replace
+/fill 30 12 40 40 15 50 minecraft:air replace
+/fill 40 12 40 50 15 50 minecraft:air replace
+/fill 90 12 40 100 15 50 minecraft:air replace
+/fill 100 6 40 110 15 50 minecraft:air replace
+/fill 110 12 40 120 15 50 minecraft:air replace
+/fill 120 12 40 130 15 50 minecraft:air replace
+/fill 130 12 40 140 15 50 minecraft:air replace
+/fill 0 12 50 10 15 60 minecraft:air replace
+/fill 10 12 50 20 15 60 minecraft:air replace
+/fill 20 12 50 30 15 60 minecraft:air replace
+/fill 50 12 50 60 15 60 minecraft:air replace
+/fill 60 12 50 70 15 60 minecraft:air replace
+/fill 70 12 50 80 15 60 minecraft:air replace
+/fill 80 12 50 90 15 60 minecraft:air replace
+/fill 90 12 50 100 15 60 minecraft:air replace
+/fill 100 12 50 110 15 60 minecraft:air replace
+/fill 120 12 50 130 15 60 minecraft:air replace
+/fill 130 12 50 140 15 60 minecraft:air replace
+/fill 0 12 60 10 15 70 minecraft:air replace
+/fill 10 12 60 20 15 70 minecraft:air replace
+/fill 20 12 60 30 15 70 minecraft:air replace
+/fill 30 12 60 40 15 70 minecraft:air replace
+/fill 40 12 60 50 15 70 minecraft:air replace
+/fill 50 12 60 60 15 70 minecraft:air replace
+/fill 60 12 60 70 15 70 minecraft:air replace
+/fill 70 12 60 80 15 70 minecraft:air replace
+/fill 80 12 60 90 15 70 minecraft:air replace
+/fill 90 12 60 100 15 70 minecraft:air replace
+/fill 100 12 60 110 15 70 minecraft:air replace
+/fill 110 12 60 120 15 70 minecraft:air replace
+/fill 10 12 70 20 15 80 minecraft:air replace
+/fill 20 12 70 30 15 80 minecraft:air replace
+/fill 30 12 70 40 15 80 minecraft:air replace
+/fill 40 12 70 50 15 80 minecraft:air replace
+/fill 50 12 70 60 15 80 minecraft:air replace
+/fill 60 12 70 70 15 80 minecraft:air replace
+/fill 70 12 70 80 15 80 minecraft:air replace
+/fill 80 12 70 90 15 80 minecraft:air replace
+/fill 90 12 70 100 15 80 minecraft:air replace
+/fill 100 12 70 110 15 80 minecraft:air replace
+/fill 10 12 80 20 15 90 minecraft:air replace
+/fill 20 12 80 30 15 90 minecraft:air replace
+/fill 30 12 80 40 15 90 minecraft:air replace
+/fill 40 12 80 50 15 90 minecraft:air replace
+/fill 50 12 80 60 15 90 minecraft:air replace
+/fill 70 12 80 80 15 90 minecraft:air replace
+/fill 80 12 80 90 15 90 minecraft:air replace
+/fill 90 12 80 100 15 90 minecraft:air replace
+/fill 100 12 80 110 15 90 minecraft:air replace
+/fill 20 12 90 30 15 100 minecraft:air replace
+/fill 30 12 90 40 15 100 minecraft:air replace
+/fill 40 12 90 50 15 100 minecraft:air replace
+/fill 50 12 90 60 15 100 minecraft:air replace
+/fill 60 12 90 70 15 100 minecraft:air replace
+/fill 70 12 90 80 15 100 minecraft:air replace
+/fill 80 12 90 90 15 100 minecraft:air replace
+/fill 90 12 90 100 15 100 minecraft:air replace
+/fill 70 12 100 80 15 110 minecraft:air replace
+/fill 80 12 100 90 15 110 minecraft:air replace
