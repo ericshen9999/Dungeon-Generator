@@ -36,6 +36,10 @@ def generateLockedDoor(x,y,z,direction,block):
     commandlist = []
     dis = dirDic[direction]
     dis2 = dirDic2[direction]
+    command = "/setblock " + str(x + dis[0]) + " " + str(y + 1) + " " + str(z + dis[1]) + " minecraft:air"
+    commandlist.append(command)
+    command = "/setblock " + str(x + dis[0]) + " " + str(y + 2) + " " + str(z + dis[1]) + " minecraft:air"
+    commandlist.append(command)
     command = "/setblock " + str(x + dis[0]) + " " + str(y + 1) + " " + str(z + dis[1]) + " minecraft:iron_door[half=lower, facing=" + inverseDir[direction] + "]"
     commandlist.append(command)
     command = "/setblock " + str(x + dis[0]) + " " + str(y + 2) + " " + str(z + dis[1]) + " minecraft:iron_door[half=upper, facing=" + inverseDir[direction] + "]"
@@ -47,9 +51,12 @@ def generateLockedDoor(x,y,z,direction,block):
 def generateDoor(x,y,z,direction):
     commandlist = []
     dis = dirDic[direction]
-    command = "/setblock " + str(x + dis[0]) + " " + str(y + 1) + " " + str(z + dis[1]) + " minecraft:air"
+    dis2 = dirDic2[direction]
+    command = "/setblock " + str(x + dis[0]) + " " + str(y + 1) + " " + str(
+        z + dis[1]) + " minecraft:oak_door[half=lower, facing=" + inverseDir[direction] + "]"
     commandlist.append(command)
-    command = "/setblock " + str(x + dis[0]) + " " + str(y + 2) + " " + str(z + dis[1]) + " minecraft:air"
+    command = "/setblock " + str(x + dis[0]) + " " + str(y + 2) + " " + str(
+        z + dis[1]) + " minecraft:oak_door[half=upper, facing=" + inverseDir[direction] + "]"
     commandlist.append(command)
     return commandlist
 
