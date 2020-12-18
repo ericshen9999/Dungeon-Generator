@@ -9,8 +9,6 @@ specialOptions = [
 
 ]
 
-
-
 options = [
 
 
@@ -72,6 +70,16 @@ dirOffset = {   # A dictionary containing the offset corresponding to a directio
     "w": (-1, 0)
 
 }
+
+themes = {
+    "minecraft:spruce_planks",
+    "minecraft:jungle_planks",
+    "minecraft:birch_planks",
+    "minecraft:acacia_planks",
+    "minecraft:dark_oak_planks",
+    "minecraft:crimson_planks",
+    "minecraft:warped_planks",
+}
 # 3 x 3 (*2 for passageways -1 for edges)
 length = 3 * 2 - 1
 width = 3 * 2 - 1
@@ -98,7 +106,6 @@ class Room:         #Class for a single room
             return str(useOffset(self.xy, offset)) + ' ' + self.meta + '\n'
         return ''
 
-
     def getNeighbourPosition(self, direction):  #returns the grid position in the direction passed
         offset = dirOffset[direction]
         return tuple((self.xy[0] + offset[0], self.xy[1] + offset[1]))
@@ -111,7 +118,7 @@ class Room:         #Class for a single room
 
 
 class Section:      # Class for a section - a connected set of rooms
-    def __init__(self, entrancePos, entranceDir, currentGrid, map, id, parent, onMainPath):      #passes the entrance position, entrance direction
+    def __init__(self, entrancePos, entranceDir, currentGrid, map, id, parent, onMainPath, sectionTheme):      #passes the entrance position, entrance direction
                                                                     # a dictionary of positions already in use, the section's unique ID,
                                                                     #the section's parent, and if the section is on the main path
         self.map = map      #reference to the map
@@ -120,7 +127,9 @@ class Section:      # Class for a section - a connected set of rooms
         self.onMainPath = onMainPath    #whether this section is on the main path
         self.children = []                  # A list of children sections.  Should only be added to after the section
                                             # has finished generating its rooms
+        self.theme = ""
         self.fullMap = currentGrid        # might not be needed, may remove later
+        self.blockType = sectionTheme
         self.sectionMap = {entrancePos: Room(entrancePos, 0, id)}  # the map of rooms in this section
         self.sectionMap[entrancePos].sectionEntrance = tuple((True, entranceDir))     # mark the room as a section entrance
         self.entrance = tuple((entrancePos, entranceDir))
@@ -186,7 +195,7 @@ class Section:      # Class for a section - a connected set of rooms
                 else:
                     onMainPath = True
                 self.map.sectionCount += 1
-                self.children.append(Section(newSectionStart, newSectionEntrance, self.map.map, self.map, self.map.sectionCount - 1, self, onMainPath))
+                self.children.append(Section(newSectionStart, newSectionEntrance, self.map.map, self.map, self.map.sectionCount - 1, self, onMainPath, choice(themes)))
                 self.map.sectionDict[self.children[-1].id] = self.children[-1]
                 done = self.children[-1].fill()
             else:
@@ -279,7 +288,7 @@ class Map:
         self.map = {}   # dictionary to contain the rooms that are in the dungeon.
                         # rooms in here have been successfully placed on the map.
         self.sectionCount = 1
-        self.firstSection = Section(tuple((0, 0)), None, self.map, self, 0, None, True)
+        self.firstSection = Section(tuple((0, 0)), None, self.map, self, 0, None, True, choice(themes))
         self.firstSection.sectionMap[tuple((0,0))].type = 'S'       #set start rooms type to S
         self.offsetVal = tuple((0, 0))     # set a default value for the offset for later
         self.size = tuple((0, 0))
@@ -300,8 +309,8 @@ class Map:
     def assignEmptyRooms(self):
         for roomID in list(self.map):
             room = self.map[roomID]
-            """if room.type is None or room.type == '0' or room.type == '1':
-                room.type = choice(options)"""
+            if room.type is None or room.type == '0' or room.type == '1':
+                room.type = choice(options)
 
     def setOffsetandSize(self):
         minx = 0
