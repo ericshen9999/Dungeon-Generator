@@ -1,3 +1,5 @@
+from random import choice
+
 # Rooms are 11x11 with 9x9 insides (+10 for the next room since walls overlap)
 # (x,z,y) [-100, 3, 120]
 def generateRoom(x,y,z,block):
@@ -396,6 +398,15 @@ def getTape(x,y,z):
 puzzleType = {
     "3x3": get3x3
 }
+
+# (x,y,z,direction,block) [-100, 3, 120, "north", "white_wool"]
+def findPuzzle(x,y,z,name):
+    if name in puzzleType:
+        return puzzleType[name](x,y,z)
+    else:
+        print("ERROR:", x, ",", y, ",", z, ",", name, "not found")
+        return None
+
 def getKeyRoom(x,y,z,block):
     commandlist = []
     command = "/setblock " + str(x+5) + " " + str(y) + " " + str(z+5) + " minecraft:command_block{Command:\"/give @p minecraft:lever{CanPlaceOn:[" + "'" + "minecraft:" + block + "']}\"} destroy"
@@ -403,14 +414,6 @@ def getKeyRoom(x,y,z,block):
     command = "/setblock " + str(x+5) + " " + str(y+1) + " " + str(z+5) + " minecraft:stone_pressure_plate"
     commandlist.append(command)
     return commandlist
-
-# (x,y,z,direction,block) [-100, 3, 120, "north", "white_wool"]
-def getpuzzle(x,y,z,name):
-    if name in puzzleType:
-        return puzzleType[name](x,y,z)
-    else:
-        print("ERROR:", x, ",", y, ",", z, ",", name, "not found")
-        return None
 
 def getSection(localx, localy):
     search = "(" + str(localx) + ", " + str(localy) + ")"
@@ -434,9 +437,30 @@ roomType = { # Can be randomized later
 def getBlock(section):
     return roomType[section]
 
+
+def getStart(x,y,z,block):
+    return generateRoom(x,y,z,block)
+def getEnd(x,y,z,block):
+    return generateRoom(x,y,z,block)
+def getRoom(x,y,z,block):
+    return generateRoom(x,y,z,block)
+def getKey(x,y,z,block,keyblock):
+    return generateRoom(x,y,z,block) + getKeyRoom(x,y,z,keyblock)
+def getPuzzle(x,y,z,block):
+    return generateRoom(x,y,z,block) + findPuzzle(x,y,z,choice(puzzleType))
+
 # Where the start block is
 # /setblock x y+4 z minecraft:pink_carpet
 
+roomFunction = {
+    "S": getStart, #x,y,z,block
+    "E": getEnd, #x,y,z,block
+    "R": getRoom, #x,y,z,block
+    "K": getKey, #x,y,z,block,keyblock
+    "P": getPuzzle, #x,y,z,block
+    "|": generateDoor, #x,y,z,direction,block
+    "-": generateDoor #x,y,z,direction,block
+}
 if __name__ == "__main__":
     # Test location (-100, 3, 120)
     for command in getKeyRoom(-100,3,120,"ice"):
