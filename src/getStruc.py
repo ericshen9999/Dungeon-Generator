@@ -205,7 +205,7 @@ def get3x3(x,y,z,block):
 
     return commandlist
 
-def getTape(z,y,x,block):
+def getTape(x,y,z,block):
     commandlist = []
     command = "/fill " + str(x+1) + " " + str(y-1) + " " + str(z+9) + " " + str(x+9) + " " + str(y-6) + " " + str(z+1) + " minecraft:air replace"
     commandlist.append(command)
@@ -276,7 +276,7 @@ def getTape(z,y,x,block):
     commandlist.append(command)
     command = "/setblock " + str(x+8) + " " + str(y-1) + " " + str(z+3) + " minecraft:piston[facing=south] replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+9) + " " + str(y-1) + " " + str(z+2) + " minecraft:sticky_piston[facing=south] replace"
+    command = "/setblock " + str(x+9) + " " + str(y-1) + " " + str(z+2) + " minecraft:piston[facing=south] replace"
     commandlist.append(command)
     command = "/setblock " + str(x+3) + " " + str(y-1) + " " + str(z+2) + " minecraft:piston[facing=east] replace"
     commandlist.append(command)
@@ -345,7 +345,7 @@ def getTape(z,y,x,block):
     commandlist.append(command)
     command = "/setblock " + str(x+7) + " " + str(y-3) + " " + str(z+3) + " minecraft:piston[facing=east] replace"
     commandlist.append(command)
-    command = "/setblock " + str(x+8) + " " + str(y-3) + " " + str(z+1) + " minecraft:piston[facing=west] replace"
+    command = "/setblock " + str(x+8) + " " + str(y-3) + " " + str(z+1) + " minecraft:sticky_piston[facing=west] replace"
     commandlist.append(command)
     
     command = "/setblock " + str(x+5) + " " + str(y-3) + " " + str(z+8) + " minecraft:stone_bricks replace"
