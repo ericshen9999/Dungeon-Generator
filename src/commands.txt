@@ -251,95 +251,65 @@
 /fill 60 12 170 70 15 180 minecraft:netherrack keep
 /fill 61 13 171 69 15 179 minecraft:air replace minecraft:netherrack
 /fill 61 11 171 69 6 179 minecraft:air replace
-/fill 64 12 171 66 12 179 minecraft:barrier replace
-/fill 61 12 174 69 12 176 minecraft:barrier replace
-/setblock 64 12 174 minecraft:red_stained_glass replace
-/setblock 66 12 174 minecraft:red_stained_glass replace
-/setblock 64 12 176 minecraft:red_stained_glass replace
-/setblock 66 12 176 minecraft:red_stained_glass replace
-/setblock 68 13 179 minecraft:stone_button[face=floor, facing=west] replace
-/setblock 69 13 178 minecraft:stone_button[face=floor, facing=north] replace
-/fill 65 11 171 66 11 171 minecraft:black_concrete replace
-/setblock 63 11 172 minecraft:black_concrete replace
-/fill 61 11 174 61 11 175 minecraft:black_concrete replace
-/fill 61 11 177 63 11 177 minecraft:black_concrete replace
-/fill 69 11 175 69 11 176 minecraft:black_concrete replace
-/fill 64 11 179 65 11 179 minecraft:black_concrete replace
-/setblock 65 11 172 minecraft:white_concrete replace
-/fill 64 11 173 64 11 177 minecraft:white_concrete replace
-/fill 66 11 173 66 11 178 minecraft:white_concrete replace
-/fill 63 11 174 66 11 174 minecraft:white_concrete replace
-/setblock 62 11 175 minecraft:white_concrete replace
-/fill 63 11 176 66 11 176 minecraft:white_concrete replace
-/setblock 65 11 178 minecraft:white_concrete replace
-/fill 67 11 174 68 11 174 minecraft:redstone_block replace
-/setblock 68 11 175 minecraft:redstone_block replace
-/setblock 67 11 176 minecraft:redstone_block replace
-/setblock 64 11 171 minecraft:piston[facing=north] replace
-/setblock 67 11 172 minecraft:piston[facing=west] replace
-/setblock 62 11 173 minecraft:piston[facing=north] replace
-/setblock 69 11 174 minecraft:piston[facing=west] replace
-/setblock 61 11 176 minecraft:piston[facing=east] replace
-/setblock 68 11 177 minecraft:piston[facing=south] replace
-/setblock 69 11 178 minecraft:piston[facing=south] replace
-/setblock 63 11 178 minecraft:piston[facing=east] replace
-/setblock 66 11 179 minecraft:piston[facing=south] replace
-/fill 64 10 171 66 10 173 minecraft:black_concrete replace
-/fill 61 10 175 63 10 176 minecraft:black_concrete replace
-/setblock 62 10 174 minecraft:black_concrete replace
-/setblock 65 10 175 minecraft:black_concrete replace
-/fill 67 10 175 68 10 176 minecraft:black_concrete replace
-/fill 63 10 177 66 10 179 minecraft:black_concrete replace
-/setblock 69 10 174 minecraft:stone_bricks replace
-/setblock 68 10 179 minecraft:stone_bricks replace
-/setblock 69 10 178 minecraft:sticky_piston[facing=south] replace
-/setblock 64 10 171 minecraft:observer[facing=down] replace
-/setblock 65 10 172 minecraft:observer[facing=up] replace
-/setblock 67 10 172 minecraft:observer[facing=down] replace
-/setblock 62 10 173 minecraft:observer[facing=down] replace
-/setblock 66 10 173 minecraft:observer[facing=up] replace
-/setblock 63 10 174 minecraft:observer[facing=up] replace
-/setblock 62 10 175 minecraft:observer[facing=up] replace
-/setblock 67 10 176 minecraft:observer[facing=up] replace
-/setblock 61 10 176 minecraft:observer[facing=down] replace
-/setblock 64 10 177 minecraft:observer[facing=up] replace
-/setblock 68 10 177 minecraft:observer[facing=down] replace
-/setblock 69 10 177 minecraft:observer[facing=north] replace
-/setblock 63 10 178 minecraft:observer[facing=down] replace
-/setblock 68 11 179 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
-/setblock 65 9 171 minecraft:piston[facing=west] replace
-/setblock 63 9 173 minecraft:piston[facing=west] replace
-/setblock 67 9 173 minecraft:piston[facing=south] replace
-/setblock 61 9 175 minecraft:piston[facing=north] replace
-/setblock 63 9 177 minecraft:piston[facing=north] replace
-/setblock 67 9 177 minecraft:piston[facing=east] replace
-/setblock 68 9 179 minecraft:piston[facing=west] replace
-/setblock 65 9 172 minecraft:stone_bricks replace
-/fill 66 9 173 66 9 174 minecraft:stone_bricks replace
-/fill 63 9 174 64 9 174 minecraft:stone_bricks replace
-/setblock 62 9 175 minecraft:stone_bricks replace
-/setblock 69 9 175 minecraft:stone_bricks replace
-/fill 64 9 176 64 9 177 minecraft:stone_bricks replace
-/fill 66 9 176 67 9 176 minecraft:stone_bricks replace
-/setblock 65 9 176 minecraft:redstone_wall_torch[facing=east] replace
-/setblock 66 9 175 minecraft:redstone_wall_torch[facing=south] replace
-/setblock 65 9 174 minecraft:redstone_wall_torch[facing=west] replace
-/setblock 64 9 175 minecraft:redstone_wall_torch[facing=north] replace
-/setblock 67 9 179 minecraft:observer[facing=down] replace
-/setblock 64 10 174 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
+/fill 64 12 174 66 12 176 minecraft:barrier replace
+/fill 61 11 171 69 11 179 minecraft:obsidian replace
+/fill 62 11 172 68 11 178 minecraft:air replace minecraft:obsidian
+/fill 62 11 174 62 11 176 minecraft:sticky_piston[facing=down] replace
+/fill 68 11 174 68 11 176 minecraft:sticky_piston[facing=down] replace
+/fill 64 11 172 66 11 172 minecraft:sticky_piston[facing=down] replace
+/fill 64 11 178 66 11 178 minecraft:sticky_piston[facing=down] replace
+/fill 62 12 174 62 12 176 minecraft:powered_rail replace
+/fill 68 12 174 68 12 176 minecraft:powered_rail replace
+/fill 64 12 172 66 12 172 minecraft:powered_rail replace
+/fill 64 12 178 66 12 178 minecraft:powered_rail replace
+/fill 63 11 174 63 11 176 minecraft:sticky_piston[facing=north] replace
+/fill 67 11 174 67 11 176 minecraft:sticky_piston[facing=south] replace
+/fill 64 11 173 66 11 173 minecraft:sticky_piston[facing=west] replace
+/fill 64 11 177 66 11 177 minecraft:sticky_piston[facing=east] replace
+/fill 64 11 175 64 11 176 minecraft:smooth_quartz replace
+/fill 66 11 175 66 11 176 minecraft:smooth_quartz replace
+/fill 65 11 174 65 11 176 minecraft:redstone_block replace
+/setblock 66 11 174 minecraft:redstone_block replace
+/fill 62 10 174 62 10 176 minecraft:observer[facing=south] replace
+/fill 68 10 174 68 10 176 minecraft:observer[facing=north] replace
+/fill 64 10 172 66 10 172 minecraft:observer[facing=east] replace
+/fill 64 10 178 66 10 178 minecraft:observer[facing=west] replace
+/fill 63 10 174 63 10 176 minecraft:stone_bricks replace
+/fill 67 10 174 67 10 176 minecraft:stone_bricks replace
+/fill 64 10 173 66 10 173 minecraft:stone_bricks replace
+/fill 64 10 177 66 10 177 minecraft:stone_bricks replace
+/setblock 64 9 176 minecraft:stone_bricks replace
+/setblock 66 9 176 minecraft:stone_bricks replace
+/setblock 66 9 174 minecraft:stone_bricks replace
+/setblock 64 9 174 minecraft:stone_bricks replace
+/setblock 65 9 176 minecraft:redstone_wall_torch[facing=north] replace
+/setblock 66 9 175 minecraft:redstone_wall_torch[facing=east] replace
+/setblock 65 9 174 minecraft:redstone_wall_torch[facing=south] replace
+/setblock 64 9 175 minecraft:redstone_wall_torch[facing=west] replace
 /setblock 64 10 176 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
-/setblock 66 10 174 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
 /setblock 66 10 176 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
-/setblock 69 10 175 minecraft:redstone_wire[east=side, north=side, south=side, west=side] replace
+/setblock 66 10 174 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
+/setblock 64 10 174 minecraft:redstone_wire[east=none, north=none, south=none, west=none] replace
 /fill 64 7 174 66 7 176 minecraft:stone_bricks replace
 /fill 64 8 174 66 8 176 minecraft:redstone_wire replace
 /setblock 65 8 175 minecraft:air replace
-/fill 65 7 177 65 7 179 minecraft:stone_bricks replace
-/fill 65 8 177 65 8 179 minecraft:redstone_wire replace
+/setblock 65 7 177 minecraft:redstone_wall_torch[facing=west] replace
+/setblock 65 6 178 minecraft:stone_bricks replace
+/setblock 65 7 179 minecraft:stone_bricks replace
 /setblock 65 8 180 minecraft:stone_bricks replace
-/setblock 65 9 180 minecraft:redstone_torch replace
 /setblock 65 10 180 minecraft:stone_bricks replace
+/setblock 65 7 178 minecraft:redstone_wire replace
+/setblock 65 8 179 minecraft:redstone_wire replace
+/setblock 65 9 180 minecraft:redstone_torch replace
 /setblock 65 11 180 minecraft:redstone_torch replace
+/fill 62 13 174 62 13 176 netherrack replace
+/fill 68 13 174 68 13 176 netherrack replace
+/fill 64 13 172 66 13 172 netherrack replace
+/fill 64 13 178 66 13 178 netherrack replace
+/fill 62 14 174 62 14 176 minecraft:stone_button[face=floor, facing=south] replace
+/fill 68 14 174 68 14 176 minecraft:stone_button[face=floor, facing=north] replace
+/fill 64 14 172 66 14 172 minecraft:stone_button[face=floor, facing=east] replace
+/fill 64 14 178 66 14 178 minecraft:stone_button[face=floor, facing=west] replace
 /fill 70 12 170 80 15 180 minecraft:stone keep
 /fill 71 13 171 79 15 179 minecraft:air replace minecraft:stone
 /fill 80 12 170 90 15 180 minecraft:stone keep
