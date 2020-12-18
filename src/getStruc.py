@@ -396,7 +396,7 @@ def getTape(x,y,z):
     return commandlist
 
 puzzleType = {
-    "3x3": get3x3
+    "3x3": get3x3,
     "Tape": getTape
 }
 
@@ -440,9 +440,11 @@ def getBlock(section):
 
 
 def getStart(x,y,z,block):
-    return generateRoom(x,y,z,block)
+    commandlist = ["/setblock " + str(x+5) + " " + str(y+1) + " " + str(z+5) + " minecraft:oak_sign[rotation=0]{Text1:\"\\\"Start\\\"\"}"]
+    return generateRoom(x,y,z,block) + commandlist
 def getEnd(x,y,z,block):
-    return generateRoom(x,y,z,block)
+    commandlist = ["/setblock " + str(x+5) + " " + str(y+1) + " " + str(z+5) + " minecraft:oak_sign[rotation=0]{Text1:\"\\\"End\\\"\"}"]
+    return generateRoom(x,y,z,block) + commandlist
 def getRoom(x,y,z,block):
     return generateRoom(x,y,z,block)
 def getKey(x,y,z,block,keyblock):
@@ -464,6 +466,6 @@ roomFunction = {
 }
 if __name__ == "__main__":
     # Test location (-100, 3, 120)
-    for command in getKeyRoom(-100,3,120,"ice"):
+    for command in getStart(-100,3,120,"ice"):
         print(command)
     
